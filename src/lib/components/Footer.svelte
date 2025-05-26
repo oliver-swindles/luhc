@@ -12,7 +12,6 @@
         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
         <FooterLinkGroup>
           <FooterLink liClass="mb-4" href="/contact-us">Contact Us</FooterLink>
-          <FooterLink liClass="mb-4" href="/signin">Exec Login</FooterLink>
         </FooterLinkGroup>
       </div>
       <div>

@@ -16,7 +16,6 @@
 
 <svelte:head>
 	<title>Lancaster University Hockey Club</title>
-	<link rel="shortcut icon" href="favicon.png" type="image/png">
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<meta name="description" content="The official home page of Lancaster university hockey club. All are welcome.">
 	<meta property="og:title" content="Lancaster University Hockey Club"/>

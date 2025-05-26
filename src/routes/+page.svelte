@@ -1,14 +1,5 @@
 <script lang="ts">
-  import {
-    Button,
-    Card,
-    Table,
-    TableBody,
-    TableBodyCell,
-    TableBodyRow,
-    TableHead,
-    TableHeadCell
-  } from "flowbite-svelte";
+  import { Button, Card, Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from "flowbite-svelte";
 
   import LUHCLogo from "$lib/images/luhc-logo.png?enhanced";
   import HeroPFlick from "$lib/images/pages/index/p-flick-hero.jpg?enhanced";
@@ -46,7 +37,6 @@
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
     />
     <div class="absolute inset-0 bg-black/70 z-0 rounded-xl"></div>
-
     <div class="relative z-10 space-y-6">
       <enhanced:img 
         src={LUHCLogo} 
