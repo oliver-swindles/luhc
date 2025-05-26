@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
   import { Card, Button } from 'flowbite-svelte';
 
   import ExecHero from "$lib/images/pages/exec/exec-hero.webp";

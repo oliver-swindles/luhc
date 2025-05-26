@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
   import { Button } from 'flowbite-svelte';
 
   import RosesHero from "$lib/images/pages/roses/roses-hero.webp";

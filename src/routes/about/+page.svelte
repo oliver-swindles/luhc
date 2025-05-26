@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
   import { Card, Button } from 'flowbite-svelte';
 
   import AboutHero from "$lib/images/pages/about/about-hero.jpg";

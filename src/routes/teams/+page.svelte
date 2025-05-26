@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from "svelte";
   import { Button } from "flowbite-svelte";
 
   import TeamsHero from "$lib/images/pages/teams/teams-hero.webp";

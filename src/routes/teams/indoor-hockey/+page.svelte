@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
   import { Button } from 'flowbite-svelte';
 
   import IndoorHero from "$lib/images/pages/indoor/indoor-hero.jpg";

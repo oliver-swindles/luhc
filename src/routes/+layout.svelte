@@ -1,8 +1,14 @@
 <script lang="ts">
 	import '../app.css';
+	import AOS from 'aos';
+	import 'aos/dist/aos.css';
+  import { onMount } from 'svelte';
 	let { children } = $props();
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	onMount(() => {
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+  });
 </script>
 
 <svelte:head>

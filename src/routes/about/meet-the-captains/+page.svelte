@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
   import { Card, Button } from 'flowbite-svelte';
 
   import CaptainsHero from "$lib/images/pages/captains/captains-hero.webp";

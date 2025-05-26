@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
   import { Button } from 'flowbite-svelte';
 
   import DevHero from "$lib/images/pages/dev/dev-hero.jpg";

@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
   import { Card, Button } from 'flowbite-svelte';
 
   import WomensHero from "$lib/images/pages/womens/womens-hero.webp";
