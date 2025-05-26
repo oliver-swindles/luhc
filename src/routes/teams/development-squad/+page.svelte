@@ -1,21 +1,21 @@
 <script>
   import { Button } from 'flowbite-svelte';
 
-  import DevHero from "$lib/images/pages/dev/dev-hero.jpg";
+  import DevHero from "$lib/images/pages/dev/dev-hero.jpg?enhanced";
 
-  import Dev1 from "$lib/images/pages/dev/dev-1.avif";
-  import Dev2 from "$lib/images/pages/dev/dev-2.avif";
-  import Dev3 from "$lib/images/pages/dev/dev-3.avif";
-  import Dev4 from "$lib/images/pages/dev/dev-4.avif";
-  import Dev5 from "$lib/images/pages/dev/dev-5.avif";
-  import Dev6 from "$lib/images/pages/dev/dev-6.avif";
-  import Dev7 from "$lib/images/pages/dev/dev-7.avif";
-  import Dev8 from "$lib/images/pages/dev/dev-8.avif";
-  import Dev9 from "$lib/images/pages/dev/dev-9.avif";
-  import Dev10 from "$lib/images/pages/dev/dev-10.avif";
-  import Dev11 from "$lib/images/pages/dev/dev-11.avif";
-  import Dev13 from "$lib/images/pages/dev/dev-13.avif";
-  import Dev14 from "$lib/images/pages/dev/dev-14.avif";
+  import Dev1 from "$lib/images/pages/dev/dev-1.avif?enhanced";
+  import Dev2 from "$lib/images/pages/dev/dev-2.avif?enhanced";
+  import Dev3 from "$lib/images/pages/dev/dev-3.avif?enhanced";
+  import Dev4 from "$lib/images/pages/dev/dev-4.avif?enhanced";
+  import Dev5 from "$lib/images/pages/dev/dev-5.avif?enhanced";
+  import Dev6 from "$lib/images/pages/dev/dev-6.avif?enhanced";
+  import Dev7 from "$lib/images/pages/dev/dev-7.avif?enhanced";
+  import Dev8 from "$lib/images/pages/dev/dev-8.avif?enhanced";
+  import Dev9 from "$lib/images/pages/dev/dev-9.avif?enhanced";
+  import Dev10 from "$lib/images/pages/dev/dev-10.avif?enhanced";
+  import Dev11 from "$lib/images/pages/dev/dev-11.avif?enhanced";
+  import Dev13 from "$lib/images/pages/dev/dev-13.avif?enhanced";
+  import Dev14 from "$lib/images/pages/dev/dev-14.avif?enhanced";
 
   // Gallery images
   const gallery = [
@@ -42,7 +42,7 @@
 <!-- Hero Section -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img
+    <enhanced:img
       src={DevHero}
       alt="Development Squad Hero"
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
@@ -102,7 +102,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {#each gallery as img}
         <div class="overflow-hidden rounded-xl shadow-md" data-aos="zoom-in">
-          <img src={img.src} alt={img.alt} class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
+          <enhanced:img src={img.src} alt={img.alt} class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
         </div>
       {/each}
     </div>

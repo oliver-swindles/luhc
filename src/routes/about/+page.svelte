@@ -1,11 +1,11 @@
 <script>
   import { Card, Button } from 'flowbite-svelte';
 
-  import AboutHero from "$lib/images/pages/about/about-hero.jpg";
-  import MensClub from "$lib/images/pages/about/mens-club.webp";
-  import WomensClub from "$lib/images/pages/about/womens-club.avif";
-  import DevSquad from "$lib/images/pages/about/dev-squad.avif";
-  import IndoorHockey from "$lib/images/pages/about/indoor-hockey.webp";
+  import AboutHero from "$lib/images/pages/about/about-hero.jpg?enhanced";
+  import MensClub from "$lib/images/pages/about/mens-club.webp?enhanced";
+  import WomensClub from "$lib/images/pages/about/womens-club.avif?enhanced";
+  import DevSquad from "$lib/images/pages/about/dev-squad.avif?enhanced";
+  import IndoorHockey from "$lib/images/pages/about/indoor-hockey.webp?enhanced";
 
   const teamLinks = [
     { title: 'Men’s Club', href: '/teams/mens-club', img: MensClub },
@@ -28,7 +28,7 @@
 <!-- Hero Section -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img
+    <enhanced:img
       src={AboutHero}
       alt="Development Squad Hero"
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
@@ -67,7 +67,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       {#each teamLinks as team}
         <Card class="mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in">
-          <img src={team.img} alt={team.title} class="w-full h-40 object-cover rounded-md" />
+          <enhanced:img src={team.img} alt={team.title} class="w-full h-40 object-cover rounded-md" />
           <div class="p-4 text-center">
             <h3 class="text-xl font-semibold mb-2">{team.title}</h3>
             <Button href={team.href} size="sm">Learn More</Button>

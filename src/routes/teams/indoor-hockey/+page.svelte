@@ -1,17 +1,17 @@
 <script>
   import { Button } from 'flowbite-svelte';
 
-  import IndoorHero from "$lib/images/pages/indoor/indoor-hero.jpg";
+  import IndoorHero from "$lib/images/pages/indoor/indoor-hero.jpg?enhanced";
 
-  import Indoor1 from "$lib/images/pages/indoor/indoor-1.webp";
-  import Indoor2 from "$lib/images/pages/indoor/indoor-2.webp";
-  import Indoor3 from "$lib/images/pages/indoor/indoor-3.webp";
-  import Indoor4 from "$lib/images/pages/indoor/indoor-4.webp";
-  import Indoor5 from "$lib/images/pages/indoor/indoor-5.webp";
-  import Indoor6 from "$lib/images/pages/indoor/indoor-6.webp";
-  import Indoor7 from "$lib/images/pages/indoor/indoor-7.webp";
-  import Indoor8 from "$lib/images/pages/indoor/indoor-8.webp";
-  import Indoor9 from "$lib/images/pages/indoor/indoor-9.webp";
+  import Indoor1 from "$lib/images/pages/indoor/indoor-1.webp?enhanced";
+  import Indoor2 from "$lib/images/pages/indoor/indoor-2.webp?enhanced";
+  import Indoor3 from "$lib/images/pages/indoor/indoor-3.webp?enhanced";
+  import Indoor4 from "$lib/images/pages/indoor/indoor-4.webp?enhanced";
+  import Indoor5 from "$lib/images/pages/indoor/indoor-5.webp?enhanced";
+  import Indoor6 from "$lib/images/pages/indoor/indoor-6.webp?enhanced";
+  import Indoor7 from "$lib/images/pages/indoor/indoor-7.webp?enhanced";
+  import Indoor8 from "$lib/images/pages/indoor/indoor-8.webp?enhanced";
+  import Indoor9 from "$lib/images/pages/indoor/indoor-9.webp?enhanced";
 
   // Gallery images
   const gallery = [
@@ -34,7 +34,7 @@
 <!-- Hero Section -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img
+    <enhanced:img
       src={IndoorHero}
       alt="Indoor Hockey Hero"
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
@@ -84,7 +84,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       {#each gallery as img}
         <div class="overflow-hidden rounded-xl shadow-md" data-aos="zoom-in">
-          <img src={img.src} alt={img.alt} class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
+          <enhanced:img src={img.src} alt={img.alt} class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
         </div>
       {/each}
     </div>

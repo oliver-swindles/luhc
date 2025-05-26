@@ -1,7 +1,7 @@
 <script>
   import { Card, Button } from 'flowbite-svelte';
 
-  import ExecHero from "$lib/images/pages/exec/exec-hero.webp";
+  import ExecHero from "$lib/images/pages/exec/exec-hero.webp?enhanced";
 
   const captains = [
     { role: "Chairperson", name: 'Alex Nash', photo: 'https://static.wixstatic.com/media/bf5fcf_1be6ee51b5444dcea89a12a36f8a844e~mv2.jpg/v1/fill/w_625,h_992,al_c,q_85,enc_avif,quality_auto/bf5fcf_1be6ee51b5444dcea89a12a36f8a844e~mv2.jpg' },
@@ -28,7 +28,7 @@
 <!-- Hero Section -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img 
+    <enhanced:img 
       src={ExecHero} 
       alt="Hero Background" 
       class="absolute inset-0 w-full h-full object-cover z-[-1]"

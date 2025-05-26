@@ -45,7 +45,7 @@
 
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img
+    <enhanced:img
       src={TeamsHero}
       alt="LUHC Teams Hero"
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
@@ -65,7 +65,7 @@
         class="group rounded-xl overflow-hidden shadow-lg bg-white transition-transform hover:scale-[1.03] focus:outline-none focus:ring-4 focus:ring-red-400"
         aria-label={`Go to ${team.name} page`}
       >
-        <img
+        <enhanced:img
           src={team.image}
           alt={team.alt}
           class="w-full h-56 object-cover group-hover:brightness-90 transition duration-300"

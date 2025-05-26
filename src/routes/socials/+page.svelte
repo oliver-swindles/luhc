@@ -1,22 +1,22 @@
 <script>
-  import SocialsHero from "$lib/images/pages/socials/socials-hero.webp";
+  import SocialsHero from "$lib/images/pages/socials/socials-hero.webp?enhanced";
 
-  import Socials1 from "$lib/images/pages/socials/socials-1.webp";
-  import Socials2 from "$lib/images/pages/socials/socials-2.webp";
-  import Socials3 from "$lib/images/pages/socials/socials-3.webp";
-  import Socials4 from "$lib/images/pages/socials/socials-4.webp";
-  import Socials5 from "$lib/images/pages/socials/socials-5.webp";
-  import Socials6 from "$lib/images/pages/socials/socials-6.webp";
-  import Socials7 from "$lib/images/pages/socials/socials-7.webp";
-  import Socials8 from "$lib/images/pages/socials/socials-8.webp";
-  import Socials9 from "$lib/images/pages/socials/socials-9.webp";
-  import Socials10 from "$lib/images/pages/socials/socials-10.webp";
-  import Socials11 from "$lib/images/pages/socials/socials-11.webp";
-  import Socials12 from "$lib/images/pages/socials/socials-12.webp";
-  import Socials13 from "$lib/images/pages/socials/socials-13.webp";
-  import Socials14 from "$lib/images/pages/socials/socials-14.webp";
-  import Socials15 from "$lib/images/pages/socials/socials-15.webp";
-  import Socials16 from "$lib/images/pages/socials/socials-16.webp";
+  import Socials1 from "$lib/images/pages/socials/socials-1.webp?enhanced";
+  import Socials2 from "$lib/images/pages/socials/socials-2.webp?enhanced";
+  import Socials3 from "$lib/images/pages/socials/socials-3.webp?enhanced";
+  import Socials4 from "$lib/images/pages/socials/socials-4.webp?enhanced";
+  import Socials5 from "$lib/images/pages/socials/socials-5.webp?enhanced";
+  import Socials6 from "$lib/images/pages/socials/socials-6.webp?enhanced";
+  import Socials7 from "$lib/images/pages/socials/socials-7.webp?enhanced";
+  import Socials8 from "$lib/images/pages/socials/socials-8.webp?enhanced";
+  import Socials9 from "$lib/images/pages/socials/socials-9.webp?enhanced";
+  import Socials10 from "$lib/images/pages/socials/socials-10.webp?enhanced";
+  import Socials11 from "$lib/images/pages/socials/socials-11.webp?enhanced";
+  import Socials12 from "$lib/images/pages/socials/socials-12.webp?enhanced";
+  import Socials13 from "$lib/images/pages/socials/socials-13.webp?enhanced";
+  import Socials14 from "$lib/images/pages/socials/socials-14.webp?enhanced";
+  import Socials15 from "$lib/images/pages/socials/socials-15.webp?enhanced";
+  import Socials16 from "$lib/images/pages/socials/socials-16.webp?enhanced";
 
   const galleryImages = [
     Socials5, Socials6, Socials7, Socials8, Socials9, Socials10,
@@ -31,7 +31,7 @@
 <!-- Hero Section -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img
+    <enhanced:img
       src={SocialsHero}
       alt="LUHC Socials Hero"
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
@@ -60,10 +60,10 @@
     </div>
 
     <div class="grid grid-cols-2 gap-4">
-    <img src={Socials1} class="w-full h-40 sm:h-48 md:h-56 lg:h-64 rounded-lg shadow-md object-cover" alt="LUHC Social 1" />
-    <img src={Socials2} class="w-full h-40 sm:h-48 md:h-56 lg:h-64 rounded-lg shadow-md object-cover" alt="LUHC Social 2" />
-    <img src={Socials3} class="w-full h-40 sm:h-48 md:h-56 lg:h-64 rounded-lg shadow-md object-cover" alt="LUHC Social 3" />
-    <img src={Socials4} class="w-full h-40 sm:h-48 md:h-56 lg:h-64 rounded-lg shadow-md object-cover" alt="LUHC Social 4" />
+    <enhanced:img src={Socials1} class="w-full h-40 sm:h-48 md:h-56 lg:h-64 rounded-lg shadow-md object-cover" alt="LUHC Social 1" />
+    <enhanced:img src={Socials2} class="w-full h-40 sm:h-48 md:h-56 lg:h-64 rounded-lg shadow-md object-cover" alt="LUHC Social 2" />
+    <enhanced:img src={Socials3} class="w-full h-40 sm:h-48 md:h-56 lg:h-64 rounded-lg shadow-md object-cover" alt="LUHC Social 3" />
+    <enhanced:img src={Socials4} class="w-full h-40 sm:h-48 md:h-56 lg:h-64 rounded-lg shadow-md object-cover" alt="LUHC Social 4" />
     </div>
   </div>
 
@@ -81,7 +81,7 @@
     <h2 class="text-3xl font-bold text-center mb-8">Social Highlights</h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
       {#each galleryImages as img, index}
-        <img
+        <enhanced:img
           src={img}
           alt={`Social Highlight ${index + 5}`}
           class="rounded-lg shadow-md object-cover w-full h-48 sm:h-56 md:h-64 transition-transform duration-300 hover:scale-105"

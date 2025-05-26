@@ -1,10 +1,10 @@
 <script>
   import { Button } from 'flowbite-svelte';
 
-  import RosesHero from "$lib/images/pages/roses/roses-hero.webp";
-  import Roses1 from "$lib/images/pages/roses/roses-1.avif";
-  import Roses2 from "$lib/images/pages/roses/roses-2.webp";
-  import Roses3 from "$lib/images/pages/roses/roses-3.webp";
+  import RosesHero from "$lib/images/pages/roses/roses-hero.webp?enhanced";
+  // import Roses1 from "$lib/images/pages/roses/roses-1.avif";
+  // import Roses2 from "$lib/images/pages/roses/roses-2.webp";
+  // import Roses3 from "$lib/images/pages/roses/roses-3.webp";
 
   // Gallery images
   // const gallery = [
@@ -22,7 +22,7 @@
 <!-- Hero Section -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img 
+    <enhanced:img 
       src={RosesHero} 
       alt="Hero Background" 
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
@@ -83,7 +83,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {#each gallery as img}
         <div class="overflow-hidden rounded-xl shadow-md" data-aos="zoom-in">
-          <img src={img.src} alt={img.alt} class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
+          <enhanced:img src={img.src} alt={img.alt} class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
           <div class="p-2">
             <p class="text-sm text-gray-700">{img.alt}</p>
           </div>

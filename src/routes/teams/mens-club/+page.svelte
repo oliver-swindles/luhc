@@ -1,10 +1,10 @@
 <script>
   import { Card, Button } from 'flowbite-svelte';
 
-  import MensHero from "$lib/images/pages/mens/mens-hero.jpg";
-  import OnesPhoto from "$lib/images/pages/mens/mens-ones.avif";
-  import TwosPhoto from "$lib/images/pages/mens/mens-twos.avif";
-  import ThreesPhoto from "$lib/images/pages/mens/mens-threes.avif";
+  import MensHero from "$lib/images/pages/mens/mens-hero.jpg?enhanced";
+  import OnesPhoto from "$lib/images/pages/mens/mens-ones.avif?enhanced";
+  import TwosPhoto from "$lib/images/pages/mens/mens-twos.avif?enhanced";
+  import ThreesPhoto from "$lib/images/pages/mens/mens-threes.avif?enhanced";
 
   const teams = [
     {
@@ -41,7 +41,7 @@
 <!-- Hero -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img
+    <enhanced:img
       src={MensHero}
       alt="Men's Club Hero"
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
@@ -91,7 +91,7 @@
       {#each teams as team}
         <Card class="w-full min-w-full shadow-lg overflow-hidden" data-aos="zoom-in">
           <div class="flex flex-col">
-            <img src={team.photo} alt={team.name + " Photo"} class="w-full h-auto object-cover rounded-md" />
+            <enhanced:img src={team.photo} alt={team.name + " Photo"} class="w-full h-auto object-cover rounded-md" />
             <div class="p-6">
               <h3 class="text-2xl font-semibold mb-1">{team.name}</h3>
               <p class="text-sm text-gray-600 mb-3">{team.league}</p>

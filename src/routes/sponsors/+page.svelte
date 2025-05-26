@@ -1,10 +1,11 @@
 <script>
   import { Button, Card } from 'flowbite-svelte';
 
-  import SponsorsHero from "$lib/images/pages/sponsors/sponsors-hero.webp";
-  import VibeLogo from "$lib/images/sponsors/vibe.png";
-  import SultansLogo from "$lib/images/sponsors/sultans.jpeg";
-  import SHLLogo from "$lib/images/sponsors/student-housing.webp";
+  import SponsorsHero from "$lib/images/pages/sponsors/sponsors-hero.webp?enhanced";
+  
+  import VibeLogo from "$lib/images/sponsors/vibe.png?enhanced";
+  import SultansLogo from "$lib/images/sponsors/sultans.jpeg?enhanced";
+  import SHLLogo from "$lib/images/sponsors/student-housing.webp?enhanced";
 
   const sponsors = [
     { logo: VibeLogo, name: 'VIBE Nightclub & Bar', desc: 'A recently rebranded nightclub in Lancaster, hosting our weekly Wednesday socials', alt: "VIBE Nightclub & Bar Logo" },
@@ -21,7 +22,7 @@
  <!-- Hero Section -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img 
+    <enhanced:img 
       src={SponsorsHero} 
       alt="Hero Background" 
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
@@ -41,7 +42,7 @@
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 items-center justify-center my-12">
       {#each sponsors as sponsor}
       <div class="flex flex-col items-center text-center p-4" data-aos="zoom-in">
-        <img src={sponsor.logo} alt={sponsor.name} class="h-16 object-contain mb-4" />
+        <enhanced:img src={sponsor.logo} alt={sponsor.name} class="h-16 object-contain mb-4" />
         <div class="font-semibold">{sponsor.name}</div>
         <span class="mt-1 text-sm text-gray-600">{sponsor.desc}</span>
       </div>

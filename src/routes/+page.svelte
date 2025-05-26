@@ -10,20 +10,20 @@
     TableHeadCell
   } from "flowbite-svelte";
 
-  import LUHCLogo from "$lib/images/luhc-logo.png";
-  import HeroPFlick from "$lib/images/pages/index/p-flick-hero.jpg";
-  import VibeLogo from "$lib/images/sponsors/vibe.png";
-  import SultansLogo from "$lib/images/sponsors/sultans.jpeg";
-  import SHLLogo from "$lib/images/sponsors/student-housing.webp";
+  import LUHCLogo from "$lib/images/luhc-logo.png?enhanced";
+  import HeroPFlick from "$lib/images/pages/index/p-flick-hero.jpg?enhanced";
+  import VibeLogo from "$lib/images/sponsors/vibe.png?enhanced";
+  import SultansLogo from "$lib/images/sponsors/sultans.jpeg?enhanced";
+  import SHLLogo from "$lib/images/sponsors/student-housing.webp?enhanced";
   import OurExec from "$lib/images/pages/index/our-exec.jpg";
   import OurCaptains from "$lib/images/pages/index/our-captains.jpg";
   import OurTeams from "$lib/images/pages/index/our-teams.jpg";
   import LUHCExecMessage from "$lib/images/pages/index/luhc-exec-message.jpg";
 
-  import AboutGallery1 from "$lib/images/pages/index/about-gallery-1.jpg";
-  import AboutGallery2 from "$lib/images/pages/index/about-gallery-2.jpg";
-  import AboutGallery3 from "$lib/images/pages/index/about-gallery-3.jpg";
-  import AboutGallery4 from "$lib/images/pages/index/about-gallery-4.jpg";
+  import AboutGallery1 from "$lib/images/pages/index/about-gallery-1.jpg?enhanced";
+  import AboutGallery2 from "$lib/images/pages/index/about-gallery-2.jpg?enhanced";
+  import AboutGallery3 from "$lib/images/pages/index/about-gallery-3.jpg?enhanced";
+  import AboutGallery4 from "$lib/images/pages/index/about-gallery-4.jpg?enhanced";
 
   let gallery = [
     AboutGallery1,
@@ -40,7 +40,7 @@
 <!-- Hero Section -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img 
+    <enhanced:img 
       src={HeroPFlick} 
       alt="Hero Background" 
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
@@ -48,7 +48,7 @@
     <div class="absolute inset-0 bg-black/70 z-0 rounded-xl"></div>
 
     <div class="relative z-10 space-y-6">
-      <img 
+      <enhanced:img 
         src={LUHCLogo} 
         alt="LUHC Logo" 
         class="h-36 w-auto mx-auto animate-fadeIn"
@@ -67,7 +67,7 @@
   <section class="my-12">
     <!-- <h2 class="text-3xl font-bold mb-6 text-center md:text-left">Latest News</h2> -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <img src={gallery[0]} alt="Latest News" class="rounded-xl w-full h-80 object-cover shadow-lg" />
+      <enhanced:img src={gallery[0]} alt="Latest News" class="rounded-xl w-full h-80 object-cover shadow-lg" />
       <div class="space-y-4">
         <p>The official website of Lancaster University Hockey club, one of the biggest and friendliest clubs on campus. We have three men's and three women's teams, competing in the BUCS (British university and college sport) Wednesday leagues, as well as both of our 1st XIs competing in local Saturday leagues. We boast an impressive development squad for members who would like to play recreationally, as well as members who wish to develop their game and progress into the competitive teams. We host socials every Wednesday, Saturday and have two formal dinners each year.</p>
         <!-- <h3 class="text-2xl font-semibold">Title of News Article</h3> -->
@@ -124,15 +124,15 @@
     <p class="text-lg text-gray-700 mb-6">We’re proud to be supported by amazing sponsors. Want to join them? <a href="/contact-us" class="underline text-red-600 hover:text-red-800">Get in touch</a>!</p>
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 items-center py-12">
       <div class="flex flex-col items-center text-center">
-        <img src={VibeLogo} alt="VIBE" class="h-16 object-contain mb-2" />
+        <enhanced:img src={VibeLogo} alt="VIBE" class="h-16 object-contain mb-2" />
         <span class="text-sm text-gray-600">VIBE Nightclub & Bar</span>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src={SultansLogo} alt="The Sultan" class="h-16 object-contain mb-2" />
+        <enhanced:img src={SultansLogo} alt="The Sultan" class="h-16 object-contain mb-2" />
         <span class="text-sm text-gray-600">The Sultan of Lancaster Experience</span>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src={SHLLogo} alt="Student Housing Lancaster" class="h-16 object-contain mb-2" />
+        <enhanced:img src={SHLLogo} alt="Student Housing Lancaster" class="h-16 object-contain mb-2" />
         <span class="text-sm text-gray-600">Student Housing Lancaster</span>
       </div>
     </div>

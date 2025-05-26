@@ -1,7 +1,7 @@
 <script>
   import { Card, Button } from 'flowbite-svelte';
 
-  import CaptainsHero from "$lib/images/pages/captains/captains-hero.webp";
+  import CaptainsHero from "$lib/images/pages/captains/captains-hero.webp?enhanced";
 
   const captains = [
     { role: "Men's 1s Captain", name: 'Dougie Alexander', photo: 'https://static.wixstatic.com/media/bf5fcf_d13ab9d17e5743ff8e63be27748271c5~mv2.jpg/v1/fill/w_420,h_666,al_c,q_80,enc_avif,quality_auto/bf5fcf_d13ab9d17e5743ff8e63be27748271c5~mv2.jpg' },
@@ -29,7 +29,7 @@
 <!-- Hero Section -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img 
+    <enhanced:img 
       src={CaptainsHero} 
       alt="Hero Background" 
       class="absolute inset-0 w-full h-full object-cover z-[-1]"

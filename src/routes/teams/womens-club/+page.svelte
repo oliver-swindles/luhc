@@ -1,10 +1,10 @@
 <script>
   import { Card, Button } from 'flowbite-svelte';
 
-  import WomensHero from "$lib/images/pages/womens/womens-hero.webp";
-  import OnesPhoto from "$lib/images/pages/womens/womens-ones.avif";
-  import TwosPhoto from "$lib/images/pages/womens/womens-twos.avif";
-  import ThreesPhoto from "$lib/images/pages/womens/womens-threes.avif";
+  import WomensHero from "$lib/images/pages/womens/womens-hero.webp?enhanced";
+  import OnesPhoto from "$lib/images/pages/womens/womens-ones.avif?enhanced";
+  import TwosPhoto from "$lib/images/pages/womens/womens-twos.avif?enhanced";
+  import ThreesPhoto from "$lib/images/pages/womens/womens-threes.avif?enhanced";
 
   const teams = [
     {
@@ -41,7 +41,7 @@
 <!-- Hero -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img
+    <enhanced:img
       src={WomensHero}
       alt="Men's Club Hero"
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
@@ -90,7 +90,7 @@
       {#each teams as team}
         <Card class="w-full min-w-full shadow-lg overflow-hidden" data-aos="zoom-in">
           <div class="flex flex-col">
-            <img src={team.photo} alt={team.name + " Photo"} class="w-full h-auto object-cover rounded-md" />
+            <enhanced:img src={team.photo} alt={team.name + " Photo"} class="w-full h-auto object-cover rounded-md" />
             <div class="p-6">
               <h3 class="text-2xl font-semibold mb-1">{team.name}</h3>
               <p class="text-sm text-gray-600 mb-3">{team.league}</p>

@@ -1,7 +1,7 @@
 <script>
   import { Button, Card } from 'flowbite-svelte';
 
-  import ContactHero from "$lib/images/pages/contact/contact-hero.webp";
+  import ContactHero from "$lib/images/pages/contact/contact-hero.webp?enhanced";
 </script>
 
 <svelte:head>
@@ -11,7 +11,7 @@
 <!-- Hero Section -->
 <section class="p-8">
   <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <img 
+    <enhanced:img 
       src={ContactHero} 
       alt="Hero Background" 
       class="absolute inset-0 w-full h-full object-cover z-[-1]"
