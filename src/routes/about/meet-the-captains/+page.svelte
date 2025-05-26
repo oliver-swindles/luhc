@@ -57,7 +57,7 @@
 
   <section class="text-center mt-12" data-aos="fade-up">
     <p class="mb-4 text-gray-700">Looking for the full executive team? Check out our&nbsp;
-      <a href="/meet-the-exec" class="text-red-600 underline hover:text-red-800">Meet the Exec</a> page.
+      <a href="/about/meet-the-exec" class="text-red-600 underline hover:text-red-800">Meet the Exec</a> page.
     </p>
     <Button href="/contact-us" color="red">Get in Touch</Button>
   </section>
