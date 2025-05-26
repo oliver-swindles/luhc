@@ -93,7 +93,7 @@
     <p class="mb-4">
       Whilst there is opportunity to progress to our competitive teams, most importantly we want you to have fun and make great friends—whether at trainings or socials.
     </p>
-    <Button href="/members/socials" color="red">View Club Socials</Button>
+    <Button href="/socials" color="red">View Club Socials</Button>
   </section>
 
   <!-- Gallery -->

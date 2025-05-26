@@ -1,11 +1,11 @@
 <script>
   import { Button } from "flowbite-svelte";
 
-  import TeamsHero from "$lib/images/pages/teams/teams-hero.webp";
-  import MensClub from "$lib/images/pages/teams/mens-club.webp";
-  import WomensClub from "$lib/images/pages/teams/womens-club.webp";
-  import DevSquad from "$lib/images/pages/teams/development-squad.avif";
-  import IndoorHockey from "$lib/images/pages/teams/indoor-hockey.webp";
+  import TeamsHero from "$lib/images/pages/teams/teams-hero.webp?enhanced";
+  import MensClub from "$lib/images/pages/teams/mens-club.webp?enhanced";
+  import WomensClub from "$lib/images/pages/teams/womens-club.webp?enhanced";
+  import DevSquad from "$lib/images/pages/teams/development-squad.avif?enhanced";
+  import IndoorHockey from "$lib/images/pages/teams/indoor-hockey.webp?enhanced";
 
   const teamPages = [
     {
