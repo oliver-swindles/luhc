@@ -1,5 +1,9 @@
 <script>
-  import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand } from "flowbite-svelte";
+  import Footer from "flowbite-svelte/Footer.svelte";
+  import FooterCopyright from "flowbite-svelte/FooterCopyright.svelte";
+  import FooterLinkGroup from "flowbite-svelte/FooterLinkGroup.svelte";
+  import FooterLink from "flowbite-svelte/FooterLink.svelte";
+  import FooterBrand from "flowbite-svelte/FooterBrand.svelte";
 
   import LUHCLogo from "$lib/images/luhc-logo.png";
 </script>

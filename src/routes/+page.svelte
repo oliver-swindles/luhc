@@ -1,15 +1,22 @@
 <script lang="ts">
-  import { Button, Card, Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from "flowbite-svelte";
+  import Button from "flowbite-svelte/Button.svelte";
+  import Card from "flowbite-svelte/Card.svelte";
+  import Table from "flowbite-svelte/Table.svelte";
+  import TableBody from "flowbite-svelte/TableBody.svelte";
+  import TableBodyCell from "flowbite-svelte/TableBodyCell.svelte";
+  import TableBodyRow from "flowbite-svelte/TableBodyRow.svelte";
+  import TableHead from "flowbite-svelte/TableHead.svelte";
+  import TableHeadCell from "flowbite-svelte/TableHeadCell.svelte";
 
   import LUHCLogo from "$lib/images/luhc-logo.png?enhanced";
   import HeroPFlick from "$lib/images/pages/index/p-flick-hero.jpg?enhanced";
   import VibeLogo from "$lib/images/sponsors/vibe.png?enhanced";
   import SultansLogo from "$lib/images/sponsors/sultans.jpeg?enhanced";
   import SHLLogo from "$lib/images/sponsors/student-housing.webp?enhanced";
-  import OurExec from "$lib/images/pages/index/our-exec.jpg";
-  import OurCaptains from "$lib/images/pages/index/our-captains.jpg";
-  import OurTeams from "$lib/images/pages/index/our-teams.jpg";
-  import LUHCExecMessage from "$lib/images/pages/index/luhc-exec-message.jpg";
+  import OurExec from "$lib/images/pages/index/our-exec.jpg?enhanced";
+  import OurCaptains from "$lib/images/pages/index/our-captains.jpg?enhanced";
+  import OurTeams from "$lib/images/pages/index/our-teams.jpg?enhanced";
+  import LUHCExecMessage from "$lib/images/pages/index/luhc-exec-message.jpg?enhanced";
 
   import AboutGallery1 from "$lib/images/pages/index/about-gallery-1.jpg?enhanced";
   import AboutGallery2 from "$lib/images/pages/index/about-gallery-2.jpg?enhanced";
@@ -41,7 +48,7 @@
       <enhanced:img 
         src={LUHCLogo} 
         alt="LUHC Logo" 
-        class="h-36 w-auto mx-auto animate-fadeIn"
+        class="h-36 w-auto mx-auto"
       />
       <h1 class="text-4xl md:text-5xl font-extrabold drop-shadow-lg">Lancaster University Hockey Club</h1>
       <p class="text-xl max-w-2xl mx-auto drop-shadow-md">
@@ -152,7 +159,10 @@
   <!-- Meet the Club -->
   <section class="my-12">
     <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Meet the Club</h2>
-    <p class="text-lg text-gray-700 mb-6">LUHC is powered by passionate individuals on and off the pitch. Get to know the exec team, dedicated captains, and all seven teams that make us proud every week.</p>
+    <p class="text-lg text-gray-700 mb-6">
+      LUHC is powered by passionate individuals on and off the pitch...
+    </p>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {#each [
         {
@@ -174,7 +184,12 @@
           link: "/teams"
         }
       ] as item}
-        <Card img={item.img} imgClass="max-h-48 w-full object-cover">
+        <Card class="mx-auto">
+          <enhanced:img
+            src={item.img}
+            alt={item.title}
+            class="w-full max-h-48 object-cover rounded-t-lg"
+          />
           <div class="p-4 md:p-6">
             <h3 class="text-xl font-bold text-gray-900">{item.title}</h3>
             <p class="text-sm text-gray-700 mt-2 mb-4">{item.desc}</p>
@@ -189,12 +204,25 @@
 </div>
 
 <!-- Chair Statement -->
-<section class="relative py-36 text-white text-center bg-cover bg-center before:absolute before:inset-0 before:bg-black before:opacity-70 before:z-0" style="background-image: url({LUHCExecMessage});">
-  <div class="relative z-10 max-w-4xl mx-auto px-6">
+<section class="relative py-36 text-white text-center overflow-hidden min-h-[60vh]">
+  <enhanced:img
+    src={LUHCExecMessage}
+    alt="Chair Message Background"
+    class="absolute inset-0 w-full h-full object-cover z-0"
+  />
+
+  <!-- Semi-transparent overlay -->
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] z-10"></div>
+
+  <!-- Content -->
+  <div class="relative z-20 max-w-4xl mx-auto px-6">
     <h2 class="text-3xl font-bold mb-6">A Message from Our Chair Team</h2>
-    <p class="text-lg leading-relaxed">Hi, we are the chair team for the 24/25 season! Our objectives this year are to boost the clubs presence within the university going from already one of the largest mixed societies at Lancaster University to even greater heights. With new challenges to face in the upcoming season we look forward to making progress and allowing the club to run smoothly whilst sustaining the friendly and competitive nature of the club.</p>
+    <p class="text-lg leading-relaxed">
+      Hi, we are the chair team for the 24/25 season! Our objectives this year is to boost the clubs presence within the university going from already one of the largest mixed societies at Lancaster University to even greater heights. With new challenges to face in the upcoming season we look forward to making progress and allowing the club to run smoothly whilst sustaining the friendly and competitive nature of the club. We look forward in joining you for the upcoming season!
+    </p>
   </div>
 </section>
+
 
 <!-- CTA -->
 <section class="px-6 py-16 bg-red-800 text-white text-center">
