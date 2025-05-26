@@ -21,6 +21,7 @@
           <FooterLink liClass="mb-4" href="https://www.facebook.com/groups/340322369353793/">LUHC Facebook</FooterLink>
           <FooterLink liClass="mb-4" href="https://www.instagram.com/lumhc_/">Men's Instagram</FooterLink>
           <FooterLink liClass="mb-4" href="https://www.instagram.com/luwhc_/">Women's Instagram</FooterLink>
+          <FooterLink liClass="mb-4" href="https://www.instagram.com/luhc_dev/">Dev Instagram</FooterLink>
         </FooterLinkGroup>
       </div>
       <div>
