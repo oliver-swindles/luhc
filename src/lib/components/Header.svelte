@@ -13,7 +13,7 @@
   <NavHamburger />
   <NavUl class="text-white">
     <NavLi href="/" class="text-black md:text-white md:hover:text-gray-400 hover:text-gray-400">Home</NavLi>
-    <NavLi class="cursor-pointer text-black md:text-white md:hover:text-gray-400 hover:text-gray-400">
+    <NavLi role="button" aria-haspopup="true" class="cursor-pointer text-black md:text-white md:hover:text-gray-400 hover:text-gray-400">
       About&nbsp;<span class="font-bold">&#709;</span>
     </NavLi>
     <Dropdown class="w-44">
@@ -23,7 +23,7 @@
       <DropdownItem href="/roses">Roses</DropdownItem>
       <DropdownItem href="/socials">Socials</DropdownItem>
     </Dropdown>
-    <NavLi class="cursor-pointer text-black md:text-white md:hover:text-gray-400 hover:text-gray-400">
+    <NavLi role="button" aria-haspopup="true" class="cursor-pointer text-black md:text-white md:hover:text-gray-400 hover:text-gray-400">
       Teams&nbsp;<span class="font-bold">&#709;</span>
     </NavLi>
     <Dropdown class="w-44">
