@@ -185,7 +185,7 @@
         }
       ] as item}
         <Card img={item.img} imgClass="max-h-48 w-full object-cover">
-          <div class="p-2">
+          <div class="p-4 md:p-6">
             <h3 class="text-xl font-bold text-gray-900">{item.title}</h3>
             <p class="text-sm text-gray-700 mt-2 mb-4">{item.desc}</p>
             <Button class="w-full" href={item.link}>
