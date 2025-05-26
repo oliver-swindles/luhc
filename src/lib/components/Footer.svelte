@@ -1,11 +1,13 @@
 <script>
   import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand } from "flowbite-svelte";
+
+  import LUHCLogo from "$lib/images/luhc-logo.png";
 </script>
 
 <Footer footerType="socialmedia" class="border-t-1 border-gray-200">
   <div class="md:flex md:justify-between">
     <div class="mb-6 md:mb-0">
-      <FooterBrand href="https://www.luhc.co.uk" src="https://static.wixstatic.com/media/197ea6_423c23d6467f430cad64144ef551dd6e~mv2.png/v1/fill/w_418,h_418,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LUHC_logo_nobackground.png" alt="LUHC Logo" name="LUHC" />
+      <FooterBrand href="https://www.luhc.co.uk" src={LUHCLogo} alt="LUHC Logo" name="LUHC" />
     </div>
     <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
       <div>
