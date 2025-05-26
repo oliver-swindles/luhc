@@ -1,44 +1,48 @@
 <script>
-  import Footer from "flowbite-svelte/Footer.svelte";
-  import FooterCopyright from "flowbite-svelte/FooterCopyright.svelte";
-  import FooterLinkGroup from "flowbite-svelte/FooterLinkGroup.svelte";
-  import FooterLink from "flowbite-svelte/FooterLink.svelte";
-  import FooterBrand from "flowbite-svelte/FooterBrand.svelte";
+  import LUHCLogo from "$lib/images/luhc-logo.png?enhanced";
 
-  import LUHCLogo from "$lib/images/luhc-logo.png";
+  import FooterCopyright from "flowbite-svelte/FooterCopyright.svelte";
 </script>
 
-<Footer footerType="socialmedia" class="border-t-1 border-gray-200">
-  <div class="md:flex md:justify-between">
-    <div class="mb-6 md:mb-0">
-      <FooterBrand href="https://www.luhc.co.uk" src={LUHCLogo} alt="LUHC Logo" name="LUHC" />
+<footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-6 py-10">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="flex flex-col items-start space-y-4">
+      <a href="/" class="flex items-center space-x-3">
+        <enhanced:img src={LUHCLogo} alt="LUHC Logo" class="h-12 w-auto" />
+        <span class="text-xl font-bold text-gray-900 dark:text-white">LUHC</span>
+      </a>
+      <p class="text-sm text-gray-600 dark:text-gray-400 max-w-xs">
+        Lancaster University Hockey Club – One club, one family. #ROSESARERED
+      </p>
     </div>
-    <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
-      <div>
-        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
-        <FooterLinkGroup>
-          <FooterLink liClass="mb-4" href="/contact-us">Contact Us</FooterLink>
-        </FooterLinkGroup>
-      </div>
-      <div>
-        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Socials</h2>
-        <FooterLinkGroup>
-          <FooterLink liClass="mb-4" href="https://www.facebook.com/groups/340322369353793/">LUHC Facebook</FooterLink>
-          <FooterLink liClass="mb-4" href="https://www.instagram.com/lumhc_/">Men's Instagram</FooterLink>
-          <FooterLink liClass="mb-4" href="https://www.instagram.com/luwhc_/">Women's Instagram</FooterLink>
-          <FooterLink liClass="mb-4" href="https://www.instagram.com/luhc_dev/">Dev Instagram</FooterLink>
-        </FooterLinkGroup>
-      </div>
-      <div>
-        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Sponsors</h2>
-        <FooterLinkGroup>
-          <FooterLink liClass="mb-4" href="https://www.vibelancaster.com/">VIBE Nightclub & Bar</FooterLink>
-          <FooterLink liClass="mb-4" href="https://sultanexperiencelancaster.co.uk/">The Sultan of Lancaster Experience</FooterLink>
-          <FooterLink liClass="mb-4" href="https://studenthousinglancaster.co.uk/">Student Housing Lancaster</FooterLink>
-        </FooterLinkGroup>
-      </div>
+
+    <div>
+      <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+      <ul class="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
+        <li><a href="/contact-us" class="hover:text-red-600 transition-colors">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Socials</h2>
+      <ul class="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
+        <li><a href="https://www.facebook.com/groups/340322369353793/" class="hover:text-red-600 transition-colors">LUHC Facebook</a></li>
+        <li><a href="https://www.instagram.com/lumhc_/" class="hover:text-red-600 transition-colors">Men's Instagram</a></li>
+        <li><a href="https://www.instagram.com/luwhc_/" class="hover:text-red-600 transition-colors">Women's Instagram</a></li>
+        <li><a href="https://www.instagram.com/luhc_dev/" class="hover:text-red-600 transition-colors">Dev Instagram</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Sponsors</h2>
+      <ul class="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
+        <li><a href="https://www.vibelancaster.com/" class="hover:text-red-600 transition-colors">VIBE Nightclub & Bar</a></li>
+        <li><a href="https://sultanexperiencelancaster.co.uk/" class="hover:text-red-600 transition-colors">The Sultan of Lancaster</a></li>
+        <li><a href="https://studenthousinglancaster.co.uk/" class="hover:text-red-600 transition-colors">Student Housing Lancaster</a></li>
+      </ul>
     </div>
   </div>
+
   <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
   <div class="text-center py-6">
     <FooterCopyright href="/" by="Lancaster University Hockey Club." />
@@ -47,4 +51,4 @@
       <p class="font-semibold text-red-800">#ROSESARERED</p>
     </div>
   </div>
-</Footer>
+</footer>
