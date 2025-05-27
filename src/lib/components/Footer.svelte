@@ -9,7 +9,7 @@
     <div class="flex flex-col items-start space-y-4">
       <a href="/" class="flex items-center space-x-3">
         <enhanced:img src={LUHCLogo} alt="LUHC Logo" class="h-12 w-auto" />
-        <span class="text-xl font-bold text-gray-900 dark:text-white">LUHC</span>
+        <span class="text-xl font-bold text-gray-900 dark:text-white">LU Hockey</span>
       </a>
       <p class="text-sm text-gray-600 dark:text-gray-400 max-w-xs">
         Lancaster University Hockey Club – One club, one family. #ROSESARERED
