@@ -9,6 +9,7 @@
 	let { children } = $props();
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+  import LUHCLogo from "$lib/images/luhc-logo.png";
 	onMount(() => {
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   });
@@ -16,6 +17,7 @@
 
 <svelte:head>
 	<title>Lancaster University Hockey Club</title>
+  <link rel="apple-touch-icon" href="/favicon.png">
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<meta name="description" content="The official home page of Lancaster university hockey club. All are welcome.">
 	<meta property="og:title" content="Lancaster University Hockey Club"/>
