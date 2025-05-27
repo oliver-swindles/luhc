@@ -33,6 +33,7 @@
 
 <svelte:head>
 	<title>Lancaster University Hockey Club</title>
+  <link rel="canonical" href="https://www.luhc.co.uk" >
 </svelte:head>
 
 <!-- Hero Section -->
