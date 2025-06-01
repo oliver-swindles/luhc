@@ -106,3 +106,8 @@
 		</Table>
 	</div>
 </section>
+
+<pre style="white-space: pre-wrap; background-color: #f0f0f0; padding: 1rem; margin-top: 2rem; border: 1px solid #ccc; display: block;">
+    <h2>DEBUG: Raw JSON Output</h2>
+    {JSON.stringify(jsonLdEvents, null, 2)}
+</pre>
