@@ -7,60 +7,65 @@
 	import TableHeadCell from 'flowbite-svelte/TableHeadCell.svelte';
 	import type { Fixture } from '$lib/types';
 
-	// The component receives the fixtures as a prop from the main page
 	export let upcomingFixtures: Fixture[];
 
-	const sanitizeForJson = (str: string): string => {
-		if (!str) return '';
-		return str.replace(/"/g, '\\"');
-	};
+	// This will hold our final, complete <script> tag as a string
+	let scriptTagHtml = '';
 
-	const jsonLdEvents = (upcomingFixtures || []).map((fixture) => {
-		const isHomeGame = fixture.locationType === 'Home';
-		
-		const teamPlayingSanitized = sanitizeForJson(fixture.teamPlaying);
-		const opponentSanitized = sanitizeForJson(fixture.opponent);
+	// Use a Svelte "reactive block" ($:). This code will re-run automatically
+	// if the `upcomingFixtures` prop ever changes.
+	$: {
+		if (upcomingFixtures && upcomingFixtures.length > 0) {
+			const sanitizeForJson = (str: string): string => {
+				if (!str) return '';
+				return str.replace(/"/g, '\\"');
+			};
 
-		return {
-			'@context': 'https://schema.org',
-			'@type': 'SportsEvent',
-			name: `${teamPlayingSanitized} vs ${opponentSanitized}`,
-			startDate: fixture.dateAndTime,
-			eventStatus: 'https://schema.org/EventScheduled',
-			location: {
-				'@type': 'Place',
-				name: isHomeGame ? 'Lancaster University Hockey Pitch' : 'Away Venue',
-				address: isHomeGame ? 'Lancaster LA1 4YQ' : 'See details for away venue'
-			},
-			homeTeam: {
-				'@type': 'SportsTeam',
-				name: isHomeGame ? teamPlayingSanitized : opponentSanitized
-			},
-			awayTeam: {
-				'@type': 'SportsTeam',
-				name: isHomeGame ? opponentSanitized : teamPlayingSanitized
-			},
-			organizer: {
-				'@type': 'Organization',
-				name: 'Lancaster University Hockey Club',
-				url: 'https://www.luhc.co.uk'
-			}
-		};
-	});
+			const jsonLdEvents = upcomingFixtures.map((fixture) => {
+				const isHomeGame = fixture.locationType === 'Home';
+				const teamPlayingSanitized = sanitizeForJson(fixture.teamPlaying);
+				const opponentSanitized = sanitizeForJson(fixture.opponent);
 
-    // --- FINAL FIX APPLIED HERE ---
-    // Stringify the object, then replace all '<' characters to prevent the browser
-    // from prematurely closing the script tag.
-    const finalJsonLdString = JSON.stringify(jsonLdEvents).replace(/</g, '\\u003C');
+				return {
+					'@context': 'https://schema.org',
+					'@type': 'SportsEvent',
+					name: `${teamPlayingSanitized} vs ${opponentSanitized}`,
+					startDate: fixture.dateAndTime,
+					eventStatus: 'https://schema.org/EventScheduled',
+					location: {
+						'@type': 'Place',
+						name: isHomeGame ? 'Lancaster University Hockey Pitch' : 'Away Venue',
+						address: isHomeGame ? 'Lancaster LA1 4YQ' : 'See details for away venue'
+					},
+					homeTeam: {
+						'@type': 'SportsTeam',
+						name: isHomeGame ? teamPlayingSanitized : opponentSanitized
+					},
+					awayTeam: {
+						'@type': 'SportsTeam',
+						name: isHomeGame ? opponentSanitized : teamPlayingSanitized
+					},
+					organizer: {
+						'@type': 'Organization',
+						name: 'Lancaster University Hockey Club',
+						url: 'https://www.luhc.co.uk'
+					}
+				};
+			});
 
+			const finalJsonLdString = JSON.stringify(jsonLdEvents).replace(/</g, '\\u003C');
+
+			// Construct the entire script tag as a string
+			scriptTagHtml = `<script type="application/ld+json">${finalJsonLdString}<\/script>`;
+		} else {
+			// If there are no fixtures, make sure the script tag is empty
+			scriptTagHtml = '';
+		}
+	}
 </script>
 
 <svelte:head>
-	{#if jsonLdEvents.length > 0}
-		<script type="application/ld+json">
-			{@html finalJsonLdString}
-		</script>
-	{/if}
+	{@html scriptTagHtml}
 </svelte:head>
 
 <section class="my-12">
@@ -109,8 +114,3 @@
 		</Table>
 	</div>
 </section>
-
-<pre style="white-space: pre-wrap; background-color: #f0f0f0; padding: 1rem; margin-top: 2rem; border: 1px solid #ccc; display: block;">
-    <h2>DEBUG: Raw JSON Output</h2>
-    {JSON.stringify(jsonLdEvents, null, 2)}
-</pre>
