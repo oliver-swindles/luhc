@@ -10,14 +10,24 @@
 	// The component receives the fixtures as a prop from the main page
 	export let upcomingFixtures: Fixture[];
 
+	const sanitizeForJson = (str: string): string => {
+		if (!str) return '';
+		return str.replace(/"/g, '\\"');
+	};
+
 	// --- JSON-LD Generation ---
 	// The component now generates its own structured data.
 	const jsonLdEvents = (upcomingFixtures || []).map((fixture) => {
 		const isHomeGame = fixture.locationType === 'Home';
+		
+		// Sanitize all the string values coming from the 'fixture' object
+		const teamPlayingSanitized = sanitizeForJson(fixture.teamPlaying);
+		const opponentSanitized = sanitizeForJson(fixture.opponent);
+
 		return {
 			'@context': 'https://schema.org',
 			'@type': 'SportsEvent',
-			name: `${fixture.teamPlaying} vs ${fixture.opponent}`,
+			name: `${teamPlayingSanitized} vs ${opponentSanitized}`,
 			startDate: fixture.dateAndTime,
 			eventStatus: 'https://schema.org/EventScheduled',
 			location: {
@@ -27,11 +37,11 @@
 			},
 			homeTeam: {
 				'@type': 'SportsTeam',
-				name: isHomeGame ? fixture.teamPlaying : fixture.opponent
+				name: isHomeGame ? teamPlayingSanitized : opponentSanitized
 			},
 			awayTeam: {
 				'@type': 'SportsTeam',
-				name: isHomeGame ? fixture.opponent : fixture.teamPlaying
+				name: isHomeGame ? opponentSanitized : teamPlayingSanitized
 			},
 			organizer: {
 				'@type': 'Organization',
