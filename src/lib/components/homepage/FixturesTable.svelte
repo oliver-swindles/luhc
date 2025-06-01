@@ -15,12 +15,9 @@
 		return str.replace(/"/g, '\\"');
 	};
 
-	// --- JSON-LD Generation ---
-	// The component now generates its own structured data.
 	const jsonLdEvents = (upcomingFixtures || []).map((fixture) => {
 		const isHomeGame = fixture.locationType === 'Home';
 		
-		// Sanitize all the string values coming from the 'fixture' object
 		const teamPlayingSanitized = sanitizeForJson(fixture.teamPlaying);
 		const opponentSanitized = sanitizeForJson(fixture.opponent);
 
@@ -50,12 +47,18 @@
 			}
 		};
 	});
+
+    // --- FINAL FIX APPLIED HERE ---
+    // Stringify the object, then replace all '<' characters to prevent the browser
+    // from prematurely closing the script tag.
+    const finalJsonLdString = JSON.stringify(jsonLdEvents).replace(/</g, '\\u003C');
+
 </script>
 
 <svelte:head>
 	{#if jsonLdEvents.length > 0}
 		<script type="application/ld+json">
-			{@html JSON.stringify(jsonLdEvents)}
+			{@html finalJsonLdString}
 		</script>
 	{/if}
 </svelte:head>
