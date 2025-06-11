@@ -13,11 +13,11 @@ export type NewsPost = {
   excerpt: string;
 };
 
-// Based on your fixture schema
-export type Fixture = {
+// in $lib/types.ts
+export interface Fixture {
   _id: string;
   dateAndTime: string;
-  teamPlaying: string;
+  teamPlayingName: string; // <-- Changed from teamPlaying: string
   opponent: string;
   locationType: string;
-};
+}

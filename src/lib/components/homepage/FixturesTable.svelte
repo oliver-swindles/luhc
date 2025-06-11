@@ -12,8 +12,6 @@
 	// This will hold our final, complete <script> tag as a string
 	let scriptTagHtml = '';
 
-	// Use a Svelte "reactive block" ($:). This code will re-run automatically
-	// if the `upcomingFixtures` prop ever changes.
 	$: {
 		if (upcomingFixtures && upcomingFixtures.length > 0) {
 			const sanitizeForJson = (str: string): string => {
@@ -23,7 +21,8 @@
 
 			const jsonLdEvents = upcomingFixtures.map((fixture) => {
 				const isHomeGame = fixture.locationType === 'Home';
-				const teamPlayingSanitized = sanitizeForJson(fixture.teamPlaying);
+				// --- FIX #1: Use the new 'teamPlayingName' field ---
+				const teamPlayingSanitized = sanitizeForJson(fixture.teamPlayingName);
 				const opponentSanitized = sanitizeForJson(fixture.opponent);
 
 				return {
@@ -54,11 +53,8 @@
 			});
 
 			const finalJsonLdString = JSON.stringify(jsonLdEvents).replace(/</g, '\\u003C');
-
-			// Construct the entire script tag as a string
 			scriptTagHtml = `<script type="application/ld+json">${finalJsonLdString}<\/script>`;
 		} else {
-			// If there are no fixtures, make sure the script tag is empty
 			scriptTagHtml = '';
 		}
 	}
@@ -91,7 +87,7 @@
 									year: 'numeric'
 								})}
 							</TableBodyCell>
-							<TableBodyCell>{fixture.teamPlaying}</TableBodyCell>
+							<TableBodyCell>{fixture.teamPlayingName}</TableBodyCell>
 							<TableBodyCell>{fixture.opponent}</TableBodyCell>
 							<TableBodyCell>{fixture.locationType}</TableBodyCell>
 							<TableBodyCell>

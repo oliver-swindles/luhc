@@ -1,3 +1,5 @@
+// src/routes/+page.server.ts
+
 import { client } from "$lib/sanityClient";
 import type { PageServerLoad } from "./$types";
 
@@ -7,7 +9,10 @@ export const load: PageServerLoad = async () => {
     "upcomingFixtures": *[_type == "fixture" && dateAndTime > now()] | order(dateAndTime asc) [0...6] {
       _id,
       dateAndTime,
-      teamPlaying,
+      // --- FIX IS HERE ---
+      // Use a GROQ projection to select the correct team name.
+      // If team is 'Other', use otherTeamName, otherwise use the selected team.
+      "teamPlayingName": select(teamPlaying.team == "Other" => teamPlaying.otherTeamName, teamPlaying.team),
       opponent,
       locationType
     },
