@@ -39,6 +39,17 @@
         <Button href="https://instagram.com/luwhc_" color="light" class="mt-2">@luwhc_</Button>
       </Card>
 
+      <Card class="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="text-xl font-semibold mb-1">Dev Instagram</h3>
+        <Button href="https://instagram.com/luhc_dev" color="light" class="mt-2">@luhc_dev</Button>
+      </Card>
+    </div>
+  </section>
+
+    <section data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-2 text-center">Email Options</h2>
+    <p class="text-center text-gray-600 mb-4">*Note: During the summer period our email accounts are not regularly monitored*</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
       <Card class="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="200">
         <h3 class="text-xl font-semibold mb-2">Email Us</h3>
         <p class="mb-2">General enquiries:</p>
@@ -52,6 +63,7 @@
       </Card>
     </div>
   </section>
+
 
   <!-- Contact Form -->
   <!-- <section data-aos="fade-up">

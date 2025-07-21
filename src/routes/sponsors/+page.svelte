@@ -38,7 +38,6 @@
 <div class="max-w-6xl mx-auto px-4 space-y-16 text-gray-900">
   <!-- Current Sponsors -->
   <section data-aos="fade-up">
-    <!-- <h2 class="text-3xl font-bold mb-4 text-center">Our Valued Sponsors</h2> -->
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 items-center justify-center my-12">
       {#each sponsors as sponsor}
       <div class="flex flex-col items-center text-center p-4" data-aos="zoom-in">
@@ -64,45 +63,21 @@
       </Card>
       <Card class="p-6 text-center shadow-lg" data-aos="zoom-in" data-aos-delay="200">
         <h3 class="text-2xl font-semibold mb-2">Networking</h3>
-        <p>Connect with university leaders, alumni, and fellow sponsors at exclusive LUHC events.</p>
+        <p>Connect with university leaders, alumni, and fellow sponsors throughout the Lancashire area.</p>
       </Card>
     </div>
   </section>
 
   <!-- Sponsorship Tiers -->
-  <!-- <section data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-6 text-center">Partnership Packages</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {#each tiers as tier}
-      <Card class="p-6 shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in">
-        <h3 class="text-2xl font-semibold mb-2">{tier.title}</h3>
-        <div class="text-red-600 font-bold mb-4">{tier.price}</div>
-        <ul class="list-disc list-inside space-y-2 mb-6">
-          {#each tier.benefits as benefit}
-            <li>{benefit}</li>
-          {/each}
-        </ul>
-        <Button href="/contact-us" fullWidth color="red">Join Now</Button>
-      </Card>
-      {/each}
-    </div>
-  </section> -->
+  <!-- TODO: Add sponsorships tiers section -->
+
 
   <!-- Testimonials -->
-  <!-- <section class="bg-gray-100 p-6 rounded-xl" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4 text-center">What Our Sponsors Say</h2>
-    <div class="space-y-6 max-w-2xl mx-auto">
-      {#each testimonials as t}
-        <blockquote class="italic text-gray-700">“{t.quote}”</blockquote>
-        <div class="text-right font-semibold text-red-800">– {t.author}</div>
-      {/each}
-    </div>
-  </section> -->
+  <!-- TODO: Add testimonials -->
 
   <!-- Call to Action -->
   <section class="text-center py-12" data-aos="fade-in">
-    <h2 class="text-3xl font-bold mb-4">Ready to Partner with LUHC?</h2>
-    <p class="mb-6">Let’s create a winning partnership—on and off the field. Reach out today to discuss how we can work together.</p>
+    <h2 class="text-3xl font-bold mb-12">Ready to Partner with LUHC?</h2>
     <Button href="/contact-us" size="lg" color="red">Get in Touch</Button>
   </section>
 </div>
