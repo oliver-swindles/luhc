@@ -10,7 +10,7 @@
     {
       name: "LUMHC 1st XI",
       photo: OnesPhoto,
-      league: "BUCS Northern Tier 2A / NW Men's Division 2 / Men's Lancashire Cup (Division 2)",
+      league: "BUCS Northern Tier 1A / NW Men's Division 2 / Men's Lancashire Cup (Division 2)",
       captain: "Josh Thomas",
       vice: "Hamish Fergi",
       quote: "Hamish and I are very excited for the upcoming season. Our second season in BUCS 1A will no doubt be an incredibly tough test, but it’s one that we are looking forward to rise to. Our overall goal will be to build on last years success, amid tough opposition, and push the team to its full potential, aiming to finish at the top of the table. Within the Saturday league our aim is to win the league, but we’re also aiming to push and develop players further, including those joining us from the 2nd and 3rd XIs, forming a strong team bond which will help us reach our goals. Overall we want to grow as a team, build strength throughout the year, and ultimately win Roses.",

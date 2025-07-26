@@ -10,7 +10,7 @@
     {
       name: "LUWHC 1st XI",
       photo: OnesPhoto,
-      league: "BUCS Northern Tier 1A / NW Women's Division 1",
+      league: "BUCS Northern Tier 2A / NW Women's Division 1",
       captain: "Jess Loader",
       vice: "Lauren Willson",
       quote: "Hey I’m Jess, captain for the women's 1s. After a successful season last year the first team are working hard and looking forward to the challenges the coming season will bring! The team is hardworking, motivated and aspirational, and never lets the northern weather get in the way of our goals. We are a supportive and enthusiastic team who love a challenge and I am very excited to captain this team as I believe this season could be a very successful one! As captain I want to continue the supportive and motivating environment that we worked hard to create last year and use that to achieve a fun and rewarding season of hockey.",
@@ -18,7 +18,7 @@
     {
       name: "LUWHC 2nd XI",
       photo: TwosPhoto,
-      league: "BUCS Northern Tier 4A",
+      league: "BUCS Northern Tier 3A",
       captain: "Casey Holliday & Ella Sampson",
       vice: "",
       quote: "Hello everybody, We are Casey and Ella co-captains of the 2s this year! We are really looking forward to welcoming back the team and all the new freshers! Us 2s are a friendly bunch and are very encouraging of each other both on and off the pitch. Of course we have our competitive side and are looking to keep progressing within the leagues. This year we want to hit the ground running and start rebuilding upon skills and fitness in preseason training and throughout the rest of the year. We hope everyone is as eager as we are to get back to hockey! See you all soon, Casey & Ella",
