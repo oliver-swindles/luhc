@@ -67,7 +67,7 @@
     </div>
     <div>
       <h3 class="text-2xl font-semibold mb-2">Season Highlights</h3>
-      <p>After an impressive Roses campaign, the club gears up for training in October. The hard work culminates in matches against York in Roses, an exciting experience for both spectators and players.</p>
+      <p>After an impressive Roses campaign, the club gears up for training in January. The hard work culminates in matches against York in Roses, an exciting experience for both spectators and players.</p>
       <p class="mt-2">Over the last few years the club has been exploring participation in indoor tournaments and aims to host events to grow the indoor aspect of LUHC.</p>
     </div>
   </section>

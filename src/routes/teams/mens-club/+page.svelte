@@ -10,7 +10,7 @@
     {
       name: "LUMHC 1st XI",
       photo: OnesPhoto,
-      league: "BUCS Northern Tier 1A / NW Men's Division 2 / Men's Lancashire Cup (Division 2)",
+      league: "BUCS Northern Tier 1A / North West Men's Division 2 / Men's Lancashire Cup (Division 2)",
       captain: "Josh Thomas",
       vice: "Hamish Fergi",
       quote: "Hamish and I are very excited for the upcoming season. Our second season in BUCS 1A will no doubt be an incredibly tough test, but it’s one that we are looking forward to rise to. Our overall goal will be to build on last years success, amid tough opposition, and push the team to its full potential, aiming to finish at the top of the table. Within the Saturday league our aim is to win the league, but we’re also aiming to push and develop players further, including those joining us from the 2nd and 3rd XIs, forming a strong team bond which will help us reach our goals. Overall we want to grow as a team, build strength throughout the year, and ultimately win Roses.",
@@ -24,7 +24,7 @@
       quote: "We’re extremely excited for the upcoming year. As a team, we are really hopeful for a successful season, as we have a very real chance of gaining promotion, having a good run in the cup, and winning Roses. The atmosphere in our team is really special, which is welcoming to players who both want to enjoy competitive hockey, and improve their skills. The values at the core of our team really give us a great opportunity to reach our goals and do something special this year.",
     },
     {
-      name: "LUMHC 3rd XI (The Pride)",
+      name: "LUMHC 3rd XI",
       photo: ThreesPhoto,
       league: "North West Men's Division 4 North",
       captain: "Jack Brown",
@@ -59,7 +59,7 @@
   <section data-aos="fade-up">
     <h2 class="text-3xl font-bold mb-4">About LUMHC</h2>
     <div class="space-y-4">
-      <p>We have 3 competitive teams as well as a mixed development squad. Competitive teams play BUCS games on Wednesdays against other Universities, and we also have a Saturday league 1st XI sourcing players from across the club. The development squad provides a friendly environment for those who are new to the sport to get involved, learn and grow, whilst also offering the opportunity to those wanting to play more competitively to develop and progress to our BUCS teams.</p>
+      <p>We have 3 competitive teams as well as a mixed development squad. Competitive teams play BUCS games on Wednesdays against other Universities, and we also have a Saturday league 1st XI sourcing players from across the club. The development squad provides a friendly environment for those who are new to the sport to get involved, learn and grow, whilst also offering the opportunity to those wanting to play more competitively to develop and progress to our competitive teams.</p>
       <p>We are a very social club, so even if you do not wish to play hockey, you can always join as a social member, taking part in club social events and making friends for life along the way.</p>
       <p>If you’re looking to join the club, keep a look out for trials posters on campus, make sure to find us at the fresher fair, and reach out through our social media pages and we’ll be more than happy to welcome you into our community.</p>
     </div>
@@ -77,9 +77,10 @@
     <div>
       <h2 class="text-2xl font-semibold mb-2">Trainings</h2>
       <ul class="list-disc list-inside space-y-1">
-        <li>Monday and Thursday Evenings</li>
-        <li>Sunday Morning (Indoor)</li>
-        <li>Development Squad: Monday and Tuesday Afternoon</li>
+        <li>1s & 2s: Monday and Thursday Evenings</li>
+        <li>3s: Tuesday and Thursday Evenings</li>
+        <li>Indoor: Sunday Morning (Term 2)</li>
+        <li>Development Squad: Tuesday and Thursday Afternoon</li>
       </ul>
     </div>
   </section>

@@ -10,7 +10,7 @@
     {
       name: "LUWHC 1st XI",
       photo: OnesPhoto,
-      league: "BUCS Northern Tier 2A / NW Women's Division 1",
+      league: "BUCS Northern Tier 2A / North West Women's Division 1",
       captain: "Jess Loader",
       vice: "Lauren Willson",
       quote: "Hey I’m Jess, captain for the women's 1s. After a successful season last year the first team are working hard and looking forward to the challenges the coming season will bring! The team is hardworking, motivated and aspirational, and never lets the northern weather get in the way of our goals. We are a supportive and enthusiastic team who love a challenge and I am very excited to captain this team as I believe this season could be a very successful one! As captain I want to continue the supportive and motivating environment that we worked hard to create last year and use that to achieve a fun and rewarding season of hockey.",
@@ -26,7 +26,7 @@
     {
       name: "LUWHC 3rd XI",
       photo: ThreesPhoto,
-      league: "BUCS Northern Tier 5A",
+      league: "North West Women's Division 5 North Central",
       captain: "Ellie Amies-King (Cinders)",
       vice: "Esme Ikram",
       quote: "Hi, I'm Cinders, the 3s captain for this year. I can't wait to captain the 3s as we made so much progress last year and I'm really excited to see what we can do! We always strive to make the 3s a friendly team who gel really well, and we can't wait to welcome the new members! We're also focusing on fitness and skill a bit more this year, as we're aiming for promotion which we only just missed out on by 2 points last year! I can't wait for the season to start.",
@@ -76,8 +76,9 @@
     <div>
       <h2 class="text-2xl font-semibold mb-2">Trainings</h2>
       <ul class="list-disc list-inside space-y-1">
-        <li>Monday and Thursday Evenings</li>
-        <li>Sunday Morning (Indoor)</li>
+        <li>1s & 2s: Monday and Thursday Evenings</li>
+        <li>3s: Tuesday and Thursday Evenings</li>
+        <li>Indoor: Sunday Mornings (Term 2)</li>
         <li>Development Squad: Tuesday and Thursday Afternoon</li>
       </ul>
     </div>
