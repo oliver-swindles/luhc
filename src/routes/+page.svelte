@@ -34,7 +34,7 @@
 		<p class="text-lg leading-relaxed">
 			LUHC is one of the biggest and friendliest clubs on campus, with 6 competitive teams and a
 			development squad. From BUCS to local leagues, from weekly socials to formal dinners, we're
-			more than just hockey—LUHC is a community.
+			more than just hockey - LUHC is a community.
 		</p>
 	</div>
 </section>

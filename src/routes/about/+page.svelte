@@ -52,7 +52,7 @@
       </Card>
       <Card class="p-6 text-center shadow-lg mx-auto" data-aos="zoom-in" data-aos-delay="100">
         <h3 class="text-2xl font-semibold mb-2">Excellence</h3>
-        <p>On and off the pitch, we aim to excel—through training, competition, and club development.</p>
+        <p>On and off the pitch, we aim to excel - through training, competition, and club development.</p>
       </Card>
       <Card class="p-6 text-center shadow-lg mx-auto" data-aos="zoom-in" data-aos-delay="200">
         <h3 class="text-2xl font-semibold mb-2">Community</h3>

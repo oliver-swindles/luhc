@@ -54,7 +54,7 @@
       Hockey is an important part of Lancaster's annual Roses bid, with the most available Roses points of any sport. Every goal and every save can make the difference in the overall tournament result.
     </p>
     <p>
-      Our goal: to bring home the trophy—and show that Roses truly are red.
+      Our goal: to bring home the trophy - and show that Roses truly are red.
     </p>
   </section> -->
 

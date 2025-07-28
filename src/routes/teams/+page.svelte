@@ -27,14 +27,14 @@
       href: '/teams/development-squad',
       image: DevSquad,
       alt: 'Development Squad Practice',
-      description: 'Open to all abilities—LUHC’s core for learning, improving and thriving in hockey.'
+      description: 'Open to all abilities - LUHC’s core for learning, improving and thriving in hockey.'
     },
     {
       name: "Indoor Hockey",
       href: '/teams/indoor-hockey',
       image: IndoorHockey,
       alt: 'Indoor Hockey Match',
-      description: 'Fast-paced and energetic indoor hockey—perfect for winter fitness and Roses glory.'
+      description: 'Fast-paced and energetic indoor hockey - perfect for winter fitness and Roses glory.'
     }
   ];
 </script>

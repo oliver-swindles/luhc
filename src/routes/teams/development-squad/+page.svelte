@@ -91,7 +91,7 @@
   <section class="bg-gray-100 p-6 rounded-xl" data-aos="fade-up">
     <h3 class="text-2xl font-semibold mb-2">Fun & Progression</h3>
     <p class="mb-4">
-      Whilst there is opportunity to progress to our competitive teams, most importantly we want you to have fun and make great friends—whether at trainings or socials.
+      Whilst there is opportunity to progress to our competitive teams, most importantly we want you to have fun and make great friends - whether at trainings or socials.
     </p>
     <Button href="/socials" color="red">View Club Socials</Button>
   </section>
