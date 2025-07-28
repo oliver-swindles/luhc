@@ -18,7 +18,7 @@
 			</h1>
 			<p class="text-xl max-w-2xl mx-auto drop-shadow-md">
 				One of the largest, most competitive, and most welcoming sports clubs at Lancaster University.
-				<span class="text-red-400 font-semibold">#FORTRESSLANCASTER</span>
+				<span class="text-red-400 font-semibold">#ROSESARERED</span>
 			</p>
 		</div>
 	</div>

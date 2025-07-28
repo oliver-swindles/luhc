@@ -55,7 +55,6 @@
         relaxing get-together, there's something for everyone.
       </p>
       <p class="text-lg">Some socials are mixed, while others split into men's and women's groups. We're proud to host our Wednesday nights at <a href="https://www.vibelancaster.com" class="text-red-700 underline hover:text-red-900">VIBE Lancaster</a> – our fantastic sponsor.</p>
-      <p class="text-lg">We also hold more <strong>relaxing Saturday socials</strong>, often held at a club members' house. Some of your greatest moments will ensue at these so make sure to get down to them whenever you can!</p>
       <p class="text-lg">All members agree that the social side of LUHC can be just as important as playing with your teammates. We have social members who have joined the club solely to be a part of our community without playing competitively.</p>
     </div>
 

@@ -12,7 +12,7 @@
         <span class="text-xl font-bold text-gray-900 dark:text-white">LU Hockey</span>
       </a>
       <p class="text-sm text-gray-600 dark:text-gray-400 max-w-xs">
-        Lancaster University Hockey Club. #FORTRESSLANCASTER
+        Lancaster University Hockey Club. #ROSESARERED
       </p>
     </div>
 
@@ -49,7 +49,7 @@
     <FooterCopyright href="/" by="Lancaster University Hockey Club." />
     <p class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">Website by <a href="https://oliverswindles.com" class="hover:underline">Oliver Swindles</a></p>
     <div class="mt-4">
-      <p class="font-semibold text-red-800">#FORTRESSLANCASTER</p>
+      <p class="font-semibold text-red-800">#ROSESARERED</p>
     </div>
   </div>
 </footer>
