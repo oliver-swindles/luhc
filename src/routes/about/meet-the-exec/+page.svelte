@@ -5,20 +5,23 @@
 
   const captains = [
     { role: "Chairperson", name: 'Hannah Bird', photo: '' },
-    { role: "Vice-Chairwoman", name: '...', photo: '' },
-    { role: "Vice-Chairman", name: 'Josh Carr Yetzes', photo: '' },
+    { role: "Vice-Chairwoman", name: 'Heledd Owen', photo: '' },
+    { role: "Vice-Chairman", name: 'Josh Carr-Yetzes', photo: '' },
     { role: "Treasurer", name: 'Harry Tallents', photo: '' },
     { role: "Men's Publicity Officer", name: 'Oliver Swindles', photo: '' },
     { role: "Women's Publicity Officer", name: 'Lucy Bridges', photo: '' },
-    { role: "Charity & Inclusivity Officer", name: '...', photo: '' },
-    { role: "Health & Safety Officer", name: '...', photo: '' },
-    { role: "Men's Social Sec", name: 'Marcus Allan', photo: '' },
-    { role: "Women's Social Sec", name: '...', photo: '' },
-    { role: "Social Officer", name: 'George Turner', photo: '' },
-    { role: "Social Officer", name: '...', photo: '' },
-    { role: "Social Officer", name: '...', photo: '' },
+    { role: "Charity & Inclusivity Officer", name: 'Abi Fitzpatrick', photo: '' },
+    { role: "Health & Safety Officer", name: 'Abi Speight', photo: '' },
+    { role: "Men's Wellbeing Officer", name: 'Olly Woodhouse', photo: ''},
+    { role: "Women's Wellbeing Officer", name: 'Autumn Head', photo: ''},
     { role: "Dev Officer", name: 'Rosie Lock', photo: '' },
-    { role: "Dev Officer", name: 'Alex Delaney', photo: '' }
+    { role: "Dev Officer", name: 'Alex Delaney', photo: '' },
+    { role: "Men's Social Sec", name: 'Marcus Allan', photo: '' },
+    { role: "Women's Social Sec", name: 'Isabel Robinson', photo: '' },
+    { role: "Social Officer", name: 'George Turner', photo: '' },
+    { role: "Social Officer", name: 'Grace Puckey', photo: '' },
+    { role: "Social Officer", name: 'Owen Price', photo: '' },
+    { role: "Social Officer", name: 'Daisy Vose', photo: '' }
   ];
 </script>
 
