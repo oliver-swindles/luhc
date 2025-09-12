@@ -5,44 +5,51 @@
 	import TableBodyRow from 'flowbite-svelte/TableBodyRow.svelte';
 	import TableHead from 'flowbite-svelte/TableHead.svelte';
 	import TableHeadCell from 'flowbite-svelte/TableHeadCell.svelte';
-	import type { Fixture } from '$lib/types';
+
+	// Sanity fixture type
+	export type Fixture = {
+		date: string;
+		team: string;
+		opponent: string;
+		venue: string;
+		time: string;
+	};
 
 	export let upcomingFixtures: Fixture[];
 
-	// This will hold our final, complete <script> tag as a string
+	// JSON-LD for SEO
 	let scriptTagHtml = '';
 
 	$: {
 		if (upcomingFixtures && upcomingFixtures.length > 0) {
-			const sanitizeForJson = (str: string): string => {
-				if (!str) return '';
-				return str.replace(/"/g, '\\"');
-			};
+			const sanitizeForJson = (str: string): string =>
+				str ? str.replace(/"/g, '\\"') : '';
 
 			const jsonLdEvents = upcomingFixtures.map((fixture) => {
-				const isHomeGame = fixture.locationType === 'Home';
-				// --- FIX #1: Use the new 'teamPlayingName' field ---
-				const teamPlayingSanitized = sanitizeForJson(fixture.teamPlayingName);
+				const teamSanitized = sanitizeForJson(fixture.team);
 				const opponentSanitized = sanitizeForJson(fixture.opponent);
+				const isHomeGame = fixture.venue?.toLowerCase().includes('home');
 
 				return {
 					'@context': 'https://schema.org',
 					'@type': 'SportsEvent',
-					name: `${teamPlayingSanitized} vs ${opponentSanitized}`,
-					startDate: fixture.dateAndTime,
+					name: `${teamSanitized} vs ${opponentSanitized}`,
+					startDate: fixture.date + (fixture.time ? `T${fixture.time}` : ''),
 					eventStatus: 'https://schema.org/EventScheduled',
 					location: {
 						'@type': 'Place',
-						name: isHomeGame ? 'Lancaster University Hockey Pitch' : 'Away Venue',
-						address: isHomeGame ? 'Lancaster LA1 4YQ' : 'See details for away venue'
+						name: fixture.venue,
+						address: isHomeGame
+							? 'Lancaster LA1 4YQ'
+							: 'See details for away venue'
 					},
 					homeTeam: {
 						'@type': 'SportsTeam',
-						name: isHomeGame ? teamPlayingSanitized : opponentSanitized
+						name: isHomeGame ? teamSanitized : opponentSanitized
 					},
 					awayTeam: {
 						'@type': 'SportsTeam',
-						name: isHomeGame ? opponentSanitized : teamPlayingSanitized
+						name: isHomeGame ? opponentSanitized : teamSanitized
 					},
 					organizer: {
 						'@type': 'Organization',
@@ -78,7 +85,7 @@
 			<TableBody>
 				{#if upcomingFixtures && upcomingFixtures.length > 0}
 					{#each upcomingFixtures as fixture}
-						{@const fixtureDate = new Date(fixture.dateAndTime)}
+						{@const fixtureDate = new Date(fixture.date)}
 						<TableBodyRow>
 							<TableBodyCell>
 								{fixtureDate.toLocaleDateString('en-GB', {
@@ -87,16 +94,10 @@
 									year: 'numeric'
 								})}
 							</TableBodyCell>
-							<TableBodyCell>{fixture.teamPlayingName}</TableBodyCell>
+							<TableBodyCell>{fixture.team}</TableBodyCell>
 							<TableBodyCell>{fixture.opponent}</TableBodyCell>
-							<TableBodyCell>{fixture.locationType}</TableBodyCell>
-							<TableBodyCell>
-								{fixtureDate.toLocaleTimeString('en-GB', {
-									hour: '2-digit',
-									minute: '2-digit',
-									hour12: false
-								})}
-							</TableBodyCell>
+							<TableBodyCell>{fixture.venue}</TableBodyCell>
+							<TableBodyCell>{fixture.time}</TableBodyCell>
 						</TableBodyRow>
 					{/each}
 				{:else}
