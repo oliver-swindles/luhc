@@ -1,0 +1,50 @@
+{
+	"/": [
+		"src/routes/+page.ts",
+		"src/routes/+page.server.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/about": [
+		"src/routes/+layout.ts"
+	],
+	"/about/meet-the-captains": [
+		"src/routes/+layout.ts"
+	],
+	"/about/meet-the-exec": [
+		"src/routes/+layout.ts"
+	],
+	"/contact-us": [
+		"src/routes/+layout.ts"
+	],
+	"/links/dev": [
+		"src/routes/+layout.ts"
+	],
+	"/links/mens": [
+		"src/routes/+layout.ts"
+	],
+	"/roses": [
+		"src/routes/+layout.ts"
+	],
+	"/socials": [
+		"src/routes/+layout.ts"
+	],
+	"/sponsors": [
+		"src/routes/+layout.ts"
+	],
+	"/teams": [
+		"src/routes/+layout.ts"
+	],
+	"/teams/development-squad": [
+		"src/routes/+layout.ts"
+	],
+	"/teams/indoor-hockey": [
+		"src/routes/+layout.ts"
+	],
+	"/teams/mens-club": [
+		"src/routes/+layout.ts"
+	],
+	"/teams/womens-club": [
+		"src/routes/+layout.ts"
+	]
+}
