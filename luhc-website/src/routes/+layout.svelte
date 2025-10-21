@@ -18,7 +18,7 @@
 	<title>Lancaster University Hockey Club | LUHC</title>
   <link rel="apple-touch-icon" href="/favicon.png">
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<meta name="description" content="Official site of Lancaster university hockey club (LUHC). Find team info, match updates, events, and how to get involved. #ROSESARERED">
+	<meta name="description" content="Official site of Lancaster University Hockey Club (LUHC). Find team info, match updates, events, and how to get involved. #ROSESARERED">
 	<meta property="og:title" content="Lancaster University Hockey Club"/>
   <meta name="twitter:title" content="Lancaster University Hockey Club"/>
 

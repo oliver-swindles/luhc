@@ -9,16 +9,6 @@
       description: "A social hockey club with 3 competitive teams and a dev squad. All Welcome.",
       sections: [
         {
-          title: "Freshers 2025/26",
-          links: [
-            {
-                "name": "Freshers Interest Form",
-                "url": "http://docs.google.com/forms/d/e/1FAIpQLSd5IquSGJa6EW4_2X2PeKXwWyl_IjyoVCNAsUcX285ij2baZg/viewform"
-            }
-          ]
-
-        },
-        {
           title: "Key Links",
           links: [
             // {
@@ -42,6 +32,10 @@
         {
           "title": "Charity",
           "links": [
+            {
+              "name": "Breast Cancer Awareness Fundraiser!",
+              "url": "https://www.justgiving.com/page/luhc-breastcancerawareness"
+            },
             {
               "name": "OddBalls Foundation Cricket Match",
               "url": "https://www.justgiving.com/page/lumccoddballs"
