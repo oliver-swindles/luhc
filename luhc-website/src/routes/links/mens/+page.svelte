@@ -9,6 +9,27 @@
       description: "A social hockey club with 3 competitive teams and a dev squad. All Welcome.",
       sections: [
         {
+          "title": "Charity",
+          "links": [
+            {
+              "name": "Breast Cancer Awareness Fundraiser!",
+              "url": "https://www.justgiving.com/page/luhc-breastcancerawareness"
+            },
+            // {
+            //   "name": "OddBalls Foundation Cricket Match",
+            //   "url": "https://www.justgiving.com/page/lumccoddballs"
+            // },
+            // {
+            //   "name": "LUHC vs LUCC for Refuge",
+            //   "url": "https://www.justgiving.com/page/luhcvslucc"
+            // },
+            // {
+            //   "name": "Movember",
+            //   "url": "https://uk.movember.com/team/2374603"
+            // }
+          ]
+        },
+        {
           title: "Key Links",
           links: [
             // {
@@ -26,27 +47,6 @@
             {
               "name": "LUHC | England Hockey",
               "url": "https://www.englandhockey.co.uk/clubs/lancaster-university-hc/teams"
-            }
-          ]
-        },
-        {
-          "title": "Charity",
-          "links": [
-            {
-              "name": "Breast Cancer Awareness Fundraiser!",
-              "url": "https://www.justgiving.com/page/luhc-breastcancerawareness"
-            },
-            {
-              "name": "OddBalls Foundation Cricket Match",
-              "url": "https://www.justgiving.com/page/lumccoddballs"
-            },
-            {
-              "name": "LUHC vs LUCC for Refuge",
-              "url": "https://www.justgiving.com/page/luhcvslucc"
-            },
-            {
-              "name": "Movember",
-              "url": "https://uk.movember.com/team/2374603"
             }
           ]
         },
