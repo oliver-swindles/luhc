@@ -37,9 +37,10 @@
     <div>
       <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">Sponsors</h2>
       <ul class="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
-        <li><a href="https://www.vibelancaster.com/" class="hover:text-red-600 transition-colors">VIBE Nightclub & Bar</a></li>
-        <li><a href="https://sultanexperiencelancaster.co.uk/" class="hover:text-red-600 transition-colors">The Sultan of Lancaster</a></li>
-        <li><a href="https://studenthousinglancaster.co.uk/" class="hover:text-red-600 transition-colors">Student Housing Lancaster</a></li>
+        <li><a href="https://www.yellowdoorlets.co.uk/" class="hover:text-red-600 transition-colors">Yellow Door Lets</a></li>
+        <li><a href="https://www.la1lancaster.co.uk/" class="hover:text-red-600 transition-colors">LA1 Nightclub & Bar</a></li>
+        <li><a href="https://thebowerham.co.uk/" class="hover:text-red-600 transition-colors">The Bowerham Hotel</a></li>
+        <li><a href="https://www.facebook.com/GreensLancaster/" class="hover:text-red-600 transition-colors">Greens Lancaster</a></li>
       </ul>
     </div>
   </div>
