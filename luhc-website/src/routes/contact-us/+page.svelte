@@ -48,18 +48,12 @@
 
     <section data-aos="fade-up">
     <h2 class="text-3xl font-bold mb-2 text-center">Email Options</h2>
-    <p class="text-center text-gray-600 mb-4">*Note: During the summer period our email accounts are not regularly monitored*</p>
+    <p class="text-center text-gray-600 mb-4">*Note: Our email accounts are not monitored as regularly as our Instagram accounts.*</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
       <Card class="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="200">
         <h3 class="text-xl font-semibold mb-2">Email Us</h3>
         <p class="mb-2">General enquiries:</p>
         <Button href="mailto:info@luhc.co.uk" color="light">info@luhc.co.uk</Button>
-      </Card>
-
-      <Card class="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="200">
-        <h3 class="text-xl font-semibold mb-2">Email Us</h3>
-        <p class="mb-2">Sponsorship enquiries:</p>
-        <Button href="mailto:sponsors@luhc.co.uk" color="light">sponsors@luhc.co.uk</Button>
       </Card>
     </div>
   </section>

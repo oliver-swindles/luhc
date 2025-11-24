@@ -3,14 +3,16 @@
 
   import SponsorsHero from "$lib/images/pages/sponsors/sponsors-hero.webp?enhanced";
   
-  import VibeLogo from "$lib/images/sponsors/vibe.png?enhanced";
-  import SultansLogo from "$lib/images/sponsors/sultans.jpeg?enhanced";
-  import SHLLogo from "$lib/images/sponsors/student-housing.webp?enhanced";
+  import YDLLogo from "$lib/images/sponsors/YDL.png?enhanced";
+  import LA1Logo from "$lib/images/sponsors/la1.avif?enhanced";
+  import BowerhamLogo from "$lib/images/sponsors/BowerhamHotel.jpg?enhanced";
+  import GreensLogo from "$lib/images/sponsors/Greens.png?enhanced";
 
   const sponsors = [
-    { logo: VibeLogo, name: 'VIBE Nightclub & Bar', desc: 'A recently rebranded nightclub in Lancaster, hosting our weekly Wednesday socials', alt: "VIBE Nightclub & Bar Logo" },
-    { logo: SultansLogo, name: 'The Sultan of Lancaster Experience', desc: 'A renowned local and campus-based food business providing our Saturday match teas', alt: "The Sultan of Lancaster Experience Logo" },
-    { logo: SHLLogo, name: 'Student Housing Lancaster', desc: 'Accommodation partner', alt: "Student Housing Lancaster Logo" }
+    { logo: YDLLogo, name: 'Yellow Door Lets', desc: 'Student accommodation partner', alt: "Yellow Door Lets Logo" },
+    { logo: LA1Logo, name: 'LA1 Nightclub & Bar', desc: 'Nightclub & bar hosting our weekly Wednesday socials', alt: "LA1 Nightclub & Bar Logo" },
+    { logo: BowerhamLogo, name: 'The Bowerham Hotel', desc: 'A renowned local pub providing our Saturday match teas', alt: "The Bowerham Hotel Logo" },
+    { logo: GreensLogo, name: 'Greens Lancaster', desc: 'Pub and sports bar', alt: "Greens Lancaster Logo" }
   ];
 </script>
 
@@ -38,7 +40,7 @@
 <div class="max-w-6xl mx-auto px-4 space-y-16 text-gray-900">
   <!-- Current Sponsors -->
   <section data-aos="fade-up">
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 items-center justify-center my-12">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center justify-center my-12">
       {#each sponsors as sponsor}
       <div class="flex flex-col items-center text-center p-4" data-aos="zoom-in">
         <enhanced:img src={sponsor.logo} alt={sponsor.name} class="h-16 object-contain mb-4" />
