@@ -1,123 +1,92 @@
 <script>
-  import { Button } from 'flowbite-svelte';
-
   import DevHero from "$lib/images/pages/dev/dev-hero.jpg?enhanced";
-
   import Dev1 from "$lib/images/pages/dev/dev-1.avif?enhanced";
   import Dev2 from "$lib/images/pages/dev/dev-2.avif?enhanced";
   import Dev3 from "$lib/images/pages/dev/dev-3.avif?enhanced";
   import Dev4 from "$lib/images/pages/dev/dev-4.avif?enhanced";
-  import Dev5 from "$lib/images/pages/dev/dev-5.avif?enhanced";
-  import Dev6 from "$lib/images/pages/dev/dev-6.avif?enhanced";
-  import Dev7 from "$lib/images/pages/dev/dev-7.avif?enhanced";
-  import Dev8 from "$lib/images/pages/dev/dev-8.avif?enhanced";
-  import Dev9 from "$lib/images/pages/dev/dev-9.avif?enhanced";
-  import Dev10 from "$lib/images/pages/dev/dev-10.avif?enhanced";
-  import Dev11 from "$lib/images/pages/dev/dev-11.avif?enhanced";
-  import Dev13 from "$lib/images/pages/dev/dev-13.avif?enhanced";
-  import Dev14 from "$lib/images/pages/dev/dev-14.avif?enhanced";
-
-  // Gallery images
-  const gallery = [
-    { src: Dev1, alt: 'Dev Squad 1' },
-    { src: Dev2, alt: 'Dev Squad 2' },
-    { src: Dev3, alt: 'Dev Squad 3' },
-    { src: Dev4, alt: 'Dev Squad 4' },
-    { src: Dev5, alt: 'Dev Squad 5' },
-    { src: Dev6, alt: 'Dev Squad 6' },
-    { src: Dev7, alt: 'Dev Squad 7' },
-    { src: Dev8, alt: 'Dev Squad 8' },
-    { src: Dev9, alt: 'Dev Squad 9' },
-    { src: Dev10, alt: 'Dev Squad 10' },
-    { src: Dev11, alt: 'Dev Squad 11' },
-    { src: Dev13, alt: 'Dev Squad 13' },
-    { src: Dev14, alt: 'Dev Squad 14' }
-  ];
+  
+  const gallery = [Dev1, Dev2, Dev3, Dev4]; 
 </script>
 
 <svelte:head>
-  <title>Dev Squad | Lancaster University Hockey Club</title>
+  <title>Development Squad | Lancaster University Hockey Club</title>
 </svelte:head>
 
-<!-- Hero Section -->
-<section class="p-8">
-  <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <enhanced:img
-      src={DevHero}
-      alt="Development Squad Hero"
-      class="absolute inset-0 w-full h-full object-cover z-[-1]"
-    />
-    <div class="absolute inset-0 bg-black/70 z-0 rounded-xl"></div>
-    <div class="relative z-10 space-y-4" data-aos="fade-in">
-      <h1 class="text-4xl md:text-5xl font-extrabold drop-shadow-lg">Development Squad</h1>
-      <p class="text-xl max-w-2xl mx-auto drop-shadow-md">Mixed Hockey for All Abilities</p>
-    </div>
+<section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
+  <enhanced:img
+    src={DevHero}
+    alt="Dev Squad Huddle"
+    class="absolute inset-0 w-full h-full object-cover object-center opacity-60"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-transparent to-transparent"></div>
+  
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4" data-aos="fade-in">
+    <h1 class="font-display text-6xl md:text-8xl font-bold text-white uppercase tracking-tighter drop-shadow-xl mb-4">
+      Dev Squad
+    </h1>
+    <p class="font-sans text-xl md:text-2xl text-white/90 font-light max-w-2xl">
+      Hockey for Everyone. Any Ability. Any Background.
+    </p>
   </div>
 </section>
 
-<div class="max-w-6xl mx-auto px-4 space-y-12 text-gray-900">
-  <!-- About Section -->
-  <section data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4">About the Dev Squad</h2>
-    <p class="leading-relaxed mb-4">
-      Whether you're just starting out and want to try something new, or want to hone your skills and work your way into a competitive squad, Dev is the place for you. Training takes place twice a week, with a targeted training schedule to build on all aspects of your game throughout the year.
-    </p>
-    <p class="leading-relaxed mb-4">
-      Sessions are run by our Development Captains and Officers, alongside competitive squad leaders who mentor and scout players ready for the 3rd XI.
-    </p>
-    <p class="leading-relaxed">
-      We organise friendly games against other universities' development squads to build confidence, culminating in the excitement of the Roses mixed development match each Summer term.
-    </p>
-  </section>
-
-  <!-- Training Schedule -->
-  <section class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up">
+<div class="max-w-7xl mx-auto px-6 py-20">
+  
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-24" data-aos="fade-up">
     <div>
-      <h3 class="text-2xl font-semibold mb-2">Training Schedule</h3>
-      <ul class="list-disc list-inside space-y-2">
-        <li>Tuesday 5-6pm</li>
-        <li>Thursday 5-6pm</li>
-      </ul>
+      <h2 class="font-display uppercase text-4xl font-bold text-luhc-dark mb-6">About The Squad</h2>
+      <div class="h-1 w-20 bg-luhc-red mb-8"></div>
+      <div class="space-y-6 text-lg text-gray-600 font-light leading-relaxed">
+        <p>Whether you're picking up a stick for the first time or looking to sharpen your skills for competitive selection, Dev is your home.</p>
+        <p>Sessions are run by our dedicated Development Officers alongside 1st XI players who mentor and scout talent. It is the perfect pathway into the 3rd XI, or simply a great way to stay fit and make friends.</p>
+      </div>
     </div>
-    <div>
-      <h3 class="text-2xl font-semibold mb-2">Friendly Matches</h3>
-      <p>
-        Regular fixtures against other university development squads to test your progress and build match experience. Keep an eye on the fixtures page for upcoming dates.
-      </p>
+
+    <div class="bg-gray-50 border border-gray-100 p-8 shadow-sm">
+      <h3 class="font-display uppercase text-2xl font-bold mb-6 text-luhc-dark">Training Schedule</h3>
+      <div class="space-y-4 mb-8">
+        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+          <span class="font-sans font-bold text-gray-700">Tuesday</span>
+          <span class="font-sans text-luhc-red font-bold">17:00 - 18:00</span>
+        </div>
+        <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+          <span class="font-sans font-bold text-gray-700">Thursday</span>
+          <span class="font-sans text-luhc-red font-bold">17:00 - 18:00</span>
+        </div>
+      </div>
+      
+      <h3 class="font-display uppercase text-2xl font-bold mb-4 text-luhc-dark">Fixtures</h3>
+      <p class="text-gray-600 font-light mb-6">Regular friendly matches against other university development squads, culminating in the Roses Mixed Exhibition.</p>
+      
+      <a href="/socials" class="block w-full text-center border-2 border-luhc-red text-luhc-red font-display uppercase font-bold tracking-widest py-3 hover:bg-luhc-red hover:text-white transition-colors">
+        View Socials
+      </a>
     </div>
-  </section>
+  </div>
 
-  <!-- Social & Progression -->
-  <section class="bg-gray-100 p-6 rounded-xl" data-aos="fade-up">
-    <h3 class="text-2xl font-semibold mb-2">Fun & Progression</h3>
-    <p class="mb-4">
-      Whilst there is opportunity to progress to our competitive teams, most importantly we want you to have fun and make great friends - whether at trainings or socials.
-    </p>
-    <Button href="/socials" color="red">View Club Socials</Button>
-  </section>
-
-  <!-- Gallery -->
   <section data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-6 text-center">Dev Squad in Action</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="text-center mb-12">
+      <h2 class="font-display uppercase text-4xl font-bold text-luhc-dark">Action Shots</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
       {#each gallery as img}
-        <div class="overflow-hidden rounded-xl shadow-md" data-aos="zoom-in">
-          <enhanced:img src={img.src} alt={img.alt} class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
+        <div class="aspect-square bg-gray-100 overflow-hidden group relative">
+          <enhanced:img 
+            src={img} 
+            alt="Dev Squad Action" 
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+          />
         </div>
       {/each}
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="text-center py-12" data-aos="fade-in">
-    <h2 class="text-3xl font-bold mb-4">Join the Dev Squad</h2>
-    <p class="mb-6">Ready to develop your game? Come train with us and be part of LUHC’s future.</p>
-    <Button href="/contact-us" size="lg" color="red">Sign Up Now</Button>
+  <section class="mt-24 bg-luhc-red text-white py-16 px-6 text-center rounded-sm shadow-xl">
+    <h2 class="font-display uppercase text-4xl font-bold mb-4">Start Your Journey</h2>
+    <p class="font-sans text-lg text-white/90 mb-8">No trials required. Just turn up and play.</p>
+    <a href="/contact-us" class="inline-block bg-white text-luhc-red font-display uppercase font-bold tracking-widest px-10 py-4 hover:bg-luhc-dark hover:text-white transition-colors shadow-md">
+      Sign Up Now
+    </a>
   </section>
-</div>
 
-<style>
-  @media (max-width: 640px) {
-    .max-w-6xl { max-width: 90%; }
-  }
-</style>
+</div>

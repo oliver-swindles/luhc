@@ -1,6 +1,4 @@
 <script>
-  import { Button, Card } from 'flowbite-svelte';
-
   import ContactHero from "$lib/images/pages/contact/contact-hero.webp?enhanced";
 </script>
 
@@ -8,99 +6,58 @@
   <title>Contact Us | Lancaster University Hockey Club</title>
 </svelte:head>
 
-<!-- Hero Section -->
-<section class="p-8">
-  <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <enhanced:img 
-      src={ContactHero} 
-      alt="Hero Background" 
-      class="absolute inset-0 w-full h-full object-cover z-[-1]"
-    />
-    <div class="absolute inset-0 bg-black/70 z-0 rounded-xl"></div>
-    <div class="relative z-10 space-y-6" data-aos="fade-in">
-      <h1 class="text-4xl md:text-5xl font-extrabold drop-shadow-lg">Contact Us</h1>
-      <p class="text-xl max-w-2xl mx-auto drop-shadow-md">Whether you’re a player, sponsor, or fan, we’d love to hear from you. Here’s how to reach us:</p>
-    </div>
+<section class="relative h-[50vh] w-full overflow-hidden bg-luhc-dark">
+  <enhanced:img 
+    src={ContactHero} 
+    alt="Contact Hero" 
+    class="absolute inset-0 w-full h-full object-cover object-center opacity-60" 
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-transparent to-transparent"></div>
+  
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4" data-aos="fade-in">
+    <h1 class="font-display text-5xl md:text-7xl font-bold text-white uppercase tracking-tighter drop-shadow-xl mb-4">
+      Get In Touch
+    </h1>
+    <p class="font-sans text-xl text-gray-200 font-light">We'd love to hear from you.</p>
   </div>
 </section>
 
-<div class="max-w-4xl mx-auto px-4 py-12 space-y-12 text-gray-900">
-  <!-- Quick Contacts -->
-  <section data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-6 text-center">Quick Contact Options</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-      <Card class="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in">
-        <h3 class="text-xl font-semibold mb-1">Men’s Club Instagram</h3>
-        <Button href="https://instagram.com/lumhc_" color="light" class="mt-2">@lumhc_</Button>
-      </Card>
+<div class="max-w-5xl mx-auto px-6 py-20 text-gray-900">
+  
+  <section class="mb-20" data-aos="fade-up">
+    <div class="text-center mb-12">
+      <h2 class="font-display uppercase text-3xl font-bold text-luhc-dark">Quick Contact</h2>
+      <p class="text-gray-500 mt-2 font-light">The fastest way to reach us is via Instagram Direct Message.</p>
+    </div>
 
-      <Card class="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="100">
-        <h3 class="text-xl font-semibold mb-1">Women’s Club Instagram</h3>
-        <Button href="https://instagram.com/luwhc_" color="light" class="mt-2">@luwhc_</Button>
-      </Card>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <a href="https://instagram.com/lumhc_" target="_blank" class="group bg-white p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-luhc-red/30 transition-all duration-300 text-center rounded-sm transform hover:-translate-y-1">
+        <h3 class="font-display uppercase text-xl font-bold text-luhc-dark mb-2">Men's Club</h3>
+        <span class="font-sans text-luhc-red font-bold group-hover:underline">@lumhc_</span>
+      </a>
 
-      <Card class="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="100">
-        <h3 class="text-xl font-semibold mb-1">Dev Instagram</h3>
-        <Button href="https://instagram.com/luhc_dev" color="light" class="mt-2">@luhc_dev</Button>
-      </Card>
+      <a href="https://instagram.com/luwhc_" target="_blank" class="group bg-white p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-luhc-red/30 transition-all duration-300 text-center rounded-sm transform hover:-translate-y-1">
+        <h3 class="font-display uppercase text-xl font-bold text-luhc-dark mb-2">Women's Club</h3>
+        <span class="font-sans text-luhc-red font-bold group-hover:underline">@luwhc_</span>
+      </a>
+
+      <a href="https://instagram.com/luhc_dev" target="_blank" class="group bg-white p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-luhc-red/30 transition-all duration-300 text-center rounded-sm transform hover:-translate-y-1">
+        <h3 class="font-display uppercase text-xl font-bold text-luhc-dark mb-2">Dev Squad</h3>
+        <span class="font-sans text-luhc-red font-bold group-hover:underline">@luhc_dev</span>
+      </a>
+
     </div>
   </section>
 
-    <section data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-2 text-center">Email Options</h2>
-    <p class="text-center text-gray-600 mb-4">*Note: Our email accounts are not monitored as regularly as our Instagram accounts.*</p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-      <Card class="flex flex-col items-center p-6 text-center shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="200">
-        <h3 class="text-xl font-semibold mb-2">Email Us</h3>
-        <p class="mb-2">General enquiries:</p>
-        <Button href="mailto:info@luhc.co.uk" color="light">info@luhc.co.uk</Button>
-      </Card>
-    </div>
+  <section class="bg-gray-50 p-10 text-center border-t border-gray-100" data-aos="fade-up">
+    <h2 class="font-display uppercase text-3xl font-bold text-luhc-dark mb-4">Official Enquiries</h2>
+    <p class="text-gray-600 font-light mb-8 max-w-xl mx-auto">
+      For sponsorship opportunities, formal university business, or similar, please send us an email.
+    </p>
+    <a href="mailto:info@luhc.co.uk" class="inline-block bg-luhc-dark text-white font-display uppercase font-bold tracking-widest px-8 py-3 hover:bg-luhc-red transition-colors shadow-md">
+      info@luhc.co.uk
+    </a>
   </section>
 
-
-  <!-- Contact Form -->
-  <!-- <section data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4 text-center">Send Us a Message</h2>
-    <p class="text-center text-gray-700 mb-6">Prefer to write? Use the form below (note: limited to 50 submissions/month).</p>
-    <form action="https://formspree.io/f/xeogdbbo" method="POST" class="flex flex-col gap-4">
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_template" value="table" />
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <Label for="name">Name</Label>
-          <Input id="name" name="name" type="text" placeholder="Your Name" required />
-        </div>
-        <div>
-          <Label for="email">Email</Label>
-          <Input id="email" name="email" type="email" placeholder="you@example.com" required />
-        </div>
-      </div>
-
-      <div>
-        <Label for="subject">Subject</Label>
-        <Input id="subject" name="subject" type="text" placeholder="Subject" required />
-      </div>
-
-      <div>
-        <Label for="message">Message</Label>
-        <Textarea id="message" name="message" rows="4" placeholder="Your message..." required />
-      </div>
-
-      <Button type="submit" color="red" class="w-1/2 mx-auto">Send Message</Button>
-    </form>
-  </section> -->
-
-  <!-- Footer CTA -->
-  <!-- <section class="text-center py-8" data-aos="fade-in">
-    <h2 class="text-2xl font-bold mb-2">Need Immediate Assistance?</h2>
-    <p>If you experience any issues with this page or have an urgent query, please email our Secretary at <a href="mailto:secretary@luhockey.co.uk" class="underline text-red-600">secretary@luhockey.co.uk</a>.</p>
-  </section> -->
 </div>
-
-<style>
-  @media (max-width: 640px) {
-    .max-w-4xl { max-width: 90%; }
-  }
-</style>

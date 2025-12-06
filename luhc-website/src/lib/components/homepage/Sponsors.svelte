@@ -6,24 +6,37 @@
 </script>
 
 <section class="my-12">
-    <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Our Sponsors</h2>
-    <p class="text-lg text-gray-700 mb-6">We’re proud to be supported by amazing sponsors. Want to join them? <a href="/contact-us" class="underline text-red-600 hover:text-red-800">Get in touch</a>!</p>
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 items-center py-12">
-      <div class="flex flex-col items-center text-center">
-        <enhanced:img src={YellowDoorLetsLogo} alt="Yellow Door Lets Student Housing" class="h-16 object-contain mb-2" />
-        <span class="text-sm text-gray-600">Yellow Door Lets</span>
-      </div>
-      <div class="flex flex-col items-center text-center">
-        <enhanced:img src={LA1Logo} alt="LA1 Lancaster Nightclub" class="h-16 object-contain mb-2" />
-        <span class="text-sm text-gray-600">LA1 Nightclub</span>
-      </div>
-      <div class="flex flex-col items-center text-center">
-        <enhanced:img src={BowerhamHotelLogo} alt="The Bowerham Hotel" class="h-16 object-contain mb-2" />
-        <span class="text-sm text-gray-600">The Bowerham Hotel</span>
-      </div>
-      <div class="flex flex-col items-center text-center">
-        <enhanced:img src={GreensLogo} alt="Greens Pub Lancaster" class="h-16 object-contain mb-2" />
-        <span class="text-sm text-gray-600">Greens Lancaster</span>
-      </div>
+    <div class="flex items-center gap-4 mb-8">
+        <h2 class="font-display uppercase text-3xl font-bold text-luhc-dark tracking-tight">Official Partners</h2>
+        <div class="h-[1px] flex-grow bg-gray-200"></div>
+    </div>
+
+    <p class="text-lg text-gray-600 font-light mb-8 max-w-2xl">
+        We're proud to be supported by local businesses. Want to join the team? 
+        <a href="/contact-us" class="font-bold text-luhc-red hover:underline decoration-2 underline-offset-4">Get in touch</a>.
+    </p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 items-center py-8">
+        
+        <a href="https://www.yellowdoorlets.co.uk/" target="_blank" class="group flex flex-col items-center justify-center p-4 transition-all duration-300">
+            <enhanced:img src={YellowDoorLetsLogo} alt="Yellow Door Lets" class="h-16 w-auto object-contain mb-4 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
+            <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-luhc-red transition-colors">Yellow Door Lets</span>
+        </a>
+
+        <a href="https://www.la1lancaster.co.uk/" target="_blank" class="group flex flex-col items-center justify-center p-4 transition-all duration-300">
+            <enhanced:img src={LA1Logo} alt="LA1 Nightclub" class="h-16 w-auto object-contain mb-4 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
+            <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-luhc-red transition-colors">LA1 Nightclub</span>
+        </a>
+
+        <a href="https://thebowerham.co.uk/" target="_blank" class="group flex flex-col items-center justify-center p-4 transition-all duration-300">
+            <enhanced:img src={BowerhamHotelLogo} alt="The Bowerham Hotel" class="h-16 w-auto object-contain mb-4 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
+            <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-luhc-red transition-colors">Bowerham Hotel</span>
+        </a>
+
+        <a href="https://www.facebook.com/GreensLancaster/" target="_blank" class="group flex flex-col items-center justify-center p-4 transition-all duration-300">
+            <enhanced:img src={GreensLogo} alt="Greens Lancaster" class="h-16 w-auto object-contain mb-4 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
+            <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-luhc-red transition-colors">Greens</span>
+        </a>
+
     </div>
 </section>

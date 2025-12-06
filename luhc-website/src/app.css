@@ -1,32 +1,23 @@
-/* latin-ext */
-/* @font-face {
-  font-family: "Space Grotesk";
-  font-style: normal;
-  font-weight: 300 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/spacegrotesk/v21/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2)
-    format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
-    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
-    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-} */
-/* latin */
-@font-face {
-  font-family: "Space Grotesk";
-  font-style: normal;
-  font-weight: 300 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/spacegrotesk/v21/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
-    U+2212, U+2215, U+FEFF, U+FFFD;
-}
+/* 1. Import The Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;500;700&display=swap');
 
+/* 2. Initialize Tailwind v4 */
 @import "tailwindcss";
 @plugin "flowbite/plugin";
-@custom-variant dark (&:where(.dark, .dark *));
+
+/* 3. Configure Your Theme */
 @theme {
+  /* BRANDING */
+  /* This matches Tailwind's red-800 (#991b1b) to keep your existing red */
+  --color-luhc-red: #c01515; 
+  --color-luhc-dark: #111111; /* Rich charcoal, better than black */
+  --color-luhc-gray: #f4f4f4; /* Light jersey gray */
+
+  /* TYPOGRAPHY */
+  --font-display: "Oswald", sans-serif; /* Use for HEADINGS */
+  --font-sans: "Inter", sans-serif;    /* Use for BODY text */
+  
+  /* Keep existing Flowbite variables if needed */
   --color-primary-50: #fdf3f3;
   --color-primary-100: #fce5e4;
   --color-primary-200: #fad0ce;
@@ -37,9 +28,8 @@
   --color-primary-700: #ac2f29;
   --color-primary-800: #8f2a25;
   --color-primary-900: #772925;
-  --color-primary-950: #40110f;
-  --default-font-family: Space Grotesk;
 }
+
 @source "../node_modules/flowbite-svelte/dist";
 
 html {

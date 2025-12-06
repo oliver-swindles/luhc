@@ -1,112 +1,88 @@
 <script>
-  import { Button } from 'flowbite-svelte';
-
   import RosesHero from "$lib/images/pages/roses/roses-hero.webp?enhanced";
-  // import Roses1 from "$lib/images/pages/roses/roses-1.avif";
-  // import Roses2 from "$lib/images/pages/roses/roses-2.webp";
-  // import Roses3 from "$lib/images/pages/roses/roses-3.webp";
-
-  // Gallery images
-  // const gallery = [
-  //   { src: Roses1, alt: 'Roses 2019 Outdoor Highlights' },
-  //   { src: Roses2, alt: "Roses Men's 2019 Outdoor Highlights" },
-  //   { src: Roses3, alt: 'Roses Indoor Mens 1s Replay' },
-  //   { src: Roses2, alt: 'Roses Indoor Womens 1s Replay' }
-  // ];
 </script>
 
 <svelte:head>
   <title>Roses | Lancaster University Hockey Club</title>
 </svelte:head>
 
-<!-- Hero Section -->
-<section class="p-8">
-  <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <enhanced:img 
-      src={RosesHero} 
-      alt="Hero Background" 
-      class="absolute inset-0 w-full h-full object-cover z-[-1]"
-    />
-    <div class="absolute inset-0 bg-black/70 z-0 rounded-xl"></div>
-    <div class="relative z-10 space-y-6" data-aos="fade-in">
-      <h1 class="text-4xl md:text-5xl font-extrabold drop-shadow-lg">Roses</h1>
-      <p class="text-xl max-w-2xl mx-auto drop-shadow-md">The Largest European Inter-University Sports Tournament</p>
-    </div>
+<section class="relative h-[70vh] w-full overflow-hidden bg-luhc-dark">
+  <enhanced:img 
+    src={RosesHero} 
+    alt="Roses Hockey Action" 
+    class="absolute inset-0 w-full h-full object-cover object-center opacity-60"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/0"></div>
+  
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6" data-aos="fade-in">
+    <span class="font-display uppercase tracking-[0.4em] text-white font-bold text-sm md:text-base mb-4 animate-pulse">Varsity</span>
+    <h1 class="font-display text-7xl md:text-9xl font-bold text-white uppercase tracking-tighter drop-shadow-2xl mb-6 leading-none">
+      Roses
+    </h1>
+    <div class="h-2 w-32 bg-white mb-8"></div>
+    <p class="font-sans text-xl md:text-3xl text-white font-light max-w-3xl drop-shadow-md">
+      Europe's Largest Inter-Varsity Sports Tournament
+    </p>
   </div>
 </section>
 
-<div class="max-w-6xl mx-auto px-4 space-y-12 text-gray-900">
-  <!-- Intro -->
-  <section class="py-8" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4 text-center">Why Roses Matters</h2>
-    <p class="text-lg leading-relaxed mb-4">
-      Roses is by far the biggest event on the LUHC calendar each year. After a year of build up and training, it provides an impressive finale to the end of the hockey season, and a memorable send-off for graduating members.
+<div class="bg-white text-luhc-dark">
+  
+  <section class="max-w-4xl mx-auto px-6 py-20 text-center" data-aos="fade-up">
+    <h2 class="font-display uppercase text-4xl font-bold mb-8 text-luhc-red">Why It Matters</h2>
+    <p class="text-xl text-gray-600 leading-relaxed font-light mb-8">
+      Roses is the finale of the LUHC calendar. After a season of grit and training, it's the ultimate showdown against York.
+      With six outdoor games, four indoor clashes, and the development squad exhibition, it is a weekend where legends are made.
     </p>
-    <p class="text-lg leading-relaxed">
-      Featuring six outdoor games, four indoor games, the development squad exhibition match, and a club social, it’s a great weekend of sport for club members, friends and family to enjoy.
-    </p>
-  </section>
-
-  <!-- Points Section -->
-  <!-- <section class="bg-gray-100 p-6 rounded-xl" data-aos="fade-up">
-    <h2 class="text-2xl font-semibold mb-3">Roses Are Red, Not White!</h2>
-    <p class="mb-2">
-      Hockey is an important part of Lancaster's annual Roses bid, with the most available Roses points of any sport. Every goal and every save can make the difference in the overall tournament result.
-    </p>
-    <p>
-      Our goal: to bring home the trophy - and show that Roses truly are red.
-    </p>
-  </section> -->
-
-  <!-- Roses Playlists -->
-  <section data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-2 text-center">1st XI Hockey</h2>
-    <p class="text-gray-700 text-center mb-6">Roses 2025</p>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center justify-center">
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/D0kxPxzUJgI?si=OP_ZqztvhkpMJIus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md mx-auto"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YE8VG-8AUOI?si=CaFNyTn_SftUconA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md mx-auto"></iframe>
+    <div class="inline-block border-2 border-luhc-dark px-6 py-2 font-display uppercase font-bold tracking-widest text-sm">
+      #RosesAreRed
     </div>
   </section>
 
-  <!-- Roses Playlists -->
-  <section data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-2 text-center">1st XI Indoor Hockey</h2>
-    <p class="text-gray-700 text-center mb-6">Roses 2025</p>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7eyaLJZA3sU?si=J2xWrDWcoDiYqlNe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md mx-auto"></iframe>
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/n8Jj4okm0Hg?si=bIlAAwTMSbUyXw_7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-md mx-auto"></iframe>    </div>
-  </section>
-
-  <!-- Media Gallery -->
-  <!-- <section data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-6 text-center">Roses Highlights</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      {#each gallery as img}
-        <div class="overflow-hidden rounded-xl shadow-md" data-aos="zoom-in">
-          <enhanced:img src={img.src} alt={img.alt} class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
-          <div class="p-2">
-            <p class="text-sm text-gray-700">{img.alt}</p>
+  <section class="bg-gray-50 py-20 px-4">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="mb-20" data-aos="fade-up">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-8 w-1 bg-luhc-red"></div>
+          <h2 class="font-display uppercase text-3xl md:text-4xl font-bold">1st XI Highlights</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="aspect-video shadow-xl rounded-sm overflow-hidden bg-black">
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/D0kxPxzUJgI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="aspect-video shadow-xl rounded-sm overflow-hidden bg-black">
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/YE8VG-8AUOI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
-      {/each}
+      </div>
+
+      <div data-aos="fade-up">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-8 w-1 bg-luhc-red"></div>
+          <h2 class="font-display uppercase text-3xl md:text-4xl font-bold">Indoor Highlights</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="aspect-video shadow-xl rounded-sm overflow-hidden bg-black">
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/7eyaLJZA3sU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="aspect-video shadow-xl rounded-sm overflow-hidden bg-black">
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/n8Jj4okm0Hg" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section> -->
-
-  <!-- Call to Action -->
-  <section class="text-center py-12" data-aos="fade-in">
-    <h2 class="text-3xl font-bold mb-4">Be Part of the Action</h2>
-    <p class="mb-6 text-lg">
-      Whether you’re a player, supporter, or sponsor, Roses is the moment to shine. Join us next year and be part of history.
-    </p>
-    <Button href="/contact-us" size="lg" color="red">Get In Touch</Button>
   </section>
-</div>
 
-<style>
-  /* Ensure images and text scale on mobile */
-  @media (max-width: 640px) {
-    .max-w-6xl {
-      max-width: 90%;
-    }
-  }
-</style>
+  <section class="bg-luhc-dark text-white py-24 text-center px-6">
+    <h2 class="font-display uppercase text-5xl font-bold mb-6">Make History</h2>
+    <p class="font-sans text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+      Whether you're on the pitch or in the stands, every voice counts. Join us next year.
+    </p>
+    <a href="/contact-us" class="inline-block bg-luhc-red text-white font-display uppercase font-bold tracking-widest px-10 py-4 hover:bg-white hover:text-luhc-red transition-all duration-300 shadow-lg transform hover:-translate-y-1">
+      Join The Squad
+    </a>
+  </section>
+
+</div>

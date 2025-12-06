@@ -1,25 +1,38 @@
 <script lang="ts">
-	import LUHCLogo from '$lib/images/luhc-logo.png?enhanced';
-	import HeroPFlick from '$lib/images/pages/index/p-flick-hero.jpg?enhanced';
+    import LUHCLogo from '$lib/images/luhc-logo.png?enhanced';
+    import HeroPFlick from '$lib/images/pages/index/p-flick-hero.jpg?enhanced';
 </script>
 
-<section class="p-8">
-	<div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-		<enhanced:img
-			src={HeroPFlick}
-			alt="A Lancaster University Hockey player taking a penalty flick during a match."
-			class="absolute inset-0 w-full h-full object-cover z-[-1]"
-		/>
-		<div class="absolute inset-0 bg-black/70 z-0 rounded-xl"></div>
-		<div class="relative z-10 space-y-6">
-			<enhanced:img src={LUHCLogo} alt="LUHC Logo" class="h-36 w-auto mx-auto" />
-			<h1 class="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
-				Lancaster University Hockey Club
-			</h1>
-			<p class="text-xl max-w-2xl mx-auto drop-shadow-md">
-				One of the largest, most competitive, and most welcoming sports clubs at Lancaster University.
-				<!-- <span class="text-red-400 font-semibold">#ROSESARERED</span> -->
-			</p>
-		</div>
-	</div>
+<section class="relative h-[85vh] w-full overflow-hidden bg-luhc-dark">
+    <enhanced:img
+        src={HeroPFlick}
+        alt="Lancaster University Hockey action shot"
+        class="absolute inset-0 w-full h-full object-cover object-center opacity-80"
+    />
+
+    <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-luhc-dark/40 to-transparent"></div>
+
+    <div class="absolute inset-0 flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto w-full">
+        
+        <div class="mb-6 flex items-end gap-4 animate-in slide-in-from-bottom-4 duration-1000">
+            <enhanced:img src={LUHCLogo} alt="LUHC Logo" class="h-24 w-auto drop-shadow-2xl" />
+            
+            <div class="hidden md:block h-12 w-[1px] bg-white/30 mb-2"></div>
+            <span class="hidden md:block text-white/60 font-display uppercase tracking-widest text-sm mb-4">Est. 1964</span>
+        </div>
+
+        <h1 class="font-display font-bold text-6xl md:text-8xl text-white uppercase leading-[0.9] tracking-tighter drop-shadow-xl max-w-4xl">
+            Lancaster University <br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-luhc-red to-red-500">Hockey Club</span>
+        </h1>
+
+        <div class="mt-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+            <div class="h-1 w-24 bg-luhc-red"></div>
+            <p class="font-sans text-xl text-gray-200 max-w-xl font-light">
+                One of the largest, most competitive, and welcoming sports clubs at Lancaster.
+                <span class="block mt-2 text-white font-medium">#RosesAreRed</span>
+            </p>
+        </div>
+
+    </div>
 </section>

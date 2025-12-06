@@ -21,7 +21,7 @@
  * 
  * You can override `.env` values from the command line like so:
  * 
- * ```bash
+ * ```sh
  * MY_FEATURE_FLAG="enabled" npm run dev
  * ```
  */
@@ -40,13 +40,7 @@ declare module '$env/static/private' {
 	export const ComSpec: string;
 	export const DriverData: string;
 	export const EDITOR: string;
-	export const EFC_9252_1262719628: string;
 	export const EFC_9252_1592913036: string;
-	export const EFC_9252_2283032206: string;
-	export const EFC_9252_2775293581: string;
-	export const EFC_9252_3789132940: string;
-	export const FPS_BROWSER_APP_PROFILE_STRING: string;
-	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const HOME: string;
 	export const HOMEDRIVE: string;
 	export const HOMEPATH: string;
@@ -126,14 +120,12 @@ declare module '$env/static/public' {
  * 
  * This module cannot be imported into client-side code.
  * 
- * Dynamic environment variables cannot be used during prerendering.
- * 
  * ```ts
  * import { env } from '$env/dynamic/private';
  * console.log(env.DEPLOYMENT_SPECIFIC_VARIABLE);
  * ```
  * 
- * > In `dev`, `$env/dynamic` always includes environment variables from `.env`. In `prod`, this behavior will depend on your adapter.
+ * > [!NOTE] In `dev`, `$env/dynamic` always includes environment variables from `.env`. In `prod`, this behavior will depend on your adapter.
  */
 declare module '$env/dynamic/private' {
 	export const env: {
@@ -151,13 +143,7 @@ declare module '$env/dynamic/private' {
 		ComSpec: string;
 		DriverData: string;
 		EDITOR: string;
-		EFC_9252_1262719628: string;
 		EFC_9252_1592913036: string;
-		EFC_9252_2283032206: string;
-		EFC_9252_2775293581: string;
-		EFC_9252_3789132940: string;
-		FPS_BROWSER_APP_PROFILE_STRING: string;
-		FPS_BROWSER_USER_PROFILE_STRING: string;
 		HOME: string;
 		HOMEDRIVE: string;
 		HOMEPATH: string;
@@ -226,8 +212,6 @@ declare module '$env/dynamic/private' {
  * Similar to [`$env/dynamic/private`](https://svelte.dev/docs/kit/$env-dynamic-private), but only includes variables that begin with [`config.kit.env.publicPrefix`](https://svelte.dev/docs/kit/configuration#env) (which defaults to `PUBLIC_`), and can therefore safely be exposed to client-side code.
  * 
  * Note that public dynamic environment variables must all be sent from the server to the client, causing larger network requests — when possible, use `$env/static/public` instead.
- * 
- * Dynamic environment variables cannot be used during prerendering.
  * 
  * ```ts
  * import { env } from '$env/dynamic/public';

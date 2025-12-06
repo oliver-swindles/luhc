@@ -1,70 +1,71 @@
 <script>
-  import { Card, Button } from 'flowbite-svelte';
-
   import CaptainsHero from "$lib/images/pages/captains/captains-hero.webp?enhanced";
 
   const captains = [
     { role: "Men's 1s Captain", name: 'Victor Vankelegom', photo: '' },
-    { role: "Men's 1s Vice-captain", name: 'Felix Woods', photo: '' },
+    { role: "Men's 1s Vice", name: 'Felix Woods', photo: '' },
     { role: "Women's 1s Captain", name: 'Kiah Bardouille-Lewis', photo: '' },
-    { role: "Women's 1s Vice-captain", name: 'Lucy Bridges', photo: ''},
-    { role: "Men's 2s Captain", name: 'Tom Lockyer', photo: '' },
-    { role: "Men's 2s Vice-captain", name: 'Samuel Choi', photo: '' },
+    { role: "Women's 1s Vice", name: 'Lucy Bridges', photo: ''},
+    { role: "Men's 2s Captain", name: 'Samuel Choi', photo: '' },
+    { role: "Men's 2s Vice", name: 'Will Mallik', photo: '' },
     { role: "Women's 2s Co-Captain", name: 'Katie Little', photo: '' },
-    { role: "Women's 2s Co-captain", name: 'Nat Kyte', photo: '' },
+    { role: "Women's 2s Co-Captain", name: 'Nat Kyte', photo: '' },
     { role: "Men's 3s Captain", name: 'Matt Grimshaw', photo: '' },
-    { role: "Men's 3s Vice-captain", name: 'Tom Baker', photo: '' },
+    { role: "Men's 3s Vice", name: 'Tom Baker', photo: '' },
     { role: "Women's 3s Captain", name: 'Grace Puckey', photo: '' },
-    { role: "Women's 3s Vice-captain", name: 'Cat Prince', photo: '' },
+    { role: "Women's 3s Vice", name: 'Cat Prince', photo: '' },
     { role: "Indoor Captain", name: 'Alex Potts', photo: '' },
-    { role: "Development Captain", name: 'Jemma Louise', photo: '' },
-    { role: "Development Captain", name: 'George Turner', photo: '' }
+    { role: "Dev Captain", name: 'Jemma Louise', photo: '' },
+    { role: "Dev Captain", name: 'George Turner', photo: '' }
   ];
 </script>
 
 <svelte:head>
-	<title>Captains | Lancaster University Hockey Club</title>
+  <title>Team Captains | Lancaster University Hockey Club</title>
 </svelte:head>
 
-<!-- Hero Section -->
-<section class="p-8">
-  <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <enhanced:img 
-      src={CaptainsHero} 
-      alt="Hero Background" 
-      class="absolute inset-0 w-full h-full object-cover z-[-1]"
-    />
-    <div class="absolute inset-0 bg-black/70 z-0 rounded-xl"></div>
-    <div class="relative z-10 space-y-6" data-aos="fade-in">
-      <h1 class="text-4xl md:text-5xl font-extrabold drop-shadow-lg">Meet Our Captains</h1>
-      <p class="text-xl max-w-2xl mx-auto drop-shadow-md">The leaders driving Lancaster University Hockey Club to victory this season.</p>
-    </div>
+<section class="relative h-[50vh] w-full overflow-hidden bg-luhc-dark">
+  <enhanced:img 
+    src={CaptainsHero} 
+    alt="Captains Hero" 
+    class="absolute inset-0 w-full h-full object-cover object-top opacity-50"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-transparent to-transparent"></div>
+  <div class="absolute bottom-0 left-0 w-full p-8 md:p-16" data-aos="fade-up">
+    <span class="font-display text-luhc-red uppercase tracking-widest font-bold text-sm mb-2 block">On The Pitch</span>
+    <h1 class="font-display text-5xl md:text-7xl font-bold text-white uppercase tracking-tighter">Team Captains</h1>
   </div>
 </section>
 
-<div class="max-w-6xl mx-auto px-4 py-12">
+<div class="max-w-7xl mx-auto px-6 py-20">
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
     {#each captains as cap}
-      <Card class="overflow-hidden shadow-lg hover:shadow-xl transition-shadow" data-aos="zoom-in">
-        <img src={cap.photo} alt={cap.name} class="w-full h-48 object-cover rounded-md" />
-        <div class="p-4 text-center">
-          <h3 class="text-xl font-semibold mb-1">{cap.name}</h3>
-          <p class="text-sm text-gray-600">{cap.role}</p>
+      <div class="group bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:border-luhc-red/20 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden" data-aos="fade-up">
+        
+        <div class="w-full aspect-[4/5] bg-gray-100 relative overflow-hidden">
+          {#if cap.photo}
+            <img src={cap.photo} alt={cap.name} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          {:else}
+            <div class="absolute inset-0 flex items-center justify-center text-gray-300">
+              <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            </div>
+          {/if}
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
-      </Card>
+
+        <div class="p-6 relative">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gray-100 group-hover:bg-luhc-red transition-colors duration-300"></div>
+          <h3 class="font-display uppercase text-xl font-bold text-luhc-dark group-hover:text-luhc-red transition-colors mb-1">{cap.name}</h3>
+          <p class="font-sans text-xs uppercase tracking-widest text-gray-500">{cap.role}</p>
+        </div>
+      </div>
     {/each}
   </div>
 
-  <section class="text-center mt-12" data-aos="fade-up">
-    <p class="mb-4 text-gray-700">Looking for the full executive team? Check out our&nbsp;
-      <a href="/about/meet-the-exec" class="text-red-600 underline hover:text-red-800">Meet the Exec</a> page.
-    </p>
-    <Button href="/contact-us" color="red">Get in Touch</Button>
-  </section>
+  <div class="mt-16 p-8 bg-gray-50 text-center border border-gray-100">
+    <p class="font-display uppercase text-xl font-bold text-luhc-dark mb-4">Looking for the Committee?</p>
+    <a href="/about/meet-the-exec" class="inline-block text-luhc-red font-bold uppercase tracking-widest text-sm hover:underline decoration-2 underline-offset-4">
+      View Executive Team &rarr;
+    </a>
+  </div>
 </div>
-
-<style>
-  @media (max-width: 640px) {
-    .max-w-6xl { max-width: 90%; }
-  }
-</style>
