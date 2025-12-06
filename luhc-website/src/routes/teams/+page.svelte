@@ -10,31 +10,31 @@
   const teamPages = [
     {
       name: "Men's Club",
-      href: '/teams/mens-club',
+      href: "/teams/mens-club",
       image: MensClub,
-      alt: 'Men's Club Action Shot',
-      description: 'BUCS & Saturday league teams fostering strong camaraderie and competitive hockey.'
+      alt: "Men's Club Action Shot",
+      description: "BUCS & Saturday league teams fostering strong camaraderie and competitive hockey."
     },
     {
       name: "Women's Club",
-      href: '/teams/womens-club',
+      href: "/teams/womens-club",
       image: WomensClub,
-      alt: 'Women's Club Team Photo',
-      description: 'Three thriving women's teams full of passion, drive, and supportive team spirit.'
+      alt: "Women's Club Team Photo",
+      description: "Three thriving women's teams full of passion, drive, and supportive team spirit."
     },
     {
       name: "Development Squad",
-      href: '/teams/development-squad',
+      href: "/teams/development-squad",
       image: DevSquad,
-      alt: 'Development Squad Practice',
-      description: 'Open to all abilities - LUHC's core for learning, improving and thriving in hockey.'
+      alt: "Development Squad Practice",
+      description: "Open to all abilities - LUHC's core for learning, improving and thriving in hockey."
     },
     {
       name: "Indoor Hockey",
-      href: '/teams/indoor-hockey',
+      href: "/teams/indoor-hockey",
       image: IndoorHockey,
-      alt: 'Indoor Hockey Match',
-      description: 'Fast-paced and energetic indoor hockey - perfect for winter fitness and Roses glory.'
+      alt: "Indoor Hockey Match",
+      description: "Fast-paced and energetic indoor hockey - perfect for winter fitness and Roses glory."
     }
   ];
 </script>
