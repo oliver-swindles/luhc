@@ -1,6 +1,4 @@
 <script>
-  import { Button } from "flowbite-svelte";
-
   import TeamsHero from "$lib/images/pages/teams/teams-hero.webp?enhanced";
   import MensClub from "$lib/images/pages/teams/mens-club.webp?enhanced";
   import WomensClub from "$lib/images/pages/teams/womens-club.webp?enhanced";
@@ -12,29 +10,29 @@
       name: "Men's Club",
       href: "/teams/mens-club",
       image: MensClub,
-      alt: "Men's Club Action Shot",
-      description: "BUCS & Saturday league teams fostering strong camaraderie and competitive hockey."
+      alt: "Men's Club Action",
+      description: "BUCS & Saturday league teams fostering strong camaraderie and elite performance."
     },
     {
       name: "Women's Club",
       href: "/teams/womens-club",
       image: WomensClub,
-      alt: "Women's Club Team Photo",
+      alt: "Women's Club Team",
       description: "Three thriving women's teams full of passion, drive, and supportive team spirit."
     },
     {
       name: "Development Squad",
       href: "/teams/development-squad",
       image: DevSquad,
-      alt: "Development Squad Practice",
-      description: "Open to all abilities - LUHC's core for learning, improving and thriving in hockey."
+      alt: "Dev Squad Training",
+      description: "Open to all abilities. The core of LUHC for learning, improving, and thriving."
     },
     {
       name: "Indoor Hockey",
       href: "/teams/indoor-hockey",
       image: IndoorHockey,
       alt: "Indoor Hockey Match",
-      description: "Fast-paced and energetic indoor hockey - perfect for winter fitness and Roses glory."
+      description: "Fast-paced, intense, and technical. Perfect for winter fitness and Roses glory."
     }
   ];
 </script>
@@ -43,56 +41,67 @@
   <title>Our Teams | Lancaster University Hockey Club</title>
 </svelte:head>
 
-<section class="p-8">
-  <div class="relative overflow-hidden rounded-xl text-white text-center px-8 py-16 shadow-xl">
-    <enhanced:img
-      src={TeamsHero}
-      alt="LUHC Teams Hero"
-      class="absolute inset-0 w-full h-full object-cover z-[-1]"
-    />
-    <div class="absolute inset-0 bg-black/70 z-0 rounded-xl"></div>
-    <div class="relative z-10 space-y-4" data-aos="fade-in">
-      <h1 class="text-4xl md:text-5xl font-extrabold drop-shadow-lg">Our Teams</h1>
-      <p class="text-xl max-w-2xl mx-auto drop-shadow-md">Explore LUHC's clubs, squads, and hockey offerings</p>
-    </div>
+<section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
+  <enhanced:img
+    src={TeamsHero}
+    alt="LUHC Teams Hero"
+    class="absolute inset-0 w-full h-full object-cover object-center opacity-60"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-transparent to-transparent"></div>
+  
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4" data-aos="fade-in">
+    <h1 class="font-display text-6xl md:text-8xl font-bold text-white uppercase tracking-tighter drop-shadow-2xl mb-4">
+      Our Squads
+    </h1>
+    <p class="font-sans text-xl md:text-2xl text-white/90 font-light max-w-2xl drop-shadow-md">
+      Competitive. Social. Inclusive.
+    </p>
   </div>
 </section>
 
-<section class="max-w-6xl mx-auto px-4 py-12">
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8" data-aos="fade-up">
+<div class="max-w-7xl mx-auto px-6 py-20 text-gray-900">
+  
+  <div class="text-center mb-16" data-aos="fade-up">
+    <h2 class="font-display uppercase text-4xl font-bold text-luhc-dark mb-4">Find Your Team</h2>
+    <div class="h-1 w-24 bg-luhc-red mx-auto"></div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12" data-aos="fade-up">
     {#each teamPages as team}
-      <article
-        class="group rounded-xl overflow-hidden shadow-lg bg-white transition-transform hover:scale-[1.03] focus:outline-none focus:ring-4 focus:ring-red-400"
+      <a 
+        href={team.href} 
+        class="group relative block bg-white border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
         aria-label={`Go to ${team.name} page`}
       >
-        <enhanced:img
-          src={team.image}
-          alt={team.alt}
-          class="w-full h-56 object-cover group-hover:brightness-90 transition duration-300"
-          loading="lazy"
-        />
-        <div class="p-5">
-          <h2 class="text-2xl font-bold text-red-700 mb-2">{team.name}</h2>
-          <p class="text-gray-700 mb-4">{team.description}</p>
-          <Button
-            color="red"
-            size="md"
-            aria-label={`Visit ${team.name} page`}
-            class="w-full sm:w-auto cursor-pointer"
-            href={team.href}
-          >
-            View Team
-          </Button>
+        <div class="relative h-64 overflow-hidden">
+          <enhanced:img
+            src={team.image}
+            alt={team.alt}
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          />
+          <div class="absolute inset-0 bg-luhc-red/0 group-hover:bg-luhc-red/20 transition-colors duration-300"></div>
         </div>
-      </article>
+
+        <div class="p-8 relative">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gray-100 group-hover:bg-luhc-red transition-colors duration-300"></div>
+          
+          <h2 class="font-display uppercase text-3xl font-bold text-luhc-dark group-hover:text-luhc-red transition-colors mb-3">
+            {team.name}
+          </h2>
+          
+          <p class="font-sans text-gray-600 font-light leading-relaxed mb-6">
+            {team.description}
+          </p>
+          
+          <span class="inline-flex items-center text-sm font-bold uppercase tracking-widest text-luhc-dark group-hover:text-luhc-red transition-colors">
+            View Team Details 
+            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </span>
+        </div>
+      </a>
     {/each}
   </div>
-</section>
 
-<style>
-  @media (max-width: 640px) {
-    .max-w-6xl {
-      max-width: 90%;
-    }
-  }
-</style>
+</div>
