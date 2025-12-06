@@ -6,10 +6,10 @@
   import IndoorHockey from "$lib/images/pages/about/indoor-hockey.webp?enhanced";
 
   const teamLinks = [
-    { title: 'Men's Club', href: '/teams/mens-club', img: MensClub },
-    { title: 'Women's Club', href: '/teams/womens-club', img: WomensClub },
-    { title: 'Dev Squad', href: '/teams/development-squad', img: DevSquad },
-    { title: 'Indoor Hockey', href: '/teams/indoor-hockey', img: IndoorHockey }
+    { title: "Men's Club", href: "/teams/mens-club", img: MensClub },
+    { title: "Women's Club", href: "/teams/womens-club", img: WomensClub },
+    { title: "Dev Squad", href: "/teams/development-squad", img: DevSquad },
+    { title: "Indoor Hockey", href: "/teams/indoor-hockey", img: IndoorHockey }
   ];
 </script>
 
