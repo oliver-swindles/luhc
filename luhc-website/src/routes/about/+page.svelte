@@ -26,7 +26,7 @@
   <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-transparent to-black/30"></div>
   
   <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4" data-aos="fade-in">
-    <span class="font-display uppercase tracking-[0.3em] text-luhc-red font-bold mb-4 text-sm md:text-base">Est. 1964</span>
+    <!-- <span class="font-display uppercase tracking-[0.3em] text-luhc-red font-bold mb-4 text-sm md:text-base">Est. 1964</span> -->
     <h1 class="font-display text-6xl md:text-8xl font-bold text-white uppercase tracking-tighter drop-shadow-xl mb-6">
       Our Club
     </h1>

@@ -17,8 +17,8 @@
         <div class="mb-6 flex items-end gap-4 animate-in slide-in-from-bottom-4 duration-1000">
             <enhanced:img src={LUHCLogo} alt="LUHC Logo" class="h-24 w-auto drop-shadow-2xl" />
             
-            <div class="hidden md:block h-12 w-[1px] bg-white/30 mb-2"></div>
-            <span class="hidden md:block text-white/60 font-display uppercase tracking-widest text-sm mb-4">Est. 1964</span>
+            <!-- <div class="hidden md:block h-12 w-[1px] bg-white/30 mb-2"></div> -->
+            <!-- <span class="hidden md:block text-white/60 font-display uppercase tracking-widest text-sm mb-4">Est. 1964</span> -->
         </div>
 
         <h1 class="font-display font-bold text-6xl md:text-8xl text-white uppercase leading-[0.9] tracking-tighter drop-shadow-xl max-w-4xl">

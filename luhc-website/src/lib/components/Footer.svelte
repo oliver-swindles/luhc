@@ -11,7 +11,7 @@
         <enhanced:img src={LUHCLogo} alt="LUHC Logo" class="h-16 w-auto opacity-90 group-hover:opacity-100 transition-opacity" />
         <div class="flex flex-col">
           <span class="text-2xl font-display font-bold uppercase tracking-wide">LU Hockey</span>
-          <span class="text-xs font-sans text-gray-400">Est. 1964</span>
+          <!-- <span class="text-xs font-sans text-gray-400">Est. 1964</span> -->
         </div>
       </a>
       <p class="text-sm text-gray-400 leading-relaxed max-w-xs font-light">
