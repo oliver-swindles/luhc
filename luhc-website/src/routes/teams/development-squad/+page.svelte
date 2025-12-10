@@ -38,7 +38,7 @@
       <div class="h-1 w-20 bg-luhc-red mb-8"></div>
       <div class="space-y-6 text-lg text-gray-600 font-light leading-relaxed">
         <p>Whether you're picking up a stick for the first time or looking to sharpen your skills for competitive selection, Dev is your home.</p>
-        <p>Sessions are run by our dedicated Development Officers alongside 1st XI players who mentor and scout talent. It is the perfect pathway into the 3rd XI, or simply a great way to stay fit and make friends.</p>
+        <p>Sessions are run by our dedicated Development Officers alongside the Dev Captains. It is the perfect pathway into the 3rd XI, or simply a great way to stay fit and make friends.</p>
       </div>
     </div>
 
@@ -47,7 +47,7 @@
       <div class="space-y-4 mb-8">
         <div class="flex justify-between items-center border-b border-gray-200 pb-2">
           <span class="font-sans font-bold text-gray-700">Tuesday</span>
-          <span class="font-sans text-luhc-red font-bold">17:00 - 18:00</span>
+          <span class="font-sans text-luhc-red font-bold">16:00 - 17:00</span>
         </div>
         <div class="flex justify-between items-center border-b border-gray-200 pb-2">
           <span class="font-sans font-bold text-gray-700">Thursday</span>
@@ -85,7 +85,7 @@
     <h2 class="font-display uppercase text-4xl font-bold mb-4">Start Your Journey</h2>
     <p class="font-sans text-lg text-white/90 mb-8">No trials required. Just turn up and play.</p>
     <a href="/contact-us" class="inline-block bg-white text-luhc-red font-display uppercase font-bold tracking-widest px-10 py-4 hover:bg-luhc-dark hover:text-white transition-colors shadow-md">
-      Sign Up Now
+      Get Involved
     </a>
   </section>
 

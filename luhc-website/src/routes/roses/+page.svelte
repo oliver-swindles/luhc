@@ -4,6 +4,7 @@
 
 <svelte:head>
   <title>Roses | Lancaster University Hockey Club</title>
+  <meta name="description" content="Roses is Europe's largest inter-varsity sports tournament between Lancaster and York. View LUHC highlights and match history." />
 </svelte:head>
 
 <section class="relative h-[70vh] w-full overflow-hidden bg-luhc-dark">
@@ -32,10 +33,30 @@
     <h2 class="font-display uppercase text-4xl font-bold mb-8 text-luhc-red">Why It Matters</h2>
     <p class="text-xl text-gray-600 leading-relaxed font-light mb-8">
       Roses is the finale of the LUHC calendar. After a season of grit and training, it's the ultimate showdown against York.
-      With six outdoor games, four indoor clashes, and the development squad exhibition, it is a weekend where legends are made.
+      Six outdoor games, four indoor clashes, and the development squad exhibition match.
     </p>
-    <div class="inline-block border-2 border-luhc-dark px-6 py-2 font-display uppercase font-bold tracking-widest text-sm">
-      #RosesAreRed
+    
+    <div class="flex flex-col items-center gap-6">
+      <a 
+        href="https://roseslive.co.uk/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 bg-luhc-red text-white px-8 py-3 font-display font-bold uppercase tracking-wide hover:bg-luhc-dark transition-colors duration-300 shadow-md group"
+      >
+        <span>Visit RosesLive.co.uk</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-hover:translate-x-1 transition-transform">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+        </svg>
+      </a>
+
+      <a 
+        href="https://www.lancaster.ac.uk/sport/roses/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="mt-4 text-xs font-sans text-gray-400 hover:text-luhc-red transition-colors border-b border-transparent hover:border-luhc-red pb-0.5"
+      >
+        View More Tournament Details on lancaster.ac.uk &rarr;
+      </a>
     </div>
   </section>
 
@@ -81,8 +102,8 @@
       Whether you're on the pitch or in the stands, every voice counts. Join us next year.
     </p>
     <a href="/contact-us" class="inline-block bg-luhc-red text-white font-display uppercase font-bold tracking-widest px-10 py-4 hover:bg-white hover:text-luhc-red transition-all duration-300 shadow-lg transform hover:-translate-y-1">
-      Join The Squad
+      Play for Lancaster
     </a>
   </section>
 
-</div>
+</div>  

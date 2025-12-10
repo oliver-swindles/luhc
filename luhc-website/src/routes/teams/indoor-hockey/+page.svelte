@@ -96,7 +96,7 @@
   <section class="mt-24 text-center border-t border-gray-100 pt-16">
     <h2 class="font-display uppercase text-4xl font-bold mb-6">Master The Indoor Game</h2>
     <p class="font-sans text-lg text-gray-500 mb-10 max-w-xl mx-auto">
-      Sharpen your skills in the fast-paced indoor format. Open to all abilities.
+      Sharpen your skills in the fast-paced indoor format.
     </p>
     <a href="/contact-us" class="inline-block bg-luhc-red text-white font-display uppercase font-bold tracking-widest px-10 py-4 shadow-lg hover:bg-luhc-dark transition-colors transform hover:-translate-y-1">
       Join Training

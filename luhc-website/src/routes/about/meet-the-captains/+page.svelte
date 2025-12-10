@@ -14,9 +14,9 @@
     { role: "Men's 3s Vice", name: 'Tom Baker', photo: '' },
     { role: "Women's 3s Captain", name: 'Grace Puckey', photo: '' },
     { role: "Women's 3s Vice", name: 'Cat Prince', photo: '' },
-    { role: "Indoor Captain", name: 'Alex Potts', photo: '' },
     { role: "Dev Captain", name: 'Jemma Louise', photo: '' },
-    { role: "Dev Captain", name: 'George Turner', photo: '' }
+    { role: "Dev Captain", name: 'George Turner', photo: '' },
+    { role: "Indoor Captain", name: 'Alex Potts', photo: '' }
   ];
 </script>
 

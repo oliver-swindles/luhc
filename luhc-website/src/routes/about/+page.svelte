@@ -32,8 +32,7 @@
     </h1>
     <div class="h-1 w-24 bg-luhc-red mb-8"></div>
     <p class="font-sans text-lg md:text-2xl text-gray-200 max-w-3xl font-light leading-relaxed drop-shadow-md">
-      We take pride in offering both competitive teams and a non-competitive development squad. 
-      <span class="text-white font-medium">Whoever you are, there is a place for you at LUHC.</span>
+      We take pride in offering both competitive teams and a non-competitive development squad. Whoever you are, there is a place for you at LUHC.
     </p>
   </div>
 </section>

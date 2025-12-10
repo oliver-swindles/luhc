@@ -11,7 +11,7 @@
       league: "BUCS Northern Tier 2A / North West Women's Division 1",
       captain: "Kiah Bardouille-Lewis",
       vice: "Lucy Bridges",
-      quote: "The team is hardworking, motivated and aspirational. We are a supportive and enthusiastic team who love a challenge and I believe this season could be a very successful one!",
+      // quote: "The team is hardworking, motivated and aspirational. We are a supportive and enthusiastic team who love a challenge and I believe this season could be a very successful one!",
     },
     {
       name: "LUWHC 2nd XI",
@@ -19,7 +19,7 @@
       league: "BUCS Northern Tier 3A",
       captain: "Katie Little & Nat Kyte",
       vice: "Co-Captains",
-      quote: "Us 2s are a friendly bunch and are very encouraging of each other both on and off the pitch. This year we want to hit the ground running and start rebuilding upon skills and fitness.",
+      // quote: "Us 2s are a friendly bunch and are very encouraging of each other both on and off the pitch. This year we want to hit the ground running and start rebuilding upon skills and fitness.",
     },
     {
       name: "LUWHC 3rd XI",
@@ -27,7 +27,7 @@
       league: "North West Women's Division 5 North Central",
       captain: "Grace Puckey",
       vice: "Cat Prince",
-      quote: "We always strive to make the 3s a friendly team who gel really well. We're focusing on fitness and skill a bit more this year, aiming for the promotion we missed by just 2 points last year!",
+      // quote: "We always strive to make the 3s a friendly team who gel really well. We're focusing on fitness and skill a bit more this year, aiming for the promotion we missed by just 2 points last year!",
     }
   ];
 </script>

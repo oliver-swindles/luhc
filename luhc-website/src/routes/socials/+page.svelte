@@ -42,7 +42,7 @@
         Our welcoming community is built on friendship. We host <strong>weekly Wednesday socials</strong> ranging from themed nights out to relaxed get-togethers.
       </p>
       <p class="text-lg text-gray-600 leading-relaxed font-light">
-        We are proud to host our nights at <a href="https://www.la1lancaster.co.uk" target="_blank" class="text-luhc-red font-bold hover:underline">LA1 Lancaster</a>. Whether you play competitively or just want to be part of the community, our social membership is for you.
+        We are proud to host our nights at <a href="https://www.la1lancaster.co.uk" target="_blank" class="text-luhc-red font-bold hover:underline">LA1 Lancaster</a>. Whether you play competitively or just want to be part of the community, our socials are for you.
       </p>
       <a href="/contact-us" class="inline-block mt-4 border-b-2 border-luhc-dark pb-1 text-luhc-dark font-display uppercase tracking-widest hover:text-luhc-red hover:border-luhc-red transition-colors">
         Become a Social Member

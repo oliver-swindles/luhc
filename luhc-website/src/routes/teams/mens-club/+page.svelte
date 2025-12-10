@@ -11,7 +11,7 @@
       league: "BUCS Northern Tier 1A / North West Men's Division 2",
       captain: "Victor Vankelegom",
       vice: "Felix Woods",
-      quote: "Our second season in BUCS 1A will be an incredibly tough test, but we are looking forward to rising to it. We aim to finish at the top of the table and ultimately win Roses.",
+      // quote: "Our second season in BUCS 1A will be an incredibly tough test, but we are looking forward to rising to it. We aim to finish at the top of the table and ultimately win Roses.",
     },
     {
       name: "LUMHC 2nd XI",
@@ -19,7 +19,7 @@
       league: "BUCS Northern Tier 3A",
       captain: "Samuel Choi",
       vice: "Will Mallik",
-      quote: "We have a very real chance of gaining promotion, having a good run in the cup, and winning Roses. The atmosphere in our team is welcoming to players who want to enjoy competitive hockey.",
+      // quote: "We have a very real chance of gaining promotion, having a good run in the cup, and winning Roses. The atmosphere in our team is welcoming to players who want to enjoy competitive hockey.",
     },
     {
       name: "LUMHC 3rd XI",
@@ -27,7 +27,7 @@
       league: "North West Men's Division 4 North",
       captain: "Matt Grimshaw",
       vice: "Tom Baker",
-      quote: "We won promotion last year so the new league will be an exciting challenge. I want to continue to develop the fun environment of the 3s and create a cohesive team.",
+      // quote: "We won promotion last year so the new league will be an exciting challenge. I want to continue to develop the fun environment of the 3s and create a cohesive team.",
     }
   ];
 </script>
