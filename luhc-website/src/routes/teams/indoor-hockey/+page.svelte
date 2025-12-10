@@ -33,7 +33,7 @@
     alt="Indoor Hockey Action"
     class="absolute inset-0 w-full h-full object-cover object-center opacity-70"
   />
-  <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-transparent to-transparent"></div>
+  <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
   
   <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4" data-aos="fade-in">
     <h1 class="font-display text-6xl md:text-8xl font-bold text-white uppercase tracking-tighter drop-shadow-2xl">
@@ -52,7 +52,7 @@
         “Hi, I'm Kat, the Indoor Hockey Captain for the 2022/23 season! I'm really looking forward to stepping into this captain role and increasing participation in such a great part of the sport. I hope to lead our teams to another victory at Roses as well as new competitions that we intend to enter this year. I can't wait to get started and help those who aren't as experienced at indoor improve and enjoy the game as much as I do!”
       </blockquote>
       <div class="font-display uppercase font-bold text-sm tracking-widest text-luhc-red">
-        — Kat Headings, Indoor Captain (2022/23)
+        - Kat Headings, Indoor Captain (2022/23)
       </div>
     </div>
     

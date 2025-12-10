@@ -33,7 +33,7 @@
     alt="Exec Team" 
     class="absolute inset-0 w-full h-full object-cover object-top opacity-50"
   />
-  <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-transparent to-transparent"></div>
+  <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
   <div class="absolute bottom-0 left-0 w-full p-8 md:p-16" data-aos="fade-up">
     <span class="font-display text-luhc-red uppercase tracking-widest font-bold text-sm mb-2 block">Leadership</span>
     <h1 class="font-display text-5xl md:text-7xl font-bold text-white uppercase tracking-tighter">The Executive Committee</h1>
@@ -45,7 +45,7 @@
     {#each execs as person}
       <div class="group bg-white border border-gray-100 shadow-sm hover:shadow-xl hover:border-luhc-red/20 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden" data-aos="fade-up">
         
-        <div class="w-full aspect-[4/5] bg-gray-100 relative overflow-hidden">
+        <div class="w-full aspect-4/5 bg-gray-100 relative overflow-hidden">
           {#if person.photo}
             <img src={person.photo} alt={person.name} class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
           {:else}
@@ -53,7 +53,7 @@
               <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
             </div>
           {/if}
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
 
         <div class="p-6 relative">

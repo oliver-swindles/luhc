@@ -25,7 +25,7 @@
                 "Hi, we are the chair team for the 25/26 season! Our objectives this year is to boost the clubs presence within the university going from already one of the largest mixed societies at Lancaster University to even greater heights. With new challenges to face in the upcoming season we look forward to making progress and allowing the club to run smoothly whilst sustaining the friendly and competitive nature of the club. We look forward in joining you for the upcoming season!"
             </p>
             <div class="mt-6 font-display font-bold uppercase tracking-widest text-luhc-red">
-                — LUHC Chair Team
+                - LUHC Chair Team
             </div>
         </div>
     </div>

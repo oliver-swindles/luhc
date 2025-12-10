@@ -10,7 +10,7 @@
         class="absolute inset-0 w-full h-full object-cover object-center opacity-80"
     />
 
-    <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-luhc-dark/40 to-transparent"></div>
+    <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-luhc-dark/40 to-transparent"></div>
 
     <div class="absolute inset-0 flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto w-full">
         

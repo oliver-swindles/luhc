@@ -11,28 +11,31 @@
       href: "/teams/mens-club",
       image: MensClub,
       alt: "Men's Club Action",
-      description: "BUCS & Saturday league teams fostering strong camaraderie and elite performance."
+      // REALISTIC: Focuses on the schedule (Wed/Sat) and the balance of serious play + social.
+      description: "Three competitive squads playing weekly across BUCS and North West leagues. Strong performance on the pitch, stronger brotherhood off it."
     },
     {
       name: "Women's Club",
       href: "/teams/womens-club",
       image: WomensClub,
       alt: "Women's Club Team",
-      description: "Three thriving women's teams full of passion, drive, and supportive team spirit."
+      // REALISTIC: Removes "elite/highest level". Focuses on "depth" and "success" which is true for BUCS 2A.
+      description: "A dynamic club with three teams competing in BUCS and Saturday divisions. We pride ourselves on depth of talent, commitment, and team spirit."
     },
     {
       name: "Development Squad",
       href: "/teams/development-squad",
       image: DevSquad,
       alt: "Dev Squad Training",
-      description: "Open to all abilities. The core of LUHC for learning, improving, and thriving."
+      // REALISTIC: Highlights that it's the entry point.
+      description: "The heart of LUHC growth. Open to all abilities - from complete beginners to those returning to the stick. Train, improve, and progress."
     },
     {
       name: "Indoor Hockey",
       href: "/teams/indoor-hockey",
       image: IndoorHockey,
       alt: "Indoor Hockey Match",
-      description: "Fast-paced, intense, and technical. Perfect for winter fitness and Roses glory."
+      description: "Fast, technical, and intense. A key part of our season to sharpen skills for the outdoor game and the Roses tournament."
     }
   ];
 </script>

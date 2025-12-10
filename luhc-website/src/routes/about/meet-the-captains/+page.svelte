@@ -30,7 +30,7 @@
     alt="Captains Hero" 
     class="absolute inset-0 w-full h-full object-cover object-top opacity-50"
   />
-  <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-transparent to-transparent"></div>
+  <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
   <div class="absolute bottom-0 left-0 w-full p-8 md:p-16" data-aos="fade-up">
     <span class="font-display text-luhc-red uppercase tracking-widest font-bold text-sm mb-2 block">On The Pitch</span>
     <h1 class="font-display text-5xl md:text-7xl font-bold text-white uppercase tracking-tighter">Team Captains</h1>
@@ -50,7 +50,7 @@
               <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
             </div>
           {/if}
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
 
         <div class="p-6 relative">

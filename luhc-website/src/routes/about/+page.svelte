@@ -23,7 +23,7 @@
     alt="LUHC Team Huddle"
     class="absolute inset-0 w-full h-full object-cover object-center opacity-60"
   />
-  <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-transparent to-black/30"></div>
+  <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-black/30"></div>
   
   <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4" data-aos="fade-in">
     <!-- <span class="font-display uppercase tracking-[0.3em] text-luhc-red font-bold mb-4 text-sm md:text-base">Est. 1964</span> -->
@@ -76,7 +76,7 @@
               alt={team.title} 
               class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100" 
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
+            <div class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-90"></div>
             
             <div class="absolute bottom-0 left-0 p-6 w-full">
               <h3 class="font-display uppercase text-2xl font-bold text-white mb-2 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">{team.title}</h3>

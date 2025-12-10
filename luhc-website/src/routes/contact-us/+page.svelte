@@ -12,7 +12,7 @@
     alt="Contact Hero" 
     class="absolute inset-0 w-full h-full object-cover object-center opacity-60" 
   />
-  <div class="absolute inset-0 bg-gradient-to-t from-luhc-dark via-transparent to-transparent"></div>
+  <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
   
   <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4" data-aos="fade-in">
     <h1 class="font-display text-5xl md:text-7xl font-bold text-white uppercase tracking-tighter drop-shadow-xl mb-4">

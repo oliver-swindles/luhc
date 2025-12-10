@@ -13,7 +13,7 @@
     alt="Roses Hockey Action" 
     class="absolute inset-0 w-full h-full object-cover object-center opacity-60"
   />
-  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/0"></div>
+  <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/40 to-black/0"></div>
   
   <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6" data-aos="fade-in">
     <span class="font-display uppercase tracking-[0.4em] text-white font-bold text-sm md:text-base mb-4 animate-pulse">Varsity</span>

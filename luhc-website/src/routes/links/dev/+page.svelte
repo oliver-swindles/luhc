@@ -87,7 +87,7 @@
           class="absolute inset-0 bg-cover bg-center" 
           style="background-image: url('https://ugc.production.linktr.ee/f70b2fbd-9741-4519-bd4c-029e7e519ab9_image.png?io=true&size=thumbnail-feature-v1_0');"
         ></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+        <div class="absolute inset-0 bg-linear-to-t from-black/80 to-transparent"></div>
         <div class="absolute bottom-0 left-0 p-6 text-left">
           <p class="text-xs text-gray-200 mb-1 font-heading">{data.mensLinks.sections[0].title}</p>
           <h3 class="text-3xl font-bold leading-none">{data.mensLinks.sections[0].links[0].name}</h3>
