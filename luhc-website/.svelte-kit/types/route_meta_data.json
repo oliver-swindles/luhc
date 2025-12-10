@@ -21,6 +21,7 @@
 		"src/routes/+layout.ts"
 	],
 	"/links/mens": [
+		"src/routes/links/mens/+page.ts",
 		"src/routes/+layout.ts"
 	],
 	"/roses": [
