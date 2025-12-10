@@ -22,7 +22,7 @@
 
 <header class="sticky top-0 z-50 w-full transition-all duration-300">
   
-  <div class="relative w-full bg-luhc-red/95 backdrop-blur-md border-b border-white/10 shadow-lg">
+  <div class="relative w-full bg-luhc-red md:bg-luhc-red/95 backdrop-blur-md border-b border-white/10 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
 
