@@ -1,5 +1,5 @@
 <script>
-  import ExecHero from "$lib/images/pages/exec/exec-hero.webp?enhanced";
+  import ExecHero from "$lib/images/pages/exec/exec-hero-2.webp?enhanced";
 
   const execs = [
     { role: "Chairperson", name: 'Hannah Bird', photo: '' },

@@ -1,9 +1,9 @@
 <script>
-  import AboutHero from "$lib/images/pages/about/about-hero.jpg?enhanced";
-  import MensClub from "$lib/images/pages/about/mens-club.webp?enhanced";
-  import WomensClub from "$lib/images/pages/about/womens-club.avif?enhanced";
+  import AboutHero from "$lib/images/pages/about/about-hero-2.webp?enhanced";
+  import MensClub from "$lib/images/pages/about/mens-club-3.jpg?enhanced";
+  import WomensClub from "$lib/images/pages/about/womens-club-3.webp?enhanced";
   import DevSquad from "$lib/images/pages/about/dev-squad.avif?enhanced";
-  import IndoorHockey from "$lib/images/pages/about/indoor-hockey.webp?enhanced";
+  import IndoorHockey from "$lib/images/pages/about/indoor-hockey-2.webp?enhanced";
 
   const teamLinks = [
     { title: "Men's Club", href: "/teams/mens-club", img: MensClub },

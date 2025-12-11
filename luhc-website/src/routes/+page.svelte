@@ -40,7 +40,7 @@
     
     <div class="mt-12">
       <a href="/about" class="inline-block border-b-2 border-luhc-red pb-1 text-luhc-dark font-bold uppercase tracking-widest text-xs hover:text-luhc-red transition-colors">
-        Read our full story
+        Read more about LUHC
       </a>
     </div>
 

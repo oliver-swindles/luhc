@@ -1,5 +1,5 @@
 <script>
-  import SponsorsHero from "$lib/images/pages/sponsors/sponsors-hero.webp?enhanced";
+  import SponsorsHero from "$lib/images/pages/sponsors/sponsors-hero-2.webp?enhanced";
   
   import YDLLogo from "$lib/images/sponsors/YDL.png?enhanced";
   import LA1Logo from "$lib/images/sponsors/la1.avif?enhanced";
