@@ -9,9 +9,9 @@
 @theme {
   /* BRANDING */
   /* This matches Tailwind's red-800 (#991b1b) to keep your existing red */
-  --color-luhc-red: #c01515; 
-  --color-luhc-dark: #111111; /* Rich charcoal, better than black */
-  --color-luhc-gray: #f4f4f4; /* Light jersey gray */
+--color-luhc-red: #D2141B;     /* A slightly punchier, truer sports red */
+  --color-luhc-dark: #09090b;    /* Deeper, cooler black (Zinc-950). Less "brown" than #111. */
+  --color-luhc-gray: #E5E5E5;    /* Clean paper grey */
 
   /* TYPOGRAPHY */
   --font-display: "Oswald", sans-serif; /* Use for HEADINGS */

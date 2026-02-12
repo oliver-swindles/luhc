@@ -38,7 +38,7 @@
       <div class="h-1 w-20 bg-luhc-red mb-8"></div>
       <div class="space-y-6 text-lg text-gray-600 font-light leading-relaxed">
         <p>Whether you're picking up a stick for the first time or looking to sharpen your skills for competitive selection, Dev is your home.</p>
-        <p>Sessions are run by our dedicated Development Officers alongside the Dev Captains. It is the perfect pathway into the 3rd XI, or simply a great way to stay fit and make friends.</p>
+        <p>Sessions are run by our dedicated Development Squad Coaches alongside the Dev Captains. It is the perfect pathway into the 3rd XI, or simply a great way to stay fit and make friends.</p>
       </div>
     </div>
 

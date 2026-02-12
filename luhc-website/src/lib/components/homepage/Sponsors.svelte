@@ -1,6 +1,6 @@
 <script lang="ts">
     import YellowDoorLetsLogo from "$lib/images/sponsors/YDL.png?enhanced";
-    import LA1Logo from "$lib/images/sponsors/la1.avif?enhanced";
+    import MollyOMalleysLogo from "$lib/images/sponsors/molly-o-malleys.webp?enhanced";
     import BowerhamHotelLogo from "$lib/images/sponsors/BowerhamHotel.jpg?enhanced";
     import GreensLogo from "$lib/images/sponsors/Greens.png?enhanced";
 </script>
@@ -23,9 +23,9 @@
             <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-luhc-red transition-colors">Yellow Door Lets</span>
         </a>
 
-        <a href="https://www.la1lancaster.co.uk/" target="_blank" class="group flex flex-col items-center justify-center p-4 transition-all duration-300">
-            <enhanced:img src={LA1Logo} alt="LA1 Nightclub" class="h-16 w-auto object-contain mb-4 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
-            <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-luhc-red transition-colors">LA1 Nightclub</span>
+        <a href="https://www.mollyomalleys.co.uk/" target="_blank" class="group flex flex-col items-center justify-center p-4 transition-all duration-300">
+            <enhanced:img src={MollyOMalleysLogo} alt="Molly O'Malleys" class="h-16 w-auto object-contain mb-4 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
+            <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-luhc-red transition-colors">Molly O'Malleys</span>
         </a>
 
         <a href="https://thebowerham.co.uk/" target="_blank" class="group flex flex-col items-center justify-center p-4 transition-all duration-300">

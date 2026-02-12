@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/teams/indoor-hockey/+page.svelte";
+export { default as component } from "../../../../src/routes/teams/development-squad/+page.svelte";
