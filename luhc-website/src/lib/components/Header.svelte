@@ -89,6 +89,7 @@
       <div class="md:hidden bg-luhc-red border-t border-white/10 shadow-inner" transition:slide={{ duration: 200 }}>
         <div class="px-4 pt-4 pb-8 space-y-2">
           <a href="/" class="block px-3 py-3 text-base font-display uppercase tracking-widest font-medium text-white hover:bg-black/10 rounded-md">Home</a>
+          <a href="/sponsors" class="block px-3 py-3 text-base font-display uppercase tracking-widest font-medium text-white hover:bg-black/10 rounded-md">Sponsors</a>
           
           <div class="px-3 py-2">
             <span class="text-white/40 text-xs font-bold uppercase tracking-widest mb-3 block">About</span>
@@ -110,9 +111,7 @@
                <a href="/teams/indoor-hockey" class="block text-white font-sans text-sm hover:text-white/80">Indoor</a>
             </div>
           </div>
-
-          <a href="/sponsors" class="block px-3 py-3 text-base font-display uppercase tracking-widest font-medium text-white hover:bg-black/10 rounded-md">Sponsors</a>
-          <a href="/contact-us" class="block px-3 py-3 text-base font-display uppercase tracking-widest font-bold text-luhc-red bg-white rounded-md mt-6 text-center shadow-md">Contact Us</a>
+      <a href="/contact-us" class="block px-3 py-3 text-base font-display uppercase tracking-widest font-bold text-luhc-red bg-white rounded-md mt-6 text-center shadow-md">Contact Us</a>
         </div>
       </div>
     {/if}

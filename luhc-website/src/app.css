@@ -9,7 +9,7 @@
 @theme {
   /* BRANDING */
   /* This matches Tailwind's red-800 (#991b1b) to keep your existing red */
---color-luhc-red: #D2141B;     /* A slightly punchier, truer sports red */
+  --color-luhc-red: #D2141B;     /* A slightly punchier, truer sports red */
   --color-luhc-dark: #09090b;    /* Deeper, cooler black (Zinc-950). Less "brown" than #111. */
   --color-luhc-gray: #E5E5E5;    /* Clean paper grey */
 

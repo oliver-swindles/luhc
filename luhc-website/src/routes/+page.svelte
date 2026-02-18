@@ -53,7 +53,7 @@
     <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 gap-4">
         <div>
             <h2 class="font-display uppercase text-3xl text-center md:text-left md:text-4xl font-bold text-luhc-dark">Match Centre</h2>
-            <p class="text-gray-500 mt-2 font-light">Upcoming fixtures for all of our Saturday squads.</p>
+            <p class="text-gray-500 mt-2 font-light bg-red-200 text-center sm:text-left">Upcoming fixtures for all of our Saturday squads.</p>
         </div>
         <div class="flex items-center gap-2">
             <span class="relative flex h-3 w-3">

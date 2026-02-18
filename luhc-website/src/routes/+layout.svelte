@@ -38,7 +38,7 @@
 
   <meta property="og:title" content="Lancaster University Hockey Club"/>
   <meta name="twitter:title" content="Lancaster University Hockey Club"/>
-  <meta name="theme-color" content="#c01515" />
+  <meta name="theme-color" content="#D2141B" />
   <meta property="og:url" content="https://www.luhc.co.uk" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Join LUHC - the home of Lancaster Uni hockey. Fixtures, socials, photos, and everything LUHC." />
