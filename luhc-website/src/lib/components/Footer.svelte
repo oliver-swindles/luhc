@@ -67,7 +67,7 @@
         <p class="hover:text-white transition-colors">#ROSESARERED</p>
         <div class="h-3 w-[1px] bg-white/20"></div>
         <p>
-          Website by <a href="https://oliverswindles.com" target="_blank" class="text-luhc-red hover:text-white font-bold transition-colors">Oliver Swindles</a>
+          Website by <a href="https://www.spacefrogstudio.com" target="_blank" class="text-luhc-red hover:text-white font-bold transition-colors">Space Frog Studio</a>
         </p>
       </div>
     </div>
