@@ -23,7 +23,7 @@
 
         <h1 class="font-display font-bold text-6xl md:text-8xl text-white uppercase leading-[0.9] tracking-tighter drop-shadow-xl max-w-4xl">
             Lancaster University <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-luhc-red to-red-500">Hockey Club</span>
+            <span class="text-transparent bg-clip-text bg-linear-to-r from-luhc-red to-red-500">Hockey Club</span>
         </h1>
 
         <div class="mt-6 flex flex-col md:flex-row items-start md:items-center gap-6">

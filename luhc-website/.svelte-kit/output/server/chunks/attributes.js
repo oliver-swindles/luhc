@@ -1,0 +1,1 @@
+import{e as n}from"./escaping.js";import"clsx";const t={translate:new Map([[!0,"yes"],[!1,"no"]])};function e(e,r,s=!1){if(null==r||!r&&s)return"";const o=e in t&&t[e].get(r)||r;return` ${e}${s?"":`="${n(o,!0)}"`}`}export{e as a};

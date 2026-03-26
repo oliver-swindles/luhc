@@ -6,6 +6,7 @@
   import ChairMessage from '$lib/components/homepage/ChairMessage.svelte';
   import JoinCta from '$lib/components/homepage/JoinCta.svelte';
   import MeetTheClub from '$lib/components/homepage/MeetTheClub.svelte';
+  import RosesCountdown from '$lib/components/RosesCountdown.svelte';
   
   // Import the component
   import MatchCentre from '$lib/components/homepage/MatchCentre.svelte';
@@ -23,14 +24,14 @@
 
 <ScoreTicker results={data.results} />
 
+<RosesCountdown />
+
 <section class="bg-white py-16 md:py-24 font-sans text-luhc-dark">
   <div class="max-w-4xl mx-auto px-6 text-center">
     
     <div class="mb-12">
         <span class="font-display text-luhc-red uppercase tracking-widest font-bold text-sm">Est. 1964</span>
-        <h2 class="font-display uppercase text-4xl md:text-5xl font-bold tracking-tight text-luhc-dark mt-2">
-          Welcome to LUHC
-        </h2>
+        <h2 class="font-display uppercase text-4xl md:text-5xl font-bold tracking-tight text-luhc-dark mt-2">Welcome to LUHC</h2>
         <div class="h-1 w-24 bg-gray-100 mx-auto mt-6"></div>
     </div>
     

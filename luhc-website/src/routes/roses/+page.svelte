@@ -1,5 +1,6 @@
 <script>
   import RosesHero from "$lib/images/pages/roses/roses-hero.webp?enhanced";
+  import RosesCountdown from "$lib/components/RosesCountdown.svelte";
 </script>
 
 <svelte:head>
@@ -26,6 +27,8 @@
     </p>
   </div>
 </section>
+
+<RosesCountdown />
 
 <div class="bg-white text-luhc-dark">
   
@@ -74,6 +77,36 @@
           </div>
           <div class="aspect-video shadow-xl rounded-sm overflow-hidden bg-black">
             <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/YE8VG-8AUOI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-20" data-aos="fade-up">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-8 w-1 bg-luhc-red"></div>
+          <h2 class="font-display uppercase text-3xl md:text-4xl font-bold">2nd XI Highlights</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="aspect-video shadow-xl rounded-sm overflow-hidden bg-black">
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/-kkhnXNMLCo" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="aspect-video shadow-xl rounded-sm overflow-hidden bg-black">
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/CEdbo9gKSSs" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-20" data-aos="fade-up">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="h-8 w-1 bg-luhc-red"></div>
+          <h2 class="font-display uppercase text-3xl md:text-4xl font-bold">3rd XI Highlights</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="aspect-video shadow-xl rounded-sm overflow-hidden bg-black">
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/erSmlugfESg" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="aspect-video shadow-xl rounded-sm overflow-hidden bg-black">
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/CDyEXxHycEg" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>

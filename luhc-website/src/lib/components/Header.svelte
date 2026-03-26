@@ -3,10 +3,8 @@
   import LUHCLogo from "$lib/images/luhc-logo.png?enhanced";
   import { slide } from 'svelte/transition';
 
-  // State for mobile menu
   let isMenuOpen = false;
 
-  // Close menu when route changes
   $: {
     const _ = $page.url.pathname;
     isMenuOpen = false;
@@ -16,7 +14,6 @@
     isMenuOpen = !isMenuOpen;
   }
   
-  // Helper to check active state for styling
   $: activeUrl = $page.url.pathname;
 </script>
 
@@ -26,7 +23,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
 
-        <a href="/" class="flex-shrink-0 flex items-center gap-3 group">
+        <a href="/" class="shrink-0 flex items-center gap-3 group">
           <enhanced:img src={LUHCLogo} class="h-10 w-auto md:h-12 drop-shadow-md group-hover:scale-105 transition-transform" alt="LUHC Logo" />
           <span class="font-display font-bold text-2xl uppercase tracking-wide text-white drop-shadow-sm">
             LUHC
@@ -115,4 +112,5 @@
         </div>
       </div>
     {/if}
+  </div>
 </header>
