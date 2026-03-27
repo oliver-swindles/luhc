@@ -1,9 +1,9 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import YellowDoorLetsLogo from '$lib/images/sponsors/YDL.png';
-  import MollyOMalleysLogo from '$lib/images/sponsors/molly-o-malleys.webp';
-  import BowerhamHotelLogo from '$lib/images/sponsors/BowerhamHotel.jpg';
-  import GreensLogo from '$lib/images/sponsors/Greens.png';
+  import YellowDoorLetsLogo from '$lib/images/sponsors/YDL.png?enhanced';
+  import MollyOMalleysLogo from '$lib/images/sponsors/molly-o-malleys.webp?enhanced';
+  import BowerhamHotelLogo from '$lib/images/sponsors/BowerhamHotel.jpg?enhanced';
+  import GreensLogo from '$lib/images/sponsors/Greens.png?enhanced';
 </script>
 
 <section class="my-12">
@@ -29,7 +29,7 @@
       target="_blank"
       class="group flex flex-col items-center justify-center p-4 transition-all duration-300"
     >
-      <img
+      <enhanced:img
         src={YellowDoorLetsLogo}
         alt="Yellow Door Lets"
         class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"
@@ -45,7 +45,7 @@
       target="_blank"
       class="group flex flex-col items-center justify-center p-4 transition-all duration-300"
     >
-      <img
+      <enhanced:img
         src={MollyOMalleysLogo}
         alt="Molly O'Malleys"
         class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"
@@ -61,7 +61,7 @@
       target="_blank"
       class="group flex flex-col items-center justify-center p-4 transition-all duration-300"
     >
-      <img
+      <enhanced:img
         src={BowerhamHotelLogo}
         alt="The Bowerham Hotel"
         class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"
@@ -77,7 +77,7 @@
       target="_blank"
       class="group flex flex-col items-center justify-center p-4 transition-all duration-300"
     >
-      <img
+      <enhanced:img
         src={GreensLogo}
         alt="Greens Lancaster"
         class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"

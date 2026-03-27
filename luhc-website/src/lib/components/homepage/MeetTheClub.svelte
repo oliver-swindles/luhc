@@ -1,8 +1,8 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import OurExec from '$lib/images/pages/index/our-exec.jpg';
-  import OurCaptains from '$lib/images/pages/index/our-captains.jpg';
-  import OurTeams from '$lib/images/pages/index/our-teams.jpg';
+  import OurExec from '$lib/images/pages/index/our-exec.jpg?enhanced';
+  import OurCaptains from '$lib/images/pages/index/our-captains.jpg?enhanced';
+  import OurTeams from '$lib/images/pages/index/our-teams.jpg?enhanced';
 
   const items = [
     {
@@ -33,7 +33,7 @@
       class="group flex transform flex-col overflow-hidden rounded-sm border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
     >
       <div class="relative aspect-4/3 w-full overflow-hidden">
-        <img
+        <enhanced:img
           src={item.img}
           alt={item.title}
           class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"

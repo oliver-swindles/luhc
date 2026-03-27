@@ -1,5 +1,5 @@
 <script lang="ts">
-  import LUHCLogo from '$lib/images/luhc-logo.png';
+  import LUHCLogo from '$lib/images/luhc-logo.png?enhanced';
 
   let data = {
     mensLinks: {
@@ -67,7 +67,11 @@
 
 <div class="mx-auto max-w-6xl px-4 text-gray-900">
   <div class="mx-auto max-w-2xl py-12">
-    <img src={LUHCLogo} alt="LUHC Logo" class="mx-auto mb-4 h-26 w-26 rounded-full bg-black p-3" />
+    <enhanced:img
+      src={LUHCLogo}
+      alt="LUHC Logo"
+      class="mx-auto mb-4 h-26 w-26 rounded-full bg-black p-3"
+    />
     <h2 class="mb-4 text-center text-2xl font-bold">{data.mensLinks.title}</h2>
     <p class="mx-auto mb-4 max-w-[40ch] text-center">{data.mensLinks.description}</p>
 

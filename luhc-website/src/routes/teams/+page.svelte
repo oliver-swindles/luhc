@@ -1,11 +1,11 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
 
-  import TeamsHero from '$lib/images/pages/teams/teams-hero.webp';
-  import MensClub from '$lib/images/pages/teams/mens-club.webp';
-  import WomensClub from '$lib/images/pages/teams/womens-club.webp';
+  import TeamsHero from '$lib/images/pages/teams/teams-hero.webp?enhanced';
+  import MensClub from '$lib/images/pages/teams/mens-club.webp?enhanced';
+  import WomensClub from '$lib/images/pages/teams/womens-club.webp?enhanced';
   import DevSquad from '$lib/images/pages/teams/development-squad.avif';
-  import IndoorHockey from '$lib/images/pages/teams/indoor-hockey.webp';
+  import IndoorHockey from '$lib/images/pages/teams/indoor-hockey.webp?enhanced';
 
   const teamPages = [
     {
@@ -48,7 +48,7 @@
 </svelte:head>
 
 <section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
-  <img
+  <enhanced:img
     src={TeamsHero}
     alt="LUHC Teams Hero"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"
@@ -84,7 +84,7 @@
         aria-label={`Go to ${team.name} page`}
       >
         <div class="relative h-64 overflow-hidden">
-          <img
+          <enhanced:img
             src={team.image}
             alt={team.alt}
             class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ContactHero from '$lib/images/pages/contact/contact-hero.webp';
+  import ContactHero from '$lib/images/pages/contact/contact-hero.webp?enhanced';
 </script>
 
 <svelte:head>
@@ -7,7 +7,7 @@
 </svelte:head>
 
 <section class="relative h-[50vh] w-full overflow-hidden bg-luhc-dark">
-  <img
+  <enhanced:img
     src={ContactHero}
     alt="Contact Hero"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"

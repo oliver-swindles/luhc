@@ -2,7 +2,7 @@
   import { resolve } from '$app/paths';
   import LinkTreeList from '$lib/components/links/LinkList.svelte';
   // Use your static enhanced image here
-  import MensLogo from '$lib/images/luhc-logo.png';
+  import MensLogo from '$lib/images/luhc-logo.png?enhanced';
 
   let { data } = $props();
   const pageData = $derived(data.pageData);
@@ -17,7 +17,7 @@
   <div class="mx-auto max-w-xl">
     <div class="mb-10 text-center">
       <div class="mx-auto mb-4 h-28 w-28 overflow-hidden rounded-full bg-black p-3 shadow-sm">
-        <img src={MensLogo} alt="LUHC Men's Logo" class="h-full w-full object-contain" />
+        <enhanced:img src={MensLogo} alt="LUHC Men's Logo" class="h-full w-full object-contain" />
       </div>
       <h1 class="mb-3 text-2xl font-bold">{pageData.title}</h1>
       <p class="mx-auto max-w-sm text-sm leading-relaxed text-gray-600">{pageData.description}</p>

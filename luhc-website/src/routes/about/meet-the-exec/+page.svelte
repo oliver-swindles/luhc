@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import ExecHero from '$lib/images/pages/exec/exec-hero-2.webp';
+  import ExecHero from '$lib/images/pages/exec/exec-hero-2.webp?enhanced';
 
   const execs = [
     { role: 'Chairperson', name: 'Hannah Bird', photo: '' },
@@ -29,7 +29,7 @@
 </svelte:head>
 
 <section class="relative h-[50vh] w-full overflow-hidden bg-luhc-dark">
-  <img
+  <enhanced:img
     src={ExecHero}
     alt="Exec Team"
     class="absolute inset-0 h-full w-full object-cover object-top opacity-50"
@@ -54,7 +54,7 @@
       >
         <div class="relative aspect-4/5 w-full overflow-hidden bg-gray-100">
           {#if person.photo}
-            <img
+            <enhanced:img
               src={person.photo}
               alt={person.name}
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"

@@ -1,11 +1,11 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import SponsorsHero from '$lib/images/pages/sponsors/sponsors-hero-2.webp';
+  import SponsorsHero from '$lib/images/pages/sponsors/sponsors-hero-2.webp?enhanced';
 
-  import YDLLogo from '$lib/images/sponsors/YDL.png';
-  import BowerhamLogo from '$lib/images/sponsors/BowerhamHotel.jpg';
-  import GreensLogo from '$lib/images/sponsors/Greens.png';
-  import MollyOMalleysLogo from '$lib/images/sponsors/molly-o-malleys.webp';
+  import YDLLogo from '$lib/images/sponsors/YDL.png?enhanced';
+  import BowerhamLogo from '$lib/images/sponsors/BowerhamHotel.jpg?enhanced';
+  import GreensLogo from '$lib/images/sponsors/Greens.png?enhanced';
+  import MollyOMalleysLogo from '$lib/images/sponsors/molly-o-malleys.webp?enhanced';
 
   const sponsors = [
     {
@@ -44,7 +44,7 @@
 </svelte:head>
 
 <section class="relative h-[50vh] w-full overflow-hidden bg-white">
-  <img
+  <enhanced:img
     src={SponsorsHero}
     alt="Sponsors Hero"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-90"
@@ -75,7 +75,7 @@
       >
         <div class="flex flex-col">
           <div class="mb-6 flex h-32 w-full items-center justify-center">
-            <img
+            <enhanced:img
               src={sponsor.logo}
               alt={sponsor.name}
               class="max-h-24 w-auto transform object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:scale-110 group-hover:opacity-100 group-hover:grayscale-0"

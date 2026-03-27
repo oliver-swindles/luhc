@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import RosesHero from '$lib/images/pages/roses/roses-hero.webp';
+  import RosesHero from '$lib/images/pages/roses/roses-hero.webp?enhanced';
   import RosesCountdown from '$lib/components/RosesCountdown.svelte';
 </script>
 
@@ -13,7 +13,7 @@
 </svelte:head>
 
 <section class="relative h-[70vh] w-full overflow-hidden bg-luhc-dark">
-  <img
+  <enhanced:img
     src={RosesHero}
     alt="Roses Hockey Action"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"

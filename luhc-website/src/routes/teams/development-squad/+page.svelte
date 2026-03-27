@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import DevHero from '$lib/images/pages/dev/dev-hero.jpg';
+  import DevHero from '$lib/images/pages/dev/dev-hero.jpg?enhanced';
   import Dev1 from '$lib/images/pages/dev/dev-1.avif';
   import Dev2 from '$lib/images/pages/dev/dev-2.avif';
   import Dev3 from '$lib/images/pages/dev/dev-3.avif';
@@ -14,7 +14,7 @@
 </svelte:head>
 
 <section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
-  <img
+  <enhanced:img
     src={DevHero}
     alt="Dev Squad Huddle"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"
@@ -91,7 +91,7 @@
     <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
       {#each gallery as img (img)}
         <div class="group relative aspect-square overflow-hidden bg-gray-100">
-          <img
+          <enhanced:img
             src={img}
             alt="Dev Squad Action"
             class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"

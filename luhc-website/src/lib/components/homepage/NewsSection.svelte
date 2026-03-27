@@ -1,12 +1,16 @@
 <script lang="ts">
-  import NewsImage from '$lib/images/pages/index/about-gallery-1.jpg';
+  import NewsImage from '$lib/images/pages/index/about-gallery-1.jpg?enhanced';
 </script>
 
 <!-- Latest News -->
 <section class="my-12">
   <!-- <h2 class="text-3xl font-bold mb-6 text-center md:text-left">Latest News</h2> -->
   <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-    <img src={NewsImage} alt="Latest News" class="h-80 w-full rounded-xl object-cover shadow-lg" />
+    <enhanced:img
+      src={NewsImage}
+      alt="Latest News"
+      class="h-80 w-full rounded-xl object-cover shadow-lg"
+    />
     <div class="space-y-4">
       <p>
         The official website of Lancaster University Hockey club, one of the biggest and friendliest

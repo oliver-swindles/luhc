@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import CaptainsHero from '$lib/images/pages/captains/captains-hero.webp';
+  import CaptainsHero from '$lib/images/pages/captains/captains-hero.webp?enhanced';
 
   const captains = [
     { role: "Men's 1s Captain", name: 'Victor Vankelegom', photo: '' },
@@ -26,7 +26,7 @@
 </svelte:head>
 
 <section class="relative h-[50vh] w-full overflow-hidden bg-luhc-dark">
-  <img
+  <enhanced:img
     src={CaptainsHero}
     alt="Captains Hero"
     class="absolute inset-0 h-full w-full object-cover object-top opacity-50"
@@ -51,7 +51,7 @@
       >
         <div class="relative aspect-4/5 w-full overflow-hidden bg-gray-100">
           {#if cap.photo}
-            <img
+            <enhanced:img
               src={cap.photo}
               alt={cap.name}
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"

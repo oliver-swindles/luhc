@@ -1,10 +1,10 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import AboutHero from '$lib/images/pages/about/about-hero-2.webp';
-  import MensClub from '$lib/images/pages/about/mens-club-3.jpg';
-  import WomensClub from '$lib/images/pages/about/womens-club-3.webp';
+  import AboutHero from '$lib/images/pages/about/about-hero-2.webp?enhanced';
+  import MensClub from '$lib/images/pages/about/mens-club-3.jpg?enhanced';
+  import WomensClub from '$lib/images/pages/about/womens-club-3.webp?enhanced';
   import DevSquad from '$lib/images/pages/about/dev-squad.avif';
-  import IndoorHockey from '$lib/images/pages/about/indoor-hockey-2.webp';
+  import IndoorHockey from '$lib/images/pages/about/indoor-hockey-2.webp?enhanced';
 
   const teamLinks = [
     { title: "Men's Club", href: '/teams/mens-club', img: MensClub },
@@ -19,7 +19,7 @@
 </svelte:head>
 
 <section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
-  <img
+  <enhanced:img
     src={AboutHero}
     alt="LUHC Team Huddle"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"
@@ -103,7 +103,7 @@
             href={resolve(team.href)}
             class="group relative block aspect-3/4 overflow-hidden border border-white/10 bg-gray-900 transition-colors hover:border-luhc-red"
           >
-            <img
+            <enhanced:img
               src={team.img}
               alt={team.title}
               class="absolute inset-0 h-full w-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"

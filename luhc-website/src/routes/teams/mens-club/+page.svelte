@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import MensHero from '$lib/images/pages/mens/mens-hero.jpg';
+  import MensHero from '$lib/images/pages/mens/mens-hero.jpg?enhanced';
   import OnesPhoto from '$lib/images/pages/mens/mens-ones.avif';
   import TwosPhoto from '$lib/images/pages/mens/mens-twos.avif';
   import ThreesPhoto from '$lib/images/pages/mens/mens-threes.avif';
@@ -38,7 +38,7 @@
 </svelte:head>
 
 <section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
-  <img
+  <enhanced:img
     src={MensHero}
     alt="Men's Club Hero"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-70"
@@ -112,7 +112,7 @@
           class="group flex flex-col overflow-hidden border border-gray-100 bg-white shadow-lg lg:flex-row"
         >
           <div class="relative h-64 overflow-hidden lg:h-auto lg:w-2/5">
-            <img
+            <enhanced:img
               src={team.photo}
               alt={team.name}
               class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"

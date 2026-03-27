@@ -1,13 +1,13 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import LUHCLogo from '$lib/images/luhc-logo.png';
+  import LUHCLogo from '$lib/images/luhc-logo.png?enhanced';
 </script>
 
 <footer class="border-t-4 border-luhc-red bg-luhc-dark pt-16 pb-8 text-white">
   <div class="mx-auto mb-12 grid max-w-7xl grid-cols-1 gap-12 px-6 md:grid-cols-4">
     <div class="flex flex-col items-start space-y-6">
       <a href={resolve('/')} class="group flex items-center space-x-3">
-        <img
+        <enhanced:img
           src={LUHCLogo}
           alt="LUHC Logo"
           class="h-16 w-auto opacity-90 transition-opacity group-hover:opacity-100"

@@ -1,11 +1,11 @@
 <script lang="ts">
-  import LUHCExecMessage from '$lib/images/pages/index/luhc-exec-message.jpg';
+  import LUHCExecMessage from '$lib/images/pages/index/luhc-exec-message.jpg?enhanced';
 </script>
 
 <section
   class="relative flex min-h-[60vh] items-center justify-center overflow-hidden py-24 text-center text-white md:py-36"
 >
-  <img
+  <enhanced:img
     src={LUHCExecMessage}
     alt="Chair Message Background"
     class="absolute inset-0 z-0 h-full w-full object-cover"

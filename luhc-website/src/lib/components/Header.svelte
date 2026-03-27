@@ -1,7 +1,7 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
   import { page } from '$app/state';
-  import LUHCLogo from '$lib/images/luhc-logo.png';
+  import LUHCLogo from '$lib/images/luhc-logo.png?enhanced';
   import { slide } from 'svelte/transition';
 
   let isMenuOpen = $state(false);
@@ -25,7 +25,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-20 items-center justify-between">
         <a href={resolve('/')} class="group flex shrink-0 items-center gap-3">
-          <img
+          <enhanced:img
             src={LUHCLogo}
             class="h-10 w-auto drop-shadow-md transition-transform group-hover:scale-105 md:h-12"
             alt="LUHC Logo"

@@ -1,15 +1,15 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import IndoorHero from '$lib/images/pages/indoor/indoor-hero.jpg';
-  import Indoor1 from '$lib/images/pages/indoor/indoor-1.webp';
-  import Indoor2 from '$lib/images/pages/indoor/indoor-2.webp';
-  import Indoor3 from '$lib/images/pages/indoor/indoor-3.webp';
-  import Indoor4 from '$lib/images/pages/indoor/indoor-4.webp';
-  import Indoor5 from '$lib/images/pages/indoor/indoor-5.webp';
-  import Indoor6 from '$lib/images/pages/indoor/indoor-6.webp';
-  import Indoor7 from '$lib/images/pages/indoor/indoor-7.webp';
-  import Indoor8 from '$lib/images/pages/indoor/indoor-8.webp';
-  import Indoor9 from '$lib/images/pages/indoor/indoor-9.webp';
+  import IndoorHero from '$lib/images/pages/indoor/indoor-hero.jpg?enhanced';
+  import Indoor1 from '$lib/images/pages/indoor/indoor-1.webp?enhanced';
+  import Indoor2 from '$lib/images/pages/indoor/indoor-2.webp?enhanced';
+  import Indoor3 from '$lib/images/pages/indoor/indoor-3.webp?enhanced';
+  import Indoor4 from '$lib/images/pages/indoor/indoor-4.webp?enhanced';
+  import Indoor5 from '$lib/images/pages/indoor/indoor-5.webp?enhanced';
+  import Indoor6 from '$lib/images/pages/indoor/indoor-6.webp?enhanced';
+  import Indoor7 from '$lib/images/pages/indoor/indoor-7.webp?enhanced';
+  import Indoor8 from '$lib/images/pages/indoor/indoor-8.webp?enhanced';
+  import Indoor9 from '$lib/images/pages/indoor/indoor-9.webp?enhanced';
 
   const gallery = [
     { src: Indoor1, alt: 'Indoor Hockey 1' },
@@ -29,7 +29,7 @@
 </svelte:head>
 
 <section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
-  <img
+  <enhanced:img
     src={IndoorHero}
     alt="Indoor Hockey Action"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-70"
@@ -94,7 +94,7 @@
     <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
       {#each gallery as img (img.src)}
         <div class="group relative aspect-4/3 overflow-hidden rounded-sm bg-gray-900">
-          <img
+          <enhanced:img
             src={img.src}
             alt={img.alt}
             class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
