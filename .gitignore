@@ -3,9 +3,18 @@
 # Dependencies
 /luhc-cms/node_modules
 /luhc-website/node_modules
-/node_modules
+**/node_modules
+node_modules
 /.pnp
+.vercel
 .pnp.js
+
+.svelte-kit
+
+node_modules/
+.svelte-kit/
+.env
+.env.*
 
 # Compiled Sanity Studio
 /dist
@@ -29,3 +38,7 @@
 
 # Dotenv and similar local-only files
 *.local
+
+.env
+.env.*
+*.env

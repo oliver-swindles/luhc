@@ -1,42 +1,91 @@
 <script lang="ts">
-    import YellowDoorLetsLogo from "$lib/images/sponsors/YDL.png?enhanced";
-    import MollyOMalleysLogo from "$lib/images/sponsors/molly-o-malleys.webp?enhanced";
-    import BowerhamHotelLogo from "$lib/images/sponsors/BowerhamHotel.jpg?enhanced";
-    import GreensLogo from "$lib/images/sponsors/Greens.png?enhanced";
+  import { resolve } from '$app/paths';
+  import YellowDoorLetsLogo from '$lib/images/sponsors/YDL.png';
+  import MollyOMalleysLogo from '$lib/images/sponsors/molly-o-malleys.webp';
+  import BowerhamHotelLogo from '$lib/images/sponsors/BowerhamHotel.jpg';
+  import GreensLogo from '$lib/images/sponsors/Greens.png';
 </script>
 
 <section class="my-12">
-    <div class="flex items-center gap-4 mb-8">
-        <h2 class="font-display uppercase text-3xl font-bold text-luhc-dark tracking-tight">Official Partners</h2>
-        <div class="h-[1px] flex-grow bg-gray-200"></div>
-    </div>
+  <div class="mb-8 flex items-center gap-4">
+    <h2 class="font-display text-3xl font-bold tracking-tight text-luhc-dark uppercase">
+      Official Partners
+    </h2>
+    <div class="h-px grow bg-gray-200"></div>
+  </div>
 
-    <p class="text-lg text-gray-600 font-light mb-8 max-w-2xl">
-        We're proud to be supported by local businesses. Want to join the team? 
-        <a href="/contact-us" class="font-bold text-luhc-red hover:underline decoration-2 underline-offset-4">Get in touch</a>.
-    </p>
+  <p class="mb-8 max-w-2xl text-lg font-light text-gray-600">
+    We're proud to be supported by local businesses. Want to join the team?
+    <a
+      href={resolve('/contact-us')}
+      class="font-bold text-luhc-red decoration-2 underline-offset-4 hover:underline"
+      >Get in touch</a
+    >.
+  </p>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 items-center py-8">
-        
-        <a href="https://www.yellowdoorlets.co.uk/" target="_blank" class="group flex flex-col items-center justify-center p-4 transition-all duration-300">
-            <enhanced:img src={YellowDoorLetsLogo} alt="Yellow Door Lets" class="h-16 w-auto object-contain mb-4 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
-            <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-luhc-red transition-colors">Yellow Door Lets</span>
-        </a>
+  <div class="grid grid-cols-2 items-center gap-8 py-8 md:grid-cols-4 md:gap-12">
+    <a
+      href="https://www.yellowdoorlets.co.uk/"
+      target="_blank"
+      class="group flex flex-col items-center justify-center p-4 transition-all duration-300"
+    >
+      <img
+        src={YellowDoorLetsLogo}
+        alt="Yellow Door Lets"
+        class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"
+      />
+      <span
+        class="text-xs font-bold tracking-widest text-gray-400 uppercase transition-colors group-hover:text-luhc-red"
+        >Yellow Door Lets</span
+      >
+    </a>
 
-        <a href="https://www.mollyomalleys.co.uk/" target="_blank" class="group flex flex-col items-center justify-center p-4 transition-all duration-300">
-            <enhanced:img src={MollyOMalleysLogo} alt="Molly O'Malleys" class="h-16 w-auto object-contain mb-4 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
-            <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-luhc-red transition-colors">Molly O'Malleys</span>
-        </a>
+    <a
+      href="https://www.mollyomalleys.co.uk/"
+      target="_blank"
+      class="group flex flex-col items-center justify-center p-4 transition-all duration-300"
+    >
+      <img
+        src={MollyOMalleysLogo}
+        alt="Molly O'Malleys"
+        class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"
+      />
+      <span
+        class="text-xs font-bold tracking-widest text-gray-400 uppercase transition-colors group-hover:text-luhc-red"
+        >Molly O'Malleys</span
+      >
+    </a>
 
-        <a href="https://thebowerham.co.uk/" target="_blank" class="group flex flex-col items-center justify-center p-4 transition-all duration-300">
-            <enhanced:img src={BowerhamHotelLogo} alt="The Bowerham Hotel" class="h-16 w-auto object-contain mb-4 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
-            <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-luhc-red transition-colors">Bowerham Hotel</span>
-        </a>
+    <a
+      href="https://thebowerham.co.uk/"
+      target="_blank"
+      class="group flex flex-col items-center justify-center p-4 transition-all duration-300"
+    >
+      <img
+        src={BowerhamHotelLogo}
+        alt="The Bowerham Hotel"
+        class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"
+      />
+      <span
+        class="text-xs font-bold tracking-widest text-gray-400 uppercase transition-colors group-hover:text-luhc-red"
+        >Bowerham Hotel</span
+      >
+    </a>
 
-        <a href="https://www.facebook.com/GreensLancaster/" target="_blank" class="group flex flex-col items-center justify-center p-4 transition-all duration-300">
-            <enhanced:img src={GreensLogo} alt="Greens Lancaster" class="h-16 w-auto object-contain mb-4 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
-            <span class="text-xs font-bold uppercase tracking-widest text-gray-400 group-hover:text-luhc-red transition-colors">Greens</span>
-        </a>
-
-    </div>
+    <a
+      href="https://www.facebook.com/GreensLancaster/"
+      target="_blank"
+      class="group flex flex-col items-center justify-center p-4 transition-all duration-300"
+    >
+      <img
+        src={GreensLogo}
+        alt="Greens Lancaster"
+        class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"
+      />
+      <span
+        class="text-xs font-bold tracking-widest text-gray-400 uppercase transition-colors group-hover:text-luhc-red"
+        >Greens</span
+      >
+    </a>
+  </div>
 </section>

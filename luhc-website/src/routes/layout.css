@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;500;700&display=swap');
+
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --color-luhc-red: #d2141b;
+  --color-luhc-dark: #09090b;
+  --color-luhc-gray: #e5e5e5;
+
+  --font-display: 'Oswald', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+
+  --color-primary-50: #fdf3f3;
+  --color-primary-100: #fce5e4;
+  --color-primary-200: #fad0ce;
+  --color-primary-300: #f5afac;
+  --color-primary-400: #f5afac;
+  --color-primary-500: #e15952;
+  --color-primary-600: #c33730;
+  --color-primary-700: #ac2f29;
+  --color-primary-800: #8f2a25;
+  --color-primary-900: #772925;
+}
+
+html {
+  scroll-behavior: smooth;
+}
