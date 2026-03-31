@@ -3,17 +3,12 @@
   import AOS from 'aos';
   import 'aos/dist/aos.css';
   import { onMount } from 'svelte';
-  import { afterNavigate } from '$app/navigation'; // Import this for page changes
-  import { dev } from '$app/environment';
-
-  import { injectAnalytics } from '@vercel/analytics/sveltekit';
+  import { afterNavigate } from '$app/navigation';
 
   import Header from '$lib/components/Header.svelte';
   import Footer from '$lib/components/Footer.svelte';
 
   let { children } = $props();
-
-  injectAnalytics({ mode: dev ? 'development' : 'production' });
 
   onMount(() => {
     AOS.init({
