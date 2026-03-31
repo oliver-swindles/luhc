@@ -7,9 +7,15 @@
     venueDetails?: string;
   }
 
+  interface DateString {
+    day: string;
+    date: string;
+    time: string;
+  }
+
   let { upcomingFixtures = [] }: { upcomingFixtures: Fixture[] } = $props();
 
-  function formatDate(dateStr: string) {
+  function formatDate(dateStr: string): DateString {
     const d = new Date(dateStr);
     return {
       day: d.toLocaleDateString('en-GB', { weekday: 'short' }).toUpperCase(),
@@ -19,7 +25,9 @@
   }
 
   const scriptTagHtml = $derived.by(() => {
-    if (!upcomingFixtures?.length) return '';
+    if (!upcomingFixtures?.length) {
+      return '';
+    }
 
     const jsonLdEvents = upcomingFixtures.slice(0, 5).map((f) => {
       const isHome = f.locationType === 'Home';

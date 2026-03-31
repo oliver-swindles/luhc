@@ -23,6 +23,15 @@ export default defineConfig(
       // typescript-eslint strongly recommend that you do not use the no-undef lint rule on TypeScript projects.
       // see: https://typescript-eslint.io/troubleshooting/faqs/eslint/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
       'no-undef': 'off',
+      'arrow-body-style': ['error', 'always'],
+      curly: ['error', 'all'],
+      eqeqeq: ['error', 'always'],
+      'no-implicit-coercion': 'error',
+      // 'no-duplicate-imports': 'error',
+      'svelte/no-at-debug-tags': 'error',
+      // 'svelte/no-inline-styles': ['error', { allowTransitions: false }],
+      '@typescript-eslint/consistent-type-imports': 'error',
+      '@typescript-eslint/explicit-function-return-type': 'error',
     },
   },
   {

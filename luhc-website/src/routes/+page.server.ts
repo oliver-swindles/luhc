@@ -6,13 +6,15 @@ interface Match {
   opponent: string;
   dateAndTime: string; // ISO String
   locationType?: 'Home' | 'Away';
-  venueDetails?: string;
+  venueDetails?: string | undefined;
   score: string;
 }
 
-function normaliseScore(scoreStr: string, isHome: boolean) {
+function normaliseScore(scoreStr: string, isHome: boolean): string {
   const match = scoreStr.match(/(\d+)\s*[-:–]\s*(\d+)/);
-  if (!match) return scoreStr;
+  if (!match) {
+    return scoreStr;
+  }
 
   const homeScore = match[1];
   const awayScore = match[2];
@@ -49,19 +51,24 @@ export const load: PageServerLoad = async ({ setHeaders, fetch }) => {
       signal: AbortSignal.timeout(4000),
     });
 
-    if (!response.ok) throw new Error('GMS Feed Unreachable');
+    if (!response.ok) {
+      throw new Error('GMS Feed Unreachable');
+    }
 
     const jsonResponse = await response.json();
-    if (!jsonResponse.html) throw new Error('GMS returned no HTML');
+    if (!jsonResponse.html) {
+      throw new Error('GMS returned no HTML');
+    }
 
-    // 4. PARSING: The same logic, but wrapped safely
     const $ = cheerio.load(jsonResponse.html);
     const rows = $('tr');
     const now = new Date();
 
-    rows.each((i, row) => {
+    rows.each((_, row) => {
       const cols = $(row).find('td');
-      if (cols.length === 0) return;
+      if (cols.length === 0) {
+        return;
+      }
 
       const dateStr = $(cols[0]).text().trim();
       const timeStr = $(cols[1]).text().trim();
@@ -70,19 +77,22 @@ export const load: PageServerLoad = async ({ setHeaders, fetch }) => {
       const awayTeam = $(cols[4]).text().trim();
       const venue = $(cols[5]).text().trim();
 
-      if (!dateStr || !homeTeam) return;
+      if (!dateStr || !homeTeam) {
+        return;
+      }
 
-      // Parse Date safely
       const fullDate = new Date(`${dateStr} ${timeStr}`);
-      if (isNaN(fullDate.getTime())) return; // Skip invalid dates
+      if (isNaN(fullDate.getTime())) {
+        return;
+      } // Skip invalid dates
 
-      // Normalize Names (Cleaner UI)
+      // Normalise Names (Cleaner UI)
       const isHome = homeTeam.includes('Lancaster University');
       const ourTeamRaw = isHome ? homeTeam : awayTeam;
       const opponentName = isHome ? awayTeam : homeTeam;
-      const teamName = normalizeTeamName(ourTeamRaw);
+      const teamName = normaliseTeamName(ourTeamRaw);
 
-      const matchObj = {
+      const matchObj: Match = {
         team: teamName,
         opponent: opponentName,
         dateAndTime: fullDate.toISOString(),
@@ -101,10 +111,14 @@ export const load: PageServerLoad = async ({ setHeaders, fetch }) => {
     });
 
     // Sort Fixtures: Soonest -> Latest
-    fixtures.sort((a, b) => new Date(a.dateAndTime).getTime() - new Date(b.dateAndTime).getTime());
+    fixtures.sort((a, b) => {
+      return new Date(a.dateAndTime).getTime() - new Date(b.dateAndTime).getTime();
+    });
 
     // Sort Results: Latest -> Oldest (So we see recent games first)
-    results.sort((a, b) => new Date(b.dateAndTime).getTime() - new Date(a.dateAndTime).getTime());
+    results.sort((a, b) => {
+      return new Date(b.dateAndTime).getTime() - new Date(a.dateAndTime).getTime();
+    });
 
     return {
       fixtures,
@@ -113,19 +127,31 @@ export const load: PageServerLoad = async ({ setHeaders, fetch }) => {
     };
   } catch (err) {
     console.error('⚠️ GMS Load Failed:', err);
-    // 5. FAILOVER: Return empty data so the site loads (just without stats)
     return { fixtures: [], results: [], success: false };
   }
 };
 
-// Helper to make names look "Pro"
-function normalizeTeamName(raw: string) {
-  if (raw.includes('1 (M)')) return "Men's 1s";
-  if (raw.includes('2 (M)')) return "Men's 2s";
-  if (raw.includes('3 (M)')) return "Men's 3s";
-  if (raw.includes('1 (F)')) return "Women's 1s";
-  if (raw.includes('2 (F)')) return "Women's 2s";
-  if (raw.includes('3 (F)')) return "Women's 3s";
-  if (raw.includes('Development')) return 'Dev Squad';
+function normaliseTeamName(raw: string): string {
+  if (raw.includes('1 (M)')) {
+    return "Men's 1s";
+  }
+  if (raw.includes('2 (M)')) {
+    return "Men's 2s";
+  }
+  if (raw.includes('3 (M)')) {
+    return "Men's 3s";
+  }
+  if (raw.includes('1 (F)')) {
+    return "Women's 1s";
+  }
+  if (raw.includes('2 (F)')) {
+    return "Women's 2s";
+  }
+  if (raw.includes('3 (F)')) {
+    return "Women's 3s";
+  }
+  if (raw.includes('Development')) {
+    return 'Dev Squad';
+  }
   return 'LUHC XI';
 }

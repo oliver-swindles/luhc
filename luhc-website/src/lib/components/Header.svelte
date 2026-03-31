@@ -13,7 +13,7 @@
     isMenuOpen = false;
   });
 
-  function toggleMenu() {
+  function toggleMenu(): void {
     isMenuOpen = !isMenuOpen;
   }
 </script>

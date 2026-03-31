@@ -7,10 +7,17 @@
     venueDetails?: string;
   }
 
+  interface DateStringExt {
+    weekday: string;
+    dayNum: string;
+    month: string;
+    time: string;
+  }
+
   // 1. Destructure props using the rune
   let { fixtures }: { fixtures: Fixture[] } = $props();
 
-  function formatDate(dateStr: string) {
+  function formatDate(dateStr: string): DateStringExt {
     const d = new Date(dateStr);
     return {
       weekday: d.toLocaleDateString('en-GB', { weekday: 'short' }).toUpperCase(),
@@ -21,7 +28,9 @@
   }
 
   const scriptTagHtml = $derived.by(() => {
-    if (!fixtures || fixtures.length === 0) return '';
+    if (!fixtures || fixtures.length === 0) {
+      return '';
+    }
 
     const jsonLdEvents = fixtures.slice(0, 5).map((f) => {
       const isHome = f.locationType === 'Home';

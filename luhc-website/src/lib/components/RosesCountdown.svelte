@@ -19,7 +19,9 @@
       now = Date.now();
     }, 1000);
 
-    return () => clearInterval(interval);
+    return (): void => {
+      clearInterval(interval);
+    };
   });
 </script>
 
