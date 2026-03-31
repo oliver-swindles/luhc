@@ -9,11 +9,12 @@ const config = {
     csp: {
       mode: 'auto',
       directives: {
-        'default-src': ['self'],
+        'default-src': ['none'],
         'script-src': ['self'],
         'style-src': ['self', 'unsafe-inline', 'https://fonts.googleapis.com'],
         'font-src': ['self', 'https://fonts.gstatic.com'],
         'img-src': ['self', 'https://cdn.sanity.io'],
+        'form-action': ['none'],
         'connect-src': [
           'self',
           'https://gmsfeed.co.uk',
@@ -22,7 +23,7 @@ const config = {
         ],
         'frame-src': ['https://www.youtube-nocookie.com'],
         'object-src': ['none'],
-        'base-uri': ['self'],
+        'base-uri': ['none'],
         'frame-ancestors': ['none'],
       },
     },
