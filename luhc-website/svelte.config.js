@@ -1,5 +1,4 @@
 import adapter from '@sveltejs/adapter-cloudflare';
-import { relative, sep } from 'node:path';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -9,17 +8,18 @@ const config = {
     csp: {
       mode: 'auto',
       directives: {
+        'upgrade-insecure-requests': true,
         'default-src': ['none'],
         'script-src': ['self'],
-        'style-src': ['self', 'unsafe-inline', 'https://fonts.googleapis.com'],
-        'font-src': ['self', 'https://fonts.gstatic.com'],
+        'style-src': ['self', 'unsafe-inline'],
+        'font-src': ['self'],
         'img-src': ['self', 'https://cdn.sanity.io'],
         'form-action': ['none'],
         'connect-src': [
           'self',
-          'https://gmsfeed.co.uk',
-          'https://*.api.sanity.io',
-          'wss://*.api.sanity.io',
+          'https://rplgcrto.api.sanity.io',
+          'https://rplgcrto.apicdn.sanity.io',
+          'wss://rplgcrto.api.sanity.io',
         ],
         'frame-src': ['https://www.youtube-nocookie.com'],
         'object-src': ['none'],
@@ -29,14 +29,7 @@ const config = {
     },
   },
   compilerOptions: {
-    // defaults to rune mode for the project, except for `node_modules`. Can be removed in svelte 6.
-    runes: ({ filename }) => {
-      const relativePath = relative(import.meta.dirname, filename);
-      const pathSegments = relativePath.toLowerCase().split(sep);
-      const isExternalLibrary = pathSegments.includes('node_modules');
-
-      return isExternalLibrary ? undefined : true;
-    },
+    runes: true,
   },
 };
 

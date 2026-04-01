@@ -1,11 +1,5 @@
 <script lang="ts">
-  interface Fixture {
-    team: string;
-    opponent: string;
-    dateAndTime: string;
-    locationType: 'Home' | 'Away';
-    venueDetails?: string;
-  }
+  import type { Match } from '$lib/types';
 
   interface DateStringExt {
     weekday: string;
@@ -15,7 +9,7 @@
   }
 
   // 1. Destructure props using the rune
-  let { fixtures }: { fixtures: Fixture[] } = $props();
+  let { fixtures }: { fixtures: Match[] } = $props();
 
   function formatDate(dateStr: string): DateStringExt {
     const d = new Date(dateStr);

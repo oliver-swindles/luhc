@@ -1,11 +1,5 @@
 <script lang="ts">
-  interface Fixture {
-    team: string;
-    opponent: string;
-    dateAndTime: string;
-    locationType: 'Home' | 'Away';
-    venueDetails?: string;
-  }
+  import type { Match } from '$lib/types';
 
   interface DateString {
     day: string;
@@ -13,7 +7,7 @@
     time: string;
   }
 
-  let { upcomingFixtures = [] }: { upcomingFixtures: Fixture[] } = $props();
+  let { upcomingFixtures = [] }: { upcomingFixtures: Match[] } = $props();
 
   function formatDate(dateStr: string): DateString {
     const d = new Date(dateStr);

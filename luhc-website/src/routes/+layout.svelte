@@ -1,5 +1,8 @@
 <script lang="ts">
   import './layout.css';
+  import '@fontsource-variable/inter/wght-italic.css';
+  import '@fontsource-variable/oswald/wght.css';
+
   import AOS from 'aos';
   import 'aos/dist/aos.css';
   import { onMount } from 'svelte';

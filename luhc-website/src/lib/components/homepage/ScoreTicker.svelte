@@ -1,11 +1,8 @@
 <script lang="ts">
+  import type { Match } from '$lib/types';
+
   interface Props {
-    results?: {
-      team: string;
-      opponent: string;
-      score: string;
-      locationType: 'Home' | 'Away';
-    }[];
+    results?: Match[];
   }
 
   let { results = [] }: Props = $props();

@@ -1,14 +1,6 @@
 import * as cheerio from 'cheerio';
 import type { PageServerLoad } from './$types';
-
-interface Match {
-  team: string;
-  opponent: string;
-  dateAndTime: string; // ISO String
-  locationType?: 'Home' | 'Away';
-  venueDetails?: string | undefined;
-  score: string;
-}
+import type { Match } from '$lib/types';
 
 function normaliseScore(scoreStr: string, isHome: boolean): string {
   const match = scoreStr.match(/(\d+)\s*[-:–]\s*(\d+)/);

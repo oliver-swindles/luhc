@@ -1,7 +1,8 @@
 import { error } from '@sveltejs/kit';
 import { client } from '$lib/sanityClient';
+import type { PageLoad } from './$types';
 
-export const load = async () => {
+export const load: PageLoad = async () => {
   // Query SPECIFICALLY for the 'mens' document
   const query = `*[_type == "linksPage" && slug.current == "mens"][0]{
     title,
