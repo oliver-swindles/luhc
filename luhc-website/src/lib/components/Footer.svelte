@@ -144,7 +144,7 @@
 
   <div class="mt-8 border-t border-white/10 px-6 pt-8">
     <div
-      class="mx-auto flex max-w-7xl flex-col items-center justify-between text-xs text-gray-500 md:flex-row"
+      class="mx-auto flex max-w-7xl flex-col items-center justify-between text-xs text-gray-400 md:flex-row"
     >
       <div class="flex items-center gap-1">
         <span>&copy; {new Date().getFullYear()} Lancaster University Hockey Club.</span>

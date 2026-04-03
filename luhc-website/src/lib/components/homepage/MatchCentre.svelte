@@ -56,7 +56,7 @@
     class="sticky top-0 z-10 flex items-center justify-between border-b border-gray-100 bg-gray-50 p-4 shadow-sm"
   >
     <span class="text-xs font-bold tracking-widest text-gray-500 uppercase">Upcoming Fixtures</span>
-    <span class="font-mono text-[10px] text-gray-400">2025/26 Season</span>
+    <span class="font-mono text-[10px] text-gray-500">2025/26 Season</span>
   </div>
 
   <div
@@ -79,7 +79,7 @@
               <div class="pt-1 font-display text-xl leading-none font-bold text-luhc-dark">
                 {dt.dayNum}
               </div>
-              <div class="pb-1 text-[9px] leading-none font-bold text-gray-400 uppercase">
+              <div class="pb-1 text-[9px] leading-none font-bold text-gray-500 uppercase">
                 {dt.month}
               </div>
             </div>
@@ -92,7 +92,7 @@
               </div>
 
               <div class="col-span-1 flex justify-center">
-                <span class="text-[9px] font-black tracking-widest text-gray-300 uppercase">VS</span
+                <span class="text-[9px] font-black tracking-widest text-gray-500 uppercase">VS</span
                 >
               </div>
 
@@ -148,7 +148,7 @@
             />
           </svg>
         </div>
-        <h4 class="mb-1 font-display text-lg text-luhc-dark uppercase">No Upcoming Games</h4>
+        <p class="mb-1 font-display text-lg text-luhc-dark uppercase">No Upcoming Games</p>
         <p class="max-w-50 text-xs font-light text-gray-400">
           Fixtures are updated automatically via GMS. Check back soon.
         </p>
@@ -157,7 +157,7 @@
   </div>
 
   <div class="border-t border-gray-100 bg-gray-50 p-3 text-center">
-    <p class="flex items-center justify-center gap-1 text-[10px] text-gray-400">
+    <p class="flex items-center justify-center gap-1 text-[10px] text-gray-500">
       <svg class="h-3 w-3 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"
         ><path
           stroke-linecap="round"

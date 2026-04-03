@@ -78,7 +78,7 @@
           ></span>
           <span class="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
         </span>
-        <span class="text-xs font-bold tracking-widest text-gray-400 uppercase"
+        <span class="text-xs font-semibold tracking-wider text-gray-500 uppercase"
           >Syncing Live with GMS</span
         >
       </div>
@@ -114,7 +114,7 @@
   <div class="mx-auto max-w-7xl space-y-32 px-4">
     <div>
       <div class="mb-16 text-center">
-        <span class="mb-3 block font-sans text-xs font-bold tracking-widest text-gray-400 uppercase"
+        <span class="mb-3 block font-sans text-xs font-bold tracking-widest text-gray-500 uppercase"
           >Meet The Team</span
         >
         <h2 class="font-display text-4xl font-bold text-luhc-dark uppercase md:text-5xl">

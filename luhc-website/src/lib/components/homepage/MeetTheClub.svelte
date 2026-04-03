@@ -59,7 +59,7 @@
         </p>
 
         <div
-          class="flex items-center gap-2 text-xs font-bold tracking-widest text-gray-400 uppercase transition-colors group-hover:text-luhc-red"
+          class="flex items-center gap-2 text-xs font-bold tracking-widest text-gray-500 uppercase transition-colors group-hover:text-luhc-red"
         >
           View Profile
           <span class="transform transition-transform duration-300 group-hover:translate-x-1"

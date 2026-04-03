@@ -38,7 +38,7 @@
           <span class="block font-mono text-5xl font-bold md:text-7xl"
             >{unit.value.toString().padStart(2, '0')}</span
           >
-          <span class="mt-2 block text-sm font-semibold tracking-widest uppercase opacity-80"
+          <span class="mt-2 block text-sm font-semibold tracking-widest uppercase opacity-82"
             >{unit.label}</span
           >
         </div>

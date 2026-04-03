@@ -35,7 +35,7 @@
         class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"
       />
       <span
-        class="text-xs font-bold tracking-widest text-gray-400 uppercase transition-colors group-hover:text-luhc-red"
+        class="text-xs font-bold tracking-widest text-gray-500 uppercase transition-colors group-hover:text-luhc-red"
         >Yellow Door Lets</span
       >
     </a>
@@ -51,7 +51,7 @@
         class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"
       />
       <span
-        class="text-xs font-bold tracking-widest text-gray-400 uppercase transition-colors group-hover:text-luhc-red"
+        class="text-xs font-bold tracking-widest text-gray-500 uppercase transition-colors group-hover:text-luhc-red"
         >Molly O'Malleys</span
       >
     </a>
@@ -67,7 +67,7 @@
         class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"
       />
       <span
-        class="text-xs font-bold tracking-widest text-gray-400 uppercase transition-colors group-hover:text-luhc-red"
+        class="text-xs font-bold tracking-widest text-gray-500 uppercase transition-colors group-hover:text-luhc-red"
         >Bowerham Hotel</span
       >
     </a>
@@ -83,7 +83,7 @@
         class="mb-4 h-16 w-auto object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:opacity-100 group-hover:grayscale-0"
       />
       <span
-        class="text-xs font-bold tracking-widest text-gray-400 uppercase transition-colors group-hover:text-luhc-red"
+        class="text-xs font-bold tracking-widest text-gray-500 uppercase transition-colors group-hover:text-luhc-red"
         >Greens</span
       >
     </a>

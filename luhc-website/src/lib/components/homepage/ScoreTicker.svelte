@@ -34,7 +34,7 @@
 
           <span class="text-gray-400">{match.opponent}</span>
 
-          <span class="text-[9px] font-bold text-luhc-red">
+          <span class="text-[10px] font-bold text-luhc-red">
             {match.locationType === 'Home' ? '(H)' : '(A)'}
           </span>
         </div>

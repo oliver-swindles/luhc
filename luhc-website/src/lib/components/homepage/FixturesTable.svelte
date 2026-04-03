@@ -111,7 +111,7 @@
           />
         </svg>
       </div>
-      <h4 class="mb-1 font-display text-lg text-luhc-dark uppercase">No Upcoming Games</h4>
+      <p class="mb-1 font-display text-lg text-luhc-dark uppercase">No Upcoming Games</p>
       <p class="max-w-50 text-xs font-light text-gray-400">
         Fixtures are updated automatically via GMS. Check back soon.
       </p>
