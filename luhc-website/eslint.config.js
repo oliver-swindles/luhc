@@ -27,7 +27,7 @@ export default defineConfig(
       curly: ['error', 'all'],
       eqeqeq: ['error', 'always'],
       'no-implicit-coercion': 'error',
-      // 'no-duplicate-imports': 'error',
+      'no-duplicate-imports': 'error',
       'svelte/no-at-debug-tags': 'error',
       // 'svelte/no-inline-styles': ['error', { allowTransitions: false }],
       '@typescript-eslint/consistent-type-imports': 'error',
@@ -43,6 +43,13 @@ export default defineConfig(
         parser: ts.parser,
         svelteConfig,
       },
+    },
+  },
+  {
+    files: ['*.config.js', '*.config.ts', 'svelte.config.js', 'vite.config.js'],
+    extends: [ts.configs.disableTypeChecked],
+    rules: {
+      '@typescript-eslint/explicit-function-return-type': 'off',
     },
   }
 );

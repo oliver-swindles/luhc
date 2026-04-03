@@ -1,7 +1,9 @@
 import { createClient } from '@sanity/client';
-import { PUBLIC_SANITY_PROJECT_ID } from '$env/static/public';
-import { PUBLIC_SANITY_DATASET } from '$env/static/public';
-import { PUBLIC_SANITY_API_VERSION } from '$env/static/public';
+import {
+  PUBLIC_SANITY_PROJECT_ID,
+  PUBLIC_SANITY_DATASET,
+  PUBLIC_SANITY_API_VERSION,
+} from '$env/static/public';
 
 export const client = createClient({
   projectId: PUBLIC_SANITY_PROJECT_ID,
