@@ -8,7 +8,6 @@
   import ChairMessage from '$lib/components/homepage/ChairMessage.svelte';
   import JoinCta from '$lib/components/homepage/JoinCta.svelte';
   import MeetTheClub from '$lib/components/homepage/MeetTheClub.svelte';
-  import RosesCountdown from '$lib/components/RosesCountdown.svelte';
   import MatchCentre from '$lib/components/homepage/MatchCentre.svelte';
 
   let { data } = $props();
@@ -26,8 +25,6 @@
 <HeroSection />
 
 <ScoreTicker results={data.results} />
-
-<RosesCountdown />
 
 <section class="bg-white py-16 font-sans text-luhc-dark md:py-24">
   <div class="mx-auto max-w-4xl px-6 text-center">
