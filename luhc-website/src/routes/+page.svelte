@@ -91,9 +91,7 @@
 
 <section class="relative overflow-hidden bg-luhc-red px-6 py-24 text-center text-white">
   <div
-    style:background-image="radial-gradient(circle at 2px 2px, white 1px, transparent 0)"
-    style:background-size="24px 24px"
-    class="absolute inset-0 opacity-10"
+    class="absolute inset-0 bg-[radial-gradient(circle_at_2px_2px,white_1px,transparent_0)] bg-size-[24px_24px] opacity-10"
   ></div>
 
   <div class="relative z-10 mx-auto max-w-4xl space-y-8">

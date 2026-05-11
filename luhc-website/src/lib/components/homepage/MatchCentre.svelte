@@ -9,7 +9,7 @@
   }
 
   // 1. Destructure props using the rune
-  let { fixtures }: { fixtures: Match[] } = $props();
+  let { fixtures = [] }: { fixtures?: Match[] } = $props();
 
   function formatDate(dateStr: string): DateStringExt {
     const d = new Date(dateStr);
@@ -22,7 +22,7 @@
   }
 
   const scriptTagHtml = $derived.by(() => {
-    if (!fixtures || fixtures.length === 0) {
+    if (fixtures.length === 0) {
       return '';
     }
 

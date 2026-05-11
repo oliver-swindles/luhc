@@ -152,7 +152,7 @@
             <blockquote
               class="border-l-2 border-gray-200 pl-4 font-sans font-light text-gray-500 italic"
             >
-              "{team.quote ?? ''}"
+              "{team.quote}"
             </blockquote>
           </div>
         </div>

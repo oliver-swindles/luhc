@@ -3,6 +3,8 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
+@source '../app.html';
+
 @theme {
   --color-luhc-red: #d2141b;
   --color-luhc-dark: #09090b;
