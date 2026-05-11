@@ -1,5 +1,7 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
+
+  import { Button } from 'bits-ui';
 </script>
 
 <section class="border-t border-white/10 bg-luhc-dark py-20 text-center text-white">
@@ -13,11 +15,11 @@
       Club.
     </p>
 
-    <a
-      href={resolve('/contact-us')}
+    <Button.Root
       class="inline-block transform rounded-sm bg-luhc-red px-10 py-4 font-display text-lg font-bold tracking-widest text-white uppercase shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-luhc-red hover:shadow-xl"
+      href={resolve('/contact-us')}
     >
       Get In Touch
-    </a>
+    </Button.Root>
   </div>
 </section>

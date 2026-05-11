@@ -6,6 +6,8 @@
   import DevSquad from '$lib/images/pages/about/dev-squad.avif';
   import IndoorHockey from '$lib/images/pages/about/indoor-hockey-2.webp?enhanced';
 
+  import { Button } from 'bits-ui';
+
   const teamLinks = [
     { title: "Men's Club", href: '/teams/mens-club', img: MensClub },
     { title: "Women's Club", href: '/teams/womens-club', img: WomensClub },
@@ -20,9 +22,9 @@
 
 <section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
   <enhanced:img
-    src={AboutHero}
-    alt="LUHC Team Huddle"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"
+    alt="LUHC Team Huddle"
+    src={AboutHero}
   />
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-black/30"></div>
 
@@ -99,14 +101,14 @@
 
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {#each teamLinks as team (team.title + team.href)}
-          <a
-            href={resolve(team.href)}
+          <Button.Root
             class="group relative block aspect-3/4 overflow-hidden border border-white/10 bg-gray-900 transition-colors hover:border-luhc-red"
+            href={resolve(team.href)}
           >
             <enhanced:img
-              src={team.img}
-              alt={team.title}
               class="absolute inset-0 h-full w-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
+              alt={team.title}
+              src={team.img}
             />
             <div
               class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-90"
@@ -120,7 +122,7 @@
               </h3>
               <div class="h-1 w-0 bg-luhc-red transition-all duration-500 group-hover:w-full"></div>
             </div>
-          </a>
+          </Button.Root>
         {/each}
       </div>
     </div>
@@ -132,12 +134,12 @@
       From weekly socials and formal dinners to charity fundraisers, our vibrant calendar ensures
       there's always something happening.
     </p>
-    <a
-      href={resolve('/socials')}
+    <Button.Root
       class="inline-block border-2 border-luhc-dark px-8 py-3 font-display text-sm font-bold tracking-widest text-luhc-dark uppercase transition-colors duration-300 hover:bg-luhc-dark hover:text-white"
+      href={resolve('/socials')}
     >
       View Socials
-    </a>
+    </Button.Root>
   </section>
 
   <section class="bg-luhc-red px-6 py-20 text-center text-white">
@@ -146,12 +148,12 @@
       <p class="mb-10 font-sans text-lg text-white/90">
         Join one of the largest societies at Lancaster.
       </p>
-      <a
-        href={resolve('/contact-us')}
+      <Button.Root
         class="inline-block transform bg-white px-10 py-4 font-display font-bold tracking-widest text-luhc-red uppercase shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-gray-100"
+        href={resolve('/contact-us')}
       >
         Join The Club
-      </a>
+      </Button.Root>
     </div>
   </section>
 </div>

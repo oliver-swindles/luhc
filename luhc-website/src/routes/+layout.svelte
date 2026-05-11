@@ -28,28 +28,28 @@
 
 <svelte:head>
   <title>Lancaster University Hockey Club | LUHC</title>
-  <link rel="apple-touch-icon" href="/favicon.png" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="/favicon.png" rel="apple-touch-icon" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" />
   <meta
     name="description"
     content="Official site of Lancaster University Hockey Club (LUHC). Find team info, match updates, events, and how to get involved. #ROSESARERED"
   />
 
-  <meta property="og:image" content="https://www.luhc.co.uk/og-image.jpg" />
+  <meta content="https://www.luhc.co.uk/og-image.jpg" property="og:image" />
 
-  <meta property="og:title" content="Lancaster University Hockey Club" />
+  <meta content="Lancaster University Hockey Club" property="og:title" />
   <meta name="twitter:title" content="Lancaster University Hockey Club" />
   <meta name="theme-color" content="#D2141B" />
-  <meta property="og:url" content="https://www.luhc.co.uk" />
-  <meta property="og:type" content="website" />
+  <meta content="https://www.luhc.co.uk" property="og:url" />
+  <meta content="website" property="og:type" />
   <meta
-    property="og:description"
     content="Join LUHC - the home of Lancaster Uni hockey. Fixtures, socials, photos, and everything LUHC."
+    property="og:description"
   />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta property="twitter:domain" content="luhc.co.uk" />
-  <meta property="twitter:url" content="https://www.luhc.co.uk" />
+  <meta content="luhc.co.uk" property="twitter:domain" />
+  <meta content="https://www.luhc.co.uk" property="twitter:url" />
   <meta
     name="twitter:description"
     content="Join LUHC - the home of Lancaster Uni hockey. Fixtures, socials, photos, and everything LUHC."

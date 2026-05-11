@@ -4,6 +4,8 @@
   import OurCaptains from '$lib/images/pages/index/our-captains.jpg?enhanced';
   import OurTeams from '$lib/images/pages/index/our-teams.jpg?enhanced';
 
+  import { Button } from 'bits-ui';
+
   const items = [
     {
       img: OurExec,
@@ -28,15 +30,15 @@
 
 <div class="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-10">
   {#each items as item (item.title + item.link)}
-    <a
-      href={resolve(item.link)}
+    <Button.Root
       class="group flex transform flex-col overflow-hidden rounded-sm border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+      href={resolve(item.link)}
     >
       <div class="relative aspect-4/3 w-full overflow-hidden">
         <enhanced:img
-          src={item.img}
-          alt={item.title}
           class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+          alt={item.title}
+          src={item.img}
         />
         <div
           class="absolute inset-0 bg-luhc-red/0 transition-colors duration-300 group-hover:bg-luhc-red/10"
@@ -67,6 +69,6 @@
           >
         </div>
       </div>
-    </a>
+    </Button.Root>
   {/each}
 </div>

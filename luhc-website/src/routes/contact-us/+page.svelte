@@ -1,5 +1,7 @@
 <script lang="ts">
   import ContactHero from '$lib/images/pages/contact/contact-hero.webp?enhanced';
+
+  import { Button } from 'bits-ui';
 </script>
 
 <svelte:head>
@@ -8,9 +10,9 @@
 
 <section class="relative h-[50vh] w-full overflow-hidden bg-luhc-dark">
   <enhanced:img
-    src={ContactHero}
-    alt="Contact Hero"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"
+    alt="Contact Hero"
+    src={ContactHero}
   />
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
 
@@ -37,32 +39,35 @@
     </div>
 
     <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-      <a
-        href="https://instagram.com/lumhc_"
-        target="_blank"
+      <Button.Root
         class="group transform rounded-sm border border-gray-100 bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-luhc-red/30 hover:shadow-xl"
+        href="https://instagram.com/lumhc_"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <h3 class="mb-2 font-display text-xl font-bold text-luhc-dark uppercase">Men's Club</h3>
         <span class="font-sans font-bold text-luhc-red group-hover:underline">@lumhc_</span>
-      </a>
+      </Button.Root>
 
-      <a
-        href="https://instagram.com/luwhc_"
-        target="_blank"
+      <Button.Root
         class="group transform rounded-sm border border-gray-100 bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-luhc-red/30 hover:shadow-xl"
+        href="https://instagram.com/luwhc_"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <h3 class="mb-2 font-display text-xl font-bold text-luhc-dark uppercase">Women's Club</h3>
         <span class="font-sans font-bold text-luhc-red group-hover:underline">@luwhc_</span>
-      </a>
+      </Button.Root>
 
-      <a
-        href="https://instagram.com/luhc_dev"
-        target="_blank"
+      <Button.Root
         class="group transform rounded-sm border border-gray-100 bg-white p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-luhc-red/30 hover:shadow-xl"
+        href="https://instagram.com/luhc_dev"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <h3 class="mb-2 font-display text-xl font-bold text-luhc-dark uppercase">Dev Squad</h3>
         <span class="font-sans font-bold text-luhc-red group-hover:underline">@luhc_dev</span>
-      </a>
+      </Button.Root>
     </div>
   </section>
 
@@ -74,11 +79,11 @@
       For sponsorship opportunities, formal university business, or similar, please send us an
       email.
     </p>
-    <a
+    <Button.Root
       href="mailto:info@luhc.co.uk"
       class="inline-block bg-luhc-dark px-8 py-3 font-display font-bold tracking-widest text-white uppercase shadow-md transition-colors hover:bg-luhc-red"
     >
       info@luhc.co.uk
-    </a>
+    </Button.Root>
   </section> -->
 </div>

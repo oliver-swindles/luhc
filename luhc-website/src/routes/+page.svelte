@@ -1,6 +1,8 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
 
+  import { Button } from 'bits-ui';
+
   import HeroSection from '$lib/components/homepage/HeroSection.svelte';
   import ScoreTicker from '$lib/components/homepage/ScoreTicker.svelte';
   import NewsSection from '$lib/components/homepage/NewsSection.svelte';
@@ -15,7 +17,7 @@
 
 <svelte:head>
   <title>Lancaster University Hockey Club | LUHC</title>
-  <link rel="canonical" href="https://www.luhc.co.uk" />
+  <link href="https://www.luhc.co.uk" rel="canonical" />
 </svelte:head>
 
 {#if !data}
@@ -45,12 +47,12 @@
     </div>
 
     <div class="mt-12">
-      <a
-        href={resolve('/about')}
+      <Button.Root
         class="inline-block border-b-2 border-luhc-red pb-1 text-xs font-bold tracking-widest text-luhc-dark uppercase transition-colors hover:text-luhc-red"
+        href={resolve('/about')}
       >
         Read more about LUHC
-      </a>
+      </Button.Root>
     </div>
   </div>
 </section>
@@ -89,8 +91,9 @@
 
 <section class="relative overflow-hidden bg-luhc-red px-6 py-24 text-center text-white">
   <div
+    style:background-image="radial-gradient(circle at 2px 2px, white 1px, transparent 0)"
+    style:background-size="24px 24px"
     class="absolute inset-0 opacity-10"
-    style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"
   ></div>
 
   <div class="relative z-10 mx-auto max-w-4xl space-y-8">

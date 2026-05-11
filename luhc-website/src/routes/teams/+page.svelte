@@ -7,6 +7,8 @@
   import DevSquad from '$lib/images/pages/teams/development-squad.avif';
   import IndoorHockey from '$lib/images/pages/teams/indoor-hockey.webp?enhanced';
 
+  import { Button } from 'bits-ui';
+
   const teamPages = [
     {
       name: "Men's Club",
@@ -49,9 +51,9 @@
 
 <section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
   <enhanced:img
-    src={TeamsHero}
-    alt="LUHC Teams Hero"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"
+    alt="LUHC Teams Hero"
+    src={TeamsHero}
   />
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
 
@@ -78,16 +80,16 @@
 
   <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12" data-aos="fade-up">
     {#each teamPages as team (team.name + team.href)}
-      <a
-        href={resolve(team.href)}
+      <Button.Root
         class="group relative block transform overflow-hidden border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
         aria-label={`Go to ${team.name} page`}
+        href={resolve(team.href)}
       >
         <div class="relative h-64 overflow-hidden">
           <enhanced:img
-            src={team.image}
-            alt={team.alt}
             class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            alt={team.alt}
+            src={team.image}
           />
           <div
             class="absolute inset-0 bg-luhc-red/0 transition-colors duration-300 group-hover:bg-luhc-red/20"
@@ -116,19 +118,19 @@
             <svg
               class="ml-2 h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1"
               fill="none"
-              viewBox="0 0 24 24"
               stroke="currentColor"
+              viewBox="0 0 24 24"
             >
               <path
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
           </span>
         </div>
-      </a>
+      </Button.Root>
     {/each}
   </div>
 </div>

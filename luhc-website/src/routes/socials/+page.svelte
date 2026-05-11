@@ -10,6 +10,8 @@
   import Socials7 from '$lib/images/pages/socials/socials-7.webp?enhanced';
   import Socials8 from '$lib/images/pages/socials/socials-8.webp?enhanced';
 
+  import { Button } from 'bits-ui';
+
   const galleryImages = [
     Socials1,
     Socials2,
@@ -28,9 +30,9 @@
 
 <section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
   <enhanced:img
-    src={SocialsHero}
-    alt="LUHC Social Event"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-70"
+    alt="LUHC Social Event"
+    src={SocialsHero}
   />
   <div class="absolute inset-0 bg-linear-to-r from-black/80 to-transparent"></div>
 
@@ -59,41 +61,42 @@
         > ranging from themed nights out to relaxed get-togethers.
       </p>
       <p class="text-lg leading-relaxed font-light text-gray-600">
-        We are proud to host our nights at <a
+        We are proud to host our nights at <Button.Root
+          class="font-bold text-luhc-red hover:underline"
           href="https://www.mollyomalleys.co.uk"
-          target="_blank"
-          class="font-bold text-luhc-red hover:underline">Molly O'Malleys</a
+          rel="noopener noreferrer"
+          target="_blank">Molly O'Malleys</Button.Root
         >. Whether you play competitively or just want to be part of the community, our socials are
         for you.
       </p>
-      <a
-        href={resolve('/contact-us')}
+      <Button.Root
         class="mt-4 inline-block border-b-2 border-luhc-dark pb-1 font-display tracking-widest text-luhc-dark uppercase transition-colors hover:border-luhc-red hover:text-luhc-red"
+        href={resolve('/contact-us')}
       >
         Become a Social Member
-      </a>
+      </Button.Root>
     </div>
 
     <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
       <enhanced:img
-        src={Socials1}
         class="h-48 w-full rounded-sm object-cover shadow-md transition-transform duration-500 hover:scale-105"
         alt="Social 1"
+        src={Socials1}
       />
       <enhanced:img
-        src={Socials2}
         class="mt-8 h-48 w-full rounded-sm object-cover shadow-md transition-transform duration-500 hover:scale-105"
         alt="Social 2"
+        src={Socials2}
       />
       <enhanced:img
-        src={Socials3}
         class="h-48 w-full rounded-sm object-cover shadow-md transition-transform duration-500 hover:scale-105"
         alt="Social 3"
+        src={Socials3}
       />
       <enhanced:img
-        src={Socials4}
         class="mt-8 h-48 w-full rounded-sm object-cover shadow-md transition-transform duration-500 hover:scale-105"
         alt="Social 4"
+        src={Socials4}
       />
     </div>
   </div>
@@ -108,9 +111,9 @@
     {#each galleryImages as img, index (img)}
       <div class="group relative aspect-square overflow-hidden rounded-sm">
         <enhanced:img
-          src={img}
-          alt={`Social ${index}`}
           class="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
+          alt={`Social ${index}`}
+          src={img}
         />
         <div
           class="absolute inset-0 bg-luhc-red/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"

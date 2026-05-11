@@ -7,6 +7,8 @@
   import GreensLogo from '$lib/images/sponsors/Greens.png?enhanced';
   import MollyOMalleysLogo from '$lib/images/sponsors/molly-o-malleys.webp?enhanced';
 
+  import { Button } from 'bits-ui';
+
   const sponsors = [
     {
       logo: YDLLogo,
@@ -45,9 +47,9 @@
 
 <section class="relative h-[50vh] w-full overflow-hidden bg-white">
   <enhanced:img
-    src={SponsorsHero}
-    alt="Sponsors Hero"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-90"
+    alt="Sponsors Hero"
+    src={SponsorsHero}
   />
   <div class="absolute inset-0 bg-luhc-dark/80"></div>
 
@@ -76,9 +78,9 @@
         <div class="flex flex-col">
           <div class="mb-6 flex h-32 w-full items-center justify-center">
             <enhanced:img
-              src={sponsor.logo}
-              alt={sponsor.name}
               class="max-h-24 w-auto transform object-contain opacity-60 grayscale filter transition-all duration-500 group-hover:scale-110 group-hover:opacity-100 group-hover:grayscale-0"
+              alt={sponsor.name}
+              src={sponsor.logo}
             />
           </div>
           <h3 class="mb-2 font-display text-lg font-bold text-luhc-dark uppercase">
@@ -86,17 +88,17 @@
           </h3>
           <p class="font-sans text-sm text-gray-500">{sponsor.desc}</p>
         </div>
-        <a
-          href={sponsor.url}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Button.Root
           class="group inline-flex w-full items-center gap-2 bg-luhc-red px-2 py-2 font-display font-bold tracking-tight text-white uppercase shadow-md transition-colors duration-300 hover:bg-luhc-dark"
+          href={sponsor.url}
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <span class="w-full text-center text-xs">{sponsor.domain}</span>
           <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 group-hover:translate-x-1 transition-transform">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
           </svg> -->
-        </a>
+        </Button.Root>
       </div>
     {/each}
   </div>
@@ -133,10 +135,10 @@
 
 <section class="py-20 text-center">
   <h2 class="mb-6 font-display text-3xl font-bold text-luhc-dark uppercase">Join The Team</h2>
-  <a
-    href={resolve('/contact-us')}
+  <Button.Root
     class="inline-block rounded-sm bg-luhc-red px-10 py-4 font-display font-bold tracking-widest text-white uppercase shadow-lg transition-colors hover:bg-luhc-dark"
+    href={resolve('/contact-us')}
   >
     Become A Sponsor
-  </a>
+  </Button.Root>
 </section>

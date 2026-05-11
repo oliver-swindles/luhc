@@ -2,6 +2,8 @@
   import { resolve } from '$app/paths';
   import RosesHero from '$lib/images/pages/roses/roses-hero.webp?enhanced';
   import RosesCountdown from '$lib/components/RosesCountdown.svelte';
+
+  import { Button } from 'bits-ui';
 </script>
 
 <svelte:head>
@@ -14,9 +16,9 @@
 
 <section class="relative h-[70vh] w-full overflow-hidden bg-luhc-dark">
   <enhanced:img
-    src={RosesHero}
-    alt="Roses Hockey Action"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"
+    alt="Roses Hockey Action"
+    src={RosesHero}
   />
   <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/40 to-black/0"></div>
 
@@ -52,37 +54,37 @@
     </p>
 
     <div class="flex flex-col items-center gap-6">
-      <a
-        href="https://roseslive.co.uk/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Button.Root
         class="group inline-flex items-center gap-2 bg-luhc-red px-8 py-3 font-display font-bold tracking-wide text-white uppercase shadow-md transition-colors duration-300 hover:bg-luhc-dark"
+        href="https://roseslive.co.uk/"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <span>Visit RosesLive.co.uk</span>
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
           class="h-5 w-5 transition-transform group-hover:translate-x-1"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
             stroke-linecap="round"
             stroke-linejoin="round"
-            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
           />
         </svg>
-      </a>
+      </Button.Root>
 
-      <a
-        href="https://www.lancaster.ac.uk/sport/roses/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Button.Root
         class="mt-4 border-b border-transparent pb-0.5 font-sans text-xs text-gray-400 transition-colors hover:border-luhc-red hover:text-luhc-red"
+        href="https://www.lancaster.ac.uk/sport/roses/"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         View More Tournament Details on lancaster.ac.uk &rarr;
-      </a>
+      </Button.Root>
     </div>
   </section>
 
@@ -96,22 +98,22 @@
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div class="aspect-video overflow-hidden rounded-sm bg-black shadow-xl">
             <iframe
-              width="100%"
+              allowfullscreen
+              frameborder="0"
               height="100%"
               src="https://www.youtube-nocookie.com/embed/D0kxPxzUJgI"
               title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
+              width="100%"
             ></iframe>
           </div>
           <div class="aspect-video overflow-hidden rounded-sm bg-black shadow-xl">
             <iframe
-              width="100%"
+              allowfullscreen
+              frameborder="0"
               height="100%"
               src="https://www.youtube-nocookie.com/embed/YE8VG-8AUOI"
               title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
+              width="100%"
             ></iframe>
           </div>
         </div>
@@ -125,22 +127,22 @@
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div class="aspect-video overflow-hidden rounded-sm bg-black shadow-xl">
             <iframe
-              width="100%"
+              allowfullscreen
+              frameborder="0"
               height="100%"
               src="https://www.youtube-nocookie.com/embed/-kkhnXNMLCo"
               title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
+              width="100%"
             ></iframe>
           </div>
           <div class="aspect-video overflow-hidden rounded-sm bg-black shadow-xl">
             <iframe
-              width="100%"
+              allowfullscreen
+              frameborder="0"
               height="100%"
               src="https://www.youtube-nocookie.com/embed/CEdbo9gKSSs"
               title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
+              width="100%"
             ></iframe>
           </div>
         </div>
@@ -154,22 +156,22 @@
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div class="aspect-video overflow-hidden rounded-sm bg-black shadow-xl">
             <iframe
-              width="100%"
+              allowfullscreen
+              frameborder="0"
               height="100%"
               src="https://www.youtube-nocookie.com/embed/erSmlugfESg"
               title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
+              width="100%"
             ></iframe>
           </div>
           <div class="aspect-video overflow-hidden rounded-sm bg-black shadow-xl">
             <iframe
-              width="100%"
+              allowfullscreen
+              frameborder="0"
               height="100%"
               src="https://www.youtube-nocookie.com/embed/CDyEXxHycEg"
               title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
+              width="100%"
             ></iframe>
           </div>
         </div>
@@ -183,22 +185,22 @@
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div class="aspect-video overflow-hidden rounded-sm bg-black shadow-xl">
             <iframe
-              width="100%"
+              allowfullscreen
+              frameborder="0"
               height="100%"
               src="https://www.youtube-nocookie.com/embed/7eyaLJZA3sU"
               title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
+              width="100%"
             ></iframe>
           </div>
           <div class="aspect-video overflow-hidden rounded-sm bg-black shadow-xl">
             <iframe
-              width="100%"
+              allowfullscreen
+              frameborder="0"
               height="100%"
               src="https://www.youtube-nocookie.com/embed/n8Jj4okm0Hg"
               title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
+              width="100%"
             ></iframe>
           </div>
         </div>
@@ -211,11 +213,11 @@
     <p class="mx-auto mb-10 max-w-2xl font-sans text-xl text-gray-400">
       Whether you're on the pitch or in the stands, every voice counts. Join us next year.
     </p>
-    <a
-      href={resolve('/contact-us')}
+    <Button.Root
       class="inline-block transform bg-luhc-red px-10 py-4 font-display font-bold tracking-widest text-white uppercase shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-luhc-red"
+      href={resolve('/contact-us')}
     >
       Play for Lancaster
-    </a>
+    </Button.Root>
   </section>
 </div>

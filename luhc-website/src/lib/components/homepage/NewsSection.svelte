@@ -7,9 +7,9 @@
   <!-- <h2 class="text-3xl font-bold mb-6 text-center md:text-left">Latest News</h2> -->
   <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
     <enhanced:img
-      src={NewsImage}
-      alt="Latest News"
       class="h-80 w-full rounded-xl object-cover shadow-lg"
+      alt="Latest News"
+      src={NewsImage}
     />
     <div class="space-y-4">
       <p>
@@ -23,7 +23,7 @@
       </p>
       <!-- <h3 class="text-2xl font-semibold">Title of News Article</h3> -->
       <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus numquam iste dolorem optio recusandae dignissimos.</p> -->
-      <!-- <Button class="w-fit">Read More</Button> -->
+      <!-- <Button.Root class="w-fit">Read More</Button.Root> -->
     </div>
   </div>
 </section>

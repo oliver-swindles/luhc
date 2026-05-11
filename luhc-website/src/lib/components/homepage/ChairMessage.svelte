@@ -6,9 +6,9 @@
   class="relative flex min-h-[60vh] items-center justify-center overflow-hidden py-24 text-center text-white md:py-36"
 >
   <enhanced:img
-    src={LUHCExecMessage}
-    alt="Chair Message Background"
     class="absolute inset-0 z-0 h-full w-full object-cover"
+    alt="Chair Message Background"
+    src={LUHCExecMessage}
   />
 
   <div

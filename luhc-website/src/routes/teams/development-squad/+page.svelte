@@ -5,6 +5,7 @@
   import Dev2 from '$lib/images/pages/dev/dev-2.avif';
   import Dev3 from '$lib/images/pages/dev/dev-3.avif';
   import Dev4 from '$lib/images/pages/dev/dev-4.avif';
+  import { Button } from 'bits-ui';
 
   const gallery = [Dev1, Dev2, Dev3, Dev4];
 </script>
@@ -15,9 +16,9 @@
 
 <section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
   <enhanced:img
-    src={DevHero}
-    alt="Dev Squad Huddle"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"
+    alt="Dev Squad Huddle"
+    src={DevHero}
   />
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
 
@@ -75,12 +76,12 @@
         Roses Mixed Exhibition.
       </p>
 
-      <a
-        href={resolve('/socials')}
+      <Button.Root
         class="block w-full border-2 border-luhc-red py-3 text-center font-display font-bold tracking-widest text-luhc-red uppercase transition-colors hover:bg-luhc-red hover:text-white"
+        href={resolve('/socials')}
       >
         View Socials
-      </a>
+      </Button.Root>
     </div>
   </div>
 
@@ -92,9 +93,9 @@
       {#each gallery as img (img)}
         <div class="group relative aspect-square overflow-hidden bg-gray-100">
           <enhanced:img
-            src={img}
-            alt="Dev Squad Action"
             class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+            alt="Dev Squad Action"
+            src={img}
           />
         </div>
       {/each}
@@ -104,11 +105,11 @@
   <section class="mt-24 rounded-sm bg-luhc-red px-6 py-16 text-center text-white shadow-xl">
     <h2 class="mb-4 font-display text-4xl font-bold uppercase">Start Your Journey</h2>
     <p class="mb-8 font-sans text-lg text-white/90">No trials required. Just turn up and play.</p>
-    <a
-      href={resolve('/contact-us')}
+    <Button.Root
       class="inline-block bg-white px-10 py-4 font-display font-bold tracking-widest text-luhc-red uppercase shadow-md transition-colors hover:bg-luhc-dark hover:text-white"
+      href={resolve('/contact-us')}
     >
       Get Involved
-    </a>
+    </Button.Root>
   </section>
 </div>

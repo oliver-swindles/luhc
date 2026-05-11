@@ -4,6 +4,7 @@
   import OnesPhoto from '$lib/images/pages/womens/womens-ones.avif';
   import TwosPhoto from '$lib/images/pages/womens/womens-twos.avif';
   import ThreesPhoto from '$lib/images/pages/womens/womens-threes.avif';
+  import { Button } from 'bits-ui';
 
   const teams = [
     {
@@ -39,9 +40,9 @@
 
 <section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
   <enhanced:img
-    src={WomensHero}
-    alt="Women's Club Hero"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-70"
+    alt="Women's Club Hero"
+    src={WomensHero}
   />
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
 
@@ -112,9 +113,9 @@
         >
           <div class="relative h-64 overflow-hidden lg:h-auto lg:w-2/5">
             <enhanced:img
-              src={team.photo}
-              alt={team.name}
               class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              alt={team.name}
+              src={team.photo}
             />
             <div
               class="absolute inset-0 bg-luhc-red/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -161,11 +162,11 @@
 
   <section class="mt-24 border-t border-gray-100 py-12 text-center">
     <h2 class="mb-6 font-display text-4xl font-bold uppercase">Join The Women's Club</h2>
-    <a
-      href={resolve('/contact-us')}
+    <Button.Root
       class="inline-block transform bg-luhc-red px-10 py-4 font-display font-bold tracking-widest text-white uppercase shadow-lg transition-colors hover:-translate-y-1 hover:bg-luhc-dark"
+      href={resolve('/contact-us')}
     >
       Get Involved
-    </a>
+    </Button.Root>
   </section>
 </div>

@@ -10,6 +10,7 @@
   import Indoor7 from '$lib/images/pages/indoor/indoor-7.webp?enhanced';
   import Indoor8 from '$lib/images/pages/indoor/indoor-8.webp?enhanced';
   import Indoor9 from '$lib/images/pages/indoor/indoor-9.webp?enhanced';
+  import { Button } from 'bits-ui';
 
   const gallery = [
     { src: Indoor1, alt: 'Indoor Hockey 1' },
@@ -30,9 +31,9 @@
 
 <section class="relative h-[60vh] w-full overflow-hidden bg-luhc-dark">
   <enhanced:img
-    src={IndoorHero}
-    alt="Indoor Hockey Action"
     class="absolute inset-0 h-full w-full object-cover object-center opacity-70"
+    alt="Indoor Hockey Action"
+    src={IndoorHero}
   />
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
 
@@ -95,9 +96,9 @@
       {#each gallery as img (img.src)}
         <div class="group relative aspect-4/3 overflow-hidden rounded-sm bg-gray-900">
           <enhanced:img
-            src={img.src}
-            alt={img.alt}
             class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
+            alt={img.alt}
+            src={img.src}
           />
           <div
             class="absolute inset-0 bg-luhc-red/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -112,11 +113,11 @@
     <p class="mx-auto mb-10 max-w-xl font-sans text-lg text-gray-500">
       Sharpen your skills in the fast-paced indoor format.
     </p>
-    <a
-      href={resolve('/contact-us')}
+    <Button.Root
       class="inline-block transform bg-luhc-red px-10 py-4 font-display font-bold tracking-widest text-white uppercase shadow-lg transition-colors hover:-translate-y-1 hover:bg-luhc-dark"
+      href={resolve('/contact-us')}
     >
       Join Training
-    </a>
+    </Button.Root>
   </section>
 </div>

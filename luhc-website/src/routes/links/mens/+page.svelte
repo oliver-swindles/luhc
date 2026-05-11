@@ -1,8 +1,9 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
   import LinkTreeList from '$lib/components/links/LinkList.svelte';
-  // Use your static enhanced image here
   import MensLogo from '$lib/images/luhc-logo.png?enhanced';
+
+  import { Button } from 'bits-ui';
 
   let { data } = $props();
   const pageData = $derived(data.pageData);
@@ -17,21 +18,21 @@
   <div class="mx-auto max-w-xl">
     <div class="mb-10 text-center">
       <div class="mx-auto mb-4 h-28 w-28 overflow-hidden rounded-full bg-black p-3 shadow-sm">
-        <enhanced:img src={MensLogo} alt="LUHC Men's Logo" class="h-full w-full object-contain" />
+        <enhanced:img class="h-full w-full object-contain" alt="LUHC Men's Logo" src={MensLogo} />
       </div>
       <h1 class="mb-3 text-2xl font-bold">{pageData.title}</h1>
       <p class="mx-auto max-w-sm text-sm leading-relaxed text-gray-600">{pageData.description}</p>
     </div>
 
-    <LinkTreeList socials={pageData.socials} sections={pageData.sections} />
+    <LinkTreeList sections={pageData.sections} socials={pageData.socials} />
 
     <div class="mt-16 text-center">
-      <a
-        href={resolve('/')}
+      <Button.Root
         class="text-[10px] font-bold tracking-widest text-gray-400 uppercase transition-colors hover:text-luhc-red"
+        href={resolve('/')}
       >
         L.U.H.C. Official Site
-      </a>
+      </Button.Root>
     </div>
   </div>
 </div>

@@ -2,6 +2,8 @@
   import { resolve } from '$app/paths';
   import ExecHero from '$lib/images/pages/exec/exec-hero-2.webp?enhanced';
 
+  import { Button } from 'bits-ui';
+
   const execs = [
     { role: 'Chairperson', name: 'Hannah Bird', photo: '' },
     { role: 'Vice-Chairwoman', name: 'Heledd Owen', photo: '' },
@@ -30,9 +32,9 @@
 
 <section class="relative h-[50vh] w-full overflow-hidden bg-luhc-dark">
   <enhanced:img
-    src={ExecHero}
-    alt="Exec Team"
     class="absolute inset-0 h-full w-full object-cover object-top opacity-50"
+    alt="Exec Team"
+    src={ExecHero}
   />
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
   <div class="absolute bottom-0 left-0 w-full p-8 md:p-16" data-aos="fade-up">
@@ -55,9 +57,9 @@
         <div class="relative aspect-4/5 w-full overflow-hidden bg-gray-100">
           {#if person.photo}
             <enhanced:img
-              src={person.photo}
-              alt={person.name}
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              alt={person.name}
+              src={person.photo}
             />
           {:else}
             <div class="absolute inset-0 flex items-center justify-center text-gray-300">
@@ -92,11 +94,11 @@
     <p class="mb-4 font-display text-xl font-bold text-luhc-dark uppercase">
       Looking for Team Captains?
     </p>
-    <a
-      href={resolve('/about/meet-the-captains')}
+    <Button.Root
       class="inline-block text-sm font-bold tracking-widest text-luhc-red uppercase decoration-2 underline-offset-4 hover:underline"
+      href={resolve('/about/meet-the-captains')}
     >
       View Captains Roster &rarr;
-    </a>
+    </Button.Root>
   </div>
 </div>

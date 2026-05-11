@@ -60,7 +60,7 @@
   </div>
 
   <div
-    class="scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent max-h-96 w-full overflow-y-auto bg-white"
+    class="max-h-96 w-full scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent overflow-y-auto bg-white"
   >
     {#if fixtures && fixtures.length > 0}
       <div class="divide-y divide-gray-100">
@@ -139,12 +139,12 @@
     {:else}
       <div class="flex flex-col items-center justify-center px-6 py-16 text-center">
         <div class="mb-4 rounded-full bg-gray-50 p-4">
-          <svg class="h-8 w-8 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="h-8 w-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
             />
           </svg>
         </div>
@@ -158,12 +158,12 @@
 
   <div class="border-t border-gray-100 bg-gray-50 p-3 text-center">
     <p class="flex items-center justify-center gap-1 text-[10px] text-gray-500">
-      <svg class="h-3 w-3 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+      <svg class="h-3 w-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"
         ><path
+          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width="2"
-          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
         /></svg
       >
       Auto-syncing from GMS
