@@ -19,6 +19,7 @@ const config = {
           'self',
           'https://rplgcrto.api.sanity.io',
           'https://rplgcrto.apicdn.sanity.io',
+          'https://api.websitecarbon.com',
           'wss://rplgcrto.api.sanity.io',
         ],
         'frame-src': ['https://www.youtube-nocookie.com'],
