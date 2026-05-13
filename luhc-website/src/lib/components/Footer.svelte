@@ -1,7 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
   import LUHCLogo from '$lib/images/luhc-logo.png?enhanced';
-  import { CarbonBadge } from 'svelte-website-carbon-badge';
   import { Button } from 'bits-ui';
 </script>
 
@@ -25,7 +24,6 @@
       <div class="inline-block rounded border border-white/10 bg-white/5 px-3 py-1">
         <span class="text-xs font-bold tracking-widest text-luhc-red">#ROSESARERED</span>
       </div>
-      <CarbonBadge dark={true} />
     </div>
 
     <div>

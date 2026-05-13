@@ -49,7 +49,6 @@
     "aos": "^2.3.4",
     "bits-ui": "^2.18.1",
     "cheerio": "^1.2.0",
-    "sanity": "^5.24.0",
-    "svelte-website-carbon-badge": "^1.1.0"
+    "sanity": "^5.24.0"
   }
 }
