@@ -15,15 +15,18 @@
         />
         <div class="flex flex-col">
           <span class="font-display text-2xl font-bold tracking-wide uppercase">LU Hockey</span>
-          <!-- <span class="text-xs font-sans text-gray-400">Est. 1964</span> -->
+          <span class="font-sans text-xs text-gray-400">Est. 1964</span>
         </div>
       </Button.Root>
       <p class="max-w-xs text-sm leading-relaxed font-light text-gray-400">
         The official home of Lancaster University Hockey Club. Competitive, social, and inclusive.
       </p>
-      <div class="inline-block rounded border border-white/10 bg-white/5 px-3 py-1">
-        <span class="text-xs font-bold tracking-widest text-luhc-red">#ROSESARERED</span>
-      </div>
+      <Button.Root
+        class="rounded bg-luhc-red px-3 py-1 transition-colors duration-150 hover:bg-white hover:text-luhc-dark"
+        href={resolve('/roses')}
+      >
+        <span class="text-xs font-semibold tracking-widest"> #ROSESARERED </span>
+      </Button.Root>
     </div>
 
     <div>
@@ -162,11 +165,11 @@
         <span class="hidden md:inline"> All Rights Reserved.</span>
       </div>
       <div class="mt-4 flex items-center gap-4 md:mt-0">
-        <p class="transition-colors hover:text-white">#ROSESARERED</p>
+        <p class="transition-colors">#ROSESARERED</p>
         <div class="h-3 w-px bg-white/20"></div>
         <p>
           Website by <Button.Root
-            class="font-bold text-luhc-red transition-colors hover:text-white"
+            class="font-bold hover:text-white"
             href="https://www.spacefrogstudio.com"
             rel="noopener noreferrer"
             target="_blank">Space Frog Studio</Button.Root

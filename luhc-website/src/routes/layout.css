@@ -6,7 +6,8 @@
 @source '../app.html';
 
 @theme {
-  --color-luhc-red: #d2141b;
+  /* --color-luhc-red: #d2141b; */
+  --color-luhc-red: #b5121b;
   --color-luhc-dark: #09090b;
   --color-luhc-gray: #e5e5e5;
 

@@ -7,7 +7,7 @@
 <section class="border-t border-white/10 bg-luhc-dark py-20 text-center text-white">
   <div class="mx-auto max-w-3xl px-6">
     <h2 class="mb-6 font-display text-5xl leading-none font-bold uppercase md:text-6xl">
-      Join The <span class="text-luhc-red">Family</span>
+      Join The Family
     </h2>
 
     <p class="mx-auto mb-10 max-w-xl font-sans text-xl font-light text-gray-400">

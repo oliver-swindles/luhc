@@ -34,7 +34,7 @@
 
           <span class="text-gray-400">{match.opponent}</span>
 
-          <span class="text-[10px] font-bold text-luhc-red">
+          <span class="text-[10px] font-medium text-white/60">
             {match.locationType === 'Home' ? '(H)' : '(A)'}
           </span>
         </div>
@@ -57,11 +57,9 @@
   }
 
   .animate-scroll {
-    /* Adjust '40s' to make it faster or slower */
     animation: scroll 70s linear infinite;
   }
 
-  /* Pause animation when hovering to read */
   .hover\:pause:hover {
     animation-play-state: paused;
   }

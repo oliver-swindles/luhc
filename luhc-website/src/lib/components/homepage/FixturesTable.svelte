@@ -112,7 +112,7 @@
         </svg>
       </div>
       <p class="mb-1 font-display text-lg text-luhc-dark uppercase">No Upcoming Games</p>
-      <p class="max-w-50 text-xs font-light text-gray-400">
+      <p class="max-w-50 text-xs font-light text-gray-700">
         Fixtures are updated automatically via GMS. Check back soon.
       </p>
     </div>

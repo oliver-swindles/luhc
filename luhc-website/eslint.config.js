@@ -31,7 +31,7 @@ export default defineConfig(
       'svelte/no-unused-class-name': 'off',
       'svelte/block-lang': 'off',
       // 'svelte/no-inline-styles': 'off',
-      // 'svelte/consistent-selector-style': 'off',
+      'svelte/consistent-selector-style': 'off',
       'svelte/no-at-debug-tags': 'error',
       'svelte/no-ignored-unsubscribe': 'error',
       'svelte/no-reactive-reassign': 'error',

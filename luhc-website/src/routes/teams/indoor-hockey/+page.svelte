@@ -70,7 +70,7 @@
     </div>
 
     <div class="flex flex-col justify-center lg:col-span-4">
-      <div class="bg-luhc-dark p-8 text-white shadow-xl">
+      <div class="border-2 border-gray-100 bg-gray-50 p-8 text-luhc-dark shadow-lg">
         <h3 class="mb-4 font-display text-2xl font-bold text-luhc-red uppercase">Schedule</h3>
         <ul class="space-y-4 font-sans font-light">
           <li class="flex items-center gap-3">
@@ -96,13 +96,10 @@
       {#each gallery as img (img.src)}
         <div class="group relative aspect-4/3 overflow-hidden rounded-sm bg-gray-900">
           <enhanced:img
-            class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
             alt={img.alt}
             src={img.src}
           />
-          <div
-            class="absolute inset-0 bg-luhc-red/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-          ></div>
         </div>
       {/each}
     </div>

@@ -64,7 +64,7 @@
   >
     {#if fixtures && fixtures.length > 0}
       <div class="divide-y divide-gray-100">
-        {#each fixtures as fixture, i (fixture.dateAndTime + fixture.opponent + fixture.team + i)}
+        {#each fixtures as fixture (fixture.dateAndTime + fixture.opponent + fixture.team)}
           {@const dt = formatDate(fixture.dateAndTime)}
 
           <div class="group relative flex items-center p-3 transition-colors hover:bg-gray-50">
@@ -149,7 +149,7 @@
           </svg>
         </div>
         <p class="mb-1 font-display text-lg text-luhc-dark uppercase">No Upcoming Games</p>
-        <p class="max-w-50 text-xs font-light text-gray-400">
+        <p class="max-w-50 text-xs font-light text-gray-700">
           Fixtures are updated automatically via GMS. Check back soon.
         </p>
       </div>
