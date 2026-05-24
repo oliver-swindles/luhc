@@ -170,7 +170,7 @@
         <p>
           Website by <Button.Root
             class="font-bold hover:text-white"
-            href="https://www.spacefrogstudio.com"
+            href="https://spacefrogstudio.com"
             rel="noopener noreferrer"
             target="_blank">Space Frog Studio</Button.Root
           >
