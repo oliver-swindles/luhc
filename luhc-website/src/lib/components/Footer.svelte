@@ -131,9 +131,9 @@
         <li>
           <Button.Root
             class="transition-colors duration-200 hover:text-white"
-            href="https://www.mollyomalleys.co.uk/"
+            href="https://beerhallgalgate.co.uk/"
             rel="noopener noreferrer"
-            target="_blank">Molly O'Malleys</Button.Root
+            target="_blank">The Beer Hall</Button.Root
           >
         </li>
         <li>

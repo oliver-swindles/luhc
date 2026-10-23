@@ -63,9 +63,9 @@
       <p class="text-lg leading-relaxed font-light text-gray-600">
         We are proud to host our nights at <Button.Root
           class="font-bold text-luhc-red hover:underline"
-          href="https://www.mollyomalleys.co.uk"
+          href="https://beerhallgalgate.co.uk/"
           rel="noopener noreferrer"
-          target="_blank">Molly O'Malleys</Button.Root
+          target="_blank">The Beer Hall</Button.Root
         >. Whether you play competitively or just want to be part of the community, our socials are
         for you.
       </p>

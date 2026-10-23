@@ -126,7 +126,7 @@
     </div>
 
     <div>
-      <Sponsors />
+      <Sponsors sponsors={data.sponsors} />
     </div>
   </div>
 </section>

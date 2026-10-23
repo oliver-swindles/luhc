@@ -1,6 +1,7 @@
 import * as cheerio from 'cheerio';
 import type { PageServerLoad } from './$types';
 import type { Match } from '$lib/types';
+import { client } from '$lib/sanityClient';
 
 function normaliseScore(scoreStr: string, isHome: boolean): string {
   const match = scoreStr.match(/(\d+)\s*[-:–]\s*(\d+)/);
@@ -23,6 +24,21 @@ export const load: PageServerLoad = async ({ setHeaders, fetch }) => {
 
   const fixtures: Match[] = [];
   const results: Match[] = [];
+  let sponsors: any[] = [];
+
+  try {
+    sponsors = await client.fetch(`
+        *[_type == "sponsor"]{
+          _id,
+          name,
+          description,
+          link,
+          logo
+        }
+      `);
+  } catch (error) {
+    console.error("Failed to load sponsors", error);
+  }
 
   try {
     // 2. CONFIG: Your Club ID
@@ -113,12 +129,13 @@ export const load: PageServerLoad = async ({ setHeaders, fetch }) => {
     });
 
     return {
+      sponsors,
       fixtures,
       results: results.slice(0, 12), // Only show top 12 results in ticker
       success: true,
     };
   } catch (err) {
-    console.error('⚠️ GMS Load Failed:', err);
+    console.error('GMS Load Failed:', err);
     return { fixtures: [], results: [], success: false };
   }
 };
