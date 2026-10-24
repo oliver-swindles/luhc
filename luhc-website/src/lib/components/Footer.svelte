@@ -2,10 +2,21 @@
   import { resolve } from '$app/paths';
   import LUHCLogo from '$lib/images/luhc-logo.png?enhanced';
   import { Button } from 'bits-ui';
+
+  interface Sponsor {
+    _id: string;
+    name: string;
+    description?: string;
+    link?: string;
+    logo: any;
+  }
+
+  let { sponsors = [] }: { sponsors: Sponsor[] } = $props();
 </script>
 
 <footer class="border-t-4 border-luhc-red bg-luhc-dark pt-16 pb-8 text-white">
   <div class="mx-auto mb-12 grid max-w-7xl grid-cols-1 gap-12 px-6 md:grid-cols-4">
+    <!-- Column 1: Logo & Bio -->
     <div class="flex flex-col items-start space-y-6">
       <Button.Root class="group flex items-center space-x-3" href={resolve('/')}>
         <enhanced:img
@@ -29,6 +40,7 @@
       </Button.Root>
     </div>
 
+    <!-- Column 2: Club Info -->
     <div>
       <h2
         class="mb-6 inline-block border-b border-white/10 pb-2 font-display text-sm font-bold tracking-widest text-white uppercase"
@@ -37,22 +49,13 @@
       </h2>
       <ul class="space-y-3 font-sans text-sm text-gray-400">
         <li>
-          <Button.Root
-            class="transition-colors duration-200 hover:text-luhc-red"
-            href={resolve('/about')}>About Us</Button.Root
-          >
+          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href={resolve('/about')}>About Us</Button.Root>
         </li>
         <li>
-          <Button.Root
-            class="transition-colors duration-200 hover:text-luhc-red"
-            href={resolve('/contact-us')}>Contact Us</Button.Root
-          >
+          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href={resolve('/contact-us')}>Contact Us</Button.Root>
         </li>
         <li>
-          <Button.Root
-            class="transition-colors duration-200 hover:text-luhc-red"
-            href="{resolve('/')}LUHCClubConstitution.docx">Club Constitution</Button.Root
-          >
+          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href="{resolve('/')}LUHCClubConstitution.docx">Club Constitution</Button.Root>
         </li>
         <li>
           <Button.Root
@@ -71,6 +74,7 @@
       </ul>
     </div>
 
+    <!-- Column 3: Follow Us -->
     <div>
       <h2
         class="mb-6 inline-block border-b border-white/10 pb-2 font-display text-sm font-bold tracking-widest text-white uppercase"
@@ -79,40 +83,21 @@
       </h2>
       <ul class="space-y-3 font-sans text-sm text-gray-400">
         <li>
-          <Button.Root
-            class="transition-colors duration-200 hover:text-luhc-red"
-            href="https://www.facebook.com/groups/340322369353793/"
-            rel="noopener noreferrer"
-            target="_blank">LUHC Facebook</Button.Root
-          >
+          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href="https://www.facebook.com/groups/340322369353793/" rel="noopener noreferrer" target="_blank">LUHC Facebook</Button.Root>
         </li>
         <li>
-          <Button.Root
-            class="transition-colors duration-200 hover:text-luhc-red"
-            href="https://www.instagram.com/lumhc_/"
-            rel="noopener noreferrer"
-            target="_blank">Men's Instagram</Button.Root
-          >
+          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href="https://www.instagram.com/lumhc_/" rel="noopener noreferrer" target="_blank">Men's Instagram</Button.Root>
         </li>
         <li>
-          <Button.Root
-            class="transition-colors duration-200 hover:text-luhc-red"
-            href="https://www.instagram.com/luwhc_/"
-            rel="noopener noreferrer"
-            target="_blank">Women's Instagram</Button.Root
-          >
+          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href="https://www.instagram.com/luwhc_/" rel="noopener noreferrer" target="_blank">Women's Instagram</Button.Root>
         </li>
         <li>
-          <Button.Root
-            class="transition-colors duration-200 hover:text-luhc-red"
-            href="https://www.instagram.com/luhc_dev/"
-            rel="noopener noreferrer"
-            target="_blank">Dev Squad Instagram</Button.Root
-          >
+          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href="https://www.instagram.com/luhc_dev/" rel="noopener noreferrer" target="_blank">Dev Squad Instagram</Button.Root>
         </li>
       </ul>
     </div>
 
+    <!-- Column 4: Dynamic Partners from Sanity -->
     <div>
       <h2
         class="mb-6 inline-block border-b border-white/10 pb-2 font-display text-sm font-bold tracking-widest text-white uppercase"
@@ -120,46 +105,25 @@
         Partners
       </h2>
       <ul class="space-y-3 font-sans text-sm text-gray-400">
-        <li>
-          <Button.Root
-            class="transition-colors duration-200 hover:text-yellow-400"
-            href="https://www.yellowdoorlets.co.uk/"
-            rel="noopener noreferrer"
-            target="_blank">Yellow Door Lets</Button.Root
-          >
-        </li>
-        <li>
-          <Button.Root
-            class="transition-colors duration-200 hover:text-white"
-            href="https://beerhallgalgate.co.uk/"
-            rel="noopener noreferrer"
-            target="_blank">The Beer Hall</Button.Root
-          >
-        </li>
-        <li>
-          <Button.Root
-            class="transition-colors duration-200 hover:text-white"
-            href="https://thebowerham.co.uk/"
-            rel="noopener noreferrer"
-            target="_blank">The Bowerham Hotel</Button.Root
-          >
-        </li>
-        <li>
-          <Button.Root
-            class="transition-colors duration-200 hover:text-green-400"
-            href="https://www.facebook.com/GreensLancaster/"
-            rel="noopener noreferrer"
-            target="_blank">Greens Lancaster</Button.Root
-          >
-        </li>
+        {#each sponsors as sponsor (sponsor._id)}
+          <li>
+            <Button.Root
+              class="transition-colors duration-200 hover:text-white"
+              href={sponsor.link || '#'}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {sponsor.name}
+            </Button.Root>
+          </li>
+        {/each}
       </ul>
     </div>
   </div>
 
+  <!-- Copyright Bar -->
   <div class="mt-8 border-t border-white/10 px-6 pt-8">
-    <div
-      class="mx-auto flex max-w-7xl flex-col items-center justify-between text-xs text-gray-400 md:flex-row"
-    >
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between text-xs text-gray-400 md:flex-row">
       <div class="flex items-center gap-1">
         <span>&copy; {new Date().getFullYear()} Lancaster University Hockey Club.</span>
         <span class="hidden md:inline"> All Rights Reserved.</span>

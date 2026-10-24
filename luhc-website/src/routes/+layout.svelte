@@ -11,7 +11,7 @@
   import Header from '$lib/components/Header.svelte';
   import Footer from '$lib/components/Footer.svelte';
 
-  let { children } = $props();
+  let { children, data } = $props();
 
   onMount(() => {
     AOS.init({
@@ -97,5 +97,5 @@
     {@render children()}
   </main>
 
-  <Footer />
+  <Footer sponsors={data.sponsors} />
 </div>
