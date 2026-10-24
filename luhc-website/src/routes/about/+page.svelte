@@ -1,10 +1,10 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import AboutHero from '$lib/images/pages/about/about-hero-2.webp?enhanced';
-  import MensClub from '$lib/images/pages/about/mens-club-3.jpg?enhanced';
-  import WomensClub from '$lib/images/pages/about/womens-club-3.webp?enhanced';
-  import DevSquad from '$lib/images/pages/about/dev-squad.avif';
-  import IndoorHockey from '$lib/images/pages/about/indoor-hockey-2.webp?enhanced';
+  import AboutHero from '#lib/images/pages/about/about-hero-2.webp?enhanced';
+  import MensClub from '#lib/images/pages/about/mens-club-3.jpg?enhanced';
+  import WomensClub from '#lib/images/pages/about/womens-club-3.webp?enhanced';
+  import DevSquad from '#lib/images/pages/about/dev-squad.avif';
+  import IndoorHockey from '#lib/images/pages/about/indoor-hockey-2.webp?enhanced';
 
   import { Button } from 'bits-ui';
 
@@ -25,7 +25,8 @@
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"
     alt="LUHC Team Huddle"
     src={AboutHero}
-  />
+  ></enhanced:img>
+
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-black/30"></div>
 
   <div
@@ -109,7 +110,7 @@
               class="absolute inset-0 h-full w-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
               alt={team.title}
               src={team.img}
-            />
+            ></enhanced:img>
             <div
               class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-90"
             ></div>
@@ -136,10 +137,8 @@
     </p>
     <Button.Root
       class="inline-block border-2 border-luhc-dark px-8 py-3 font-display text-sm font-bold tracking-widest text-luhc-dark uppercase transition-colors duration-300 hover:bg-luhc-dark hover:text-white"
-      href={resolve('/socials')}
+      href={resolve('socials')}>View Socials</Button.Root
     >
-      View Socials
-    </Button.Root>
   </section>
 
   <section class="bg-luhc-red px-6 py-20 text-center text-white">
@@ -150,10 +149,8 @@
       </p>
       <Button.Root
         class="inline-block transform bg-white px-10 py-4 font-display font-bold tracking-widest text-luhc-red uppercase shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-gray-100"
-        href={resolve('/contact-us')}
+        href={resolve('contact-us')}>Join The Club</Button.Root
       >
-        Join The Club
-      </Button.Root>
     </div>
   </section>
 </div>

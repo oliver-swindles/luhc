@@ -1,9 +1,9 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import MensHero from '$lib/images/pages/mens/mens-hero.jpg?enhanced';
-  import OnesPhoto from '$lib/images/pages/mens/mens-ones.avif';
-  import TwosPhoto from '$lib/images/pages/mens/mens-twos.avif';
-  import ThreesPhoto from '$lib/images/pages/mens/mens-threes.avif';
+  import MensHero from '#lib/images/pages/mens/mens-hero.jpg?enhanced';
+  import OnesPhoto from '#lib/images/pages/mens/mens-ones.avif';
+  import TwosPhoto from '#lib/images/pages/mens/mens-twos.avif';
+  import ThreesPhoto from '#lib/images/pages/mens/mens-threes.avif';
   import { Button } from 'bits-ui';
 
   const teams = [
@@ -43,7 +43,8 @@
     class="absolute inset-0 h-full w-full object-cover object-center opacity-70"
     alt="Men's Club Hero"
     src={MensHero}
-  />
+  ></enhanced:img>
+
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
 
   <div
@@ -117,7 +118,7 @@
               class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               alt={team.name}
               src={team.photo}
-            />
+            ></enhanced:img>
             <div
               class="absolute inset-0 bg-luhc-red/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             ></div>
@@ -131,6 +132,7 @@
             <h3 class="mb-2 font-display text-3xl font-bold text-luhc-dark uppercase">
               {team.name}
             </h3>
+
             <p class="mb-6 font-sans text-xs font-bold tracking-widest text-luhc-red uppercase">
               {team.league}
             </p>
@@ -165,9 +167,7 @@
     <h2 class="mb-6 font-display text-4xl font-bold uppercase">Join The Men's Club</h2>
     <Button.Root
       class="inline-block transform bg-luhc-red px-10 py-4 font-display font-bold tracking-widest text-white uppercase shadow-lg transition-colors hover:-translate-y-1 hover:bg-luhc-dark"
-      href={resolve('/contact-us')}
+      href={resolve('contact-us')}>Get Involved</Button.Root
     >
-      Get Involved
-    </Button.Root>
   </section>
 </div>

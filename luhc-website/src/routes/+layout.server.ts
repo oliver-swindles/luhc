@@ -1,4 +1,4 @@
-import { client } from '$lib/sanityClient';
+import { client } from '#lib/sanityClient.js';
 import type { LayoutServerLoad } from './$types';
 
 export const load: LayoutServerLoad = async () => {
@@ -15,10 +15,10 @@ export const load: LayoutServerLoad = async () => {
       }
     `);
   } catch (error) {
-    console.error("Failed to load sponsors in layout server", error);
+    console.error('Failed to load sponsors in layout server', error);
   }
 
   return {
-    sponsors
+    sponsors,
   };
 };

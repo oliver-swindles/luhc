@@ -1,8 +1,8 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import OurExec from '$lib/images/pages/index/our-exec.jpg?enhanced';
-  import OurCaptains from '$lib/images/pages/index/our-captains.jpg?enhanced';
-  import OurTeams from '$lib/images/pages/index/our-teams.jpg?enhanced';
+  import OurExec from '#lib/images/pages/index/our-exec.jpg?enhanced';
+  import OurCaptains from '#lib/images/pages/index/our-captains.jpg?enhanced';
+  import OurTeams from '#lib/images/pages/index/our-teams.jpg?enhanced';
 
   import { Button } from 'bits-ui';
 

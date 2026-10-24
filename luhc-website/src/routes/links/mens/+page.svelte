@@ -1,7 +1,7 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import LinkTreeList from '$lib/components/links/LinkList.svelte';
-  import MensLogo from '$lib/images/luhc-logo.png?enhanced';
+  import LinkTreeList from '#lib/components/links/LinkList.svelte';
+  import MensLogo from '#lib/images/luhc-logo.png?enhanced';
 
   import { Button } from 'bits-ui';
 

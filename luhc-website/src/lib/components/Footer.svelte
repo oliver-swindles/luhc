@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import LUHCLogo from '$lib/images/luhc-logo.png?enhanced';
+  import LUHCLogo from '#lib/images/luhc-logo.png?enhanced';
   import { Button } from 'bits-ui';
 
   interface Sponsor {
@@ -23,7 +23,7 @@
           class="h-16 w-auto opacity-90 transition-opacity group-hover:opacity-100"
           alt="LUHC Logo"
           src={LUHCLogo}
-        />
+        ></enhanced:img>
         <div class="flex flex-col">
           <span class="font-display text-2xl font-bold tracking-wide uppercase">LU Hockey</span>
           <span class="font-sans text-xs text-gray-400">Est. 1964</span>
@@ -34,10 +34,9 @@
       </p>
       <Button.Root
         class="rounded bg-luhc-red px-3 py-1 transition-colors duration-150 hover:bg-white hover:text-luhc-dark"
-        href={resolve('/roses')}
+        href={resolve('roses')}
+        ><span class="text-xs font-semibold tracking-widest">#ROSESARERED</span></Button.Root
       >
-        <span class="text-xs font-semibold tracking-widest"> #ROSESARERED </span>
-      </Button.Root>
     </div>
 
     <!-- Column 2: Club Info -->
@@ -49,13 +48,22 @@
       </h2>
       <ul class="space-y-3 font-sans text-sm text-gray-400">
         <li>
-          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href={resolve('/about')}>About Us</Button.Root>
+          <Button.Root
+            class="transition-colors duration-200 hover:text-luhc-red"
+            href={resolve('about')}>About Us</Button.Root
+          >
         </li>
         <li>
-          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href={resolve('/contact-us')}>Contact Us</Button.Root>
+          <Button.Root
+            class="transition-colors duration-200 hover:text-luhc-red"
+            href={resolve('contact-us')}>Contact Us</Button.Root
+          >
         </li>
         <li>
-          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href="{resolve('/')}LUHCClubConstitution.docx">Club Constitution</Button.Root>
+          <Button.Root
+            class="transition-colors duration-200 hover:text-luhc-red"
+            href="{resolve('/')}LUHCClubConstitution.docx">Club Constitution</Button.Root
+          >
         </li>
         <li>
           <Button.Root
@@ -64,11 +72,13 @@
             rel="noopener noreferrer"
             target="_blank"
           >
-            GitHub Repo <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24"
-              ><path
+            GitHub Repo
+
+            <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+              <path
                 d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.655-3.795-1.455-3.795-1.455-.54-1.38-1.335-1.755-1.335-1.755-1.095-.75.09-.735.09-.735 1.2.09 1.83 1.245 1.83 1.245 1.08 1.86 2.805 1.32 3.495 1.005.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.225 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405 1.02 0 2.04.135 3 .405 2.295-1.56 3.3-1.23 3.3-1.23.66 1.695.24 2.925.12 3.225.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-              /></svg
-            >
+              ></path>
+            </svg>
           </Button.Root>
         </li>
       </ul>
@@ -83,16 +93,36 @@
       </h2>
       <ul class="space-y-3 font-sans text-sm text-gray-400">
         <li>
-          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href="https://www.facebook.com/groups/340322369353793/" rel="noopener noreferrer" target="_blank">LUHC Facebook</Button.Root>
+          <Button.Root
+            class="transition-colors duration-200 hover:text-luhc-red"
+            href="https://www.facebook.com/groups/340322369353793/"
+            rel="noopener noreferrer"
+            target="_blank">LUHC Facebook</Button.Root
+          >
         </li>
         <li>
-          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href="https://www.instagram.com/lumhc_/" rel="noopener noreferrer" target="_blank">Men's Instagram</Button.Root>
+          <Button.Root
+            class="transition-colors duration-200 hover:text-luhc-red"
+            href="https://www.instagram.com/lumhc_/"
+            rel="noopener noreferrer"
+            target="_blank">Men's Instagram</Button.Root
+          >
         </li>
         <li>
-          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href="https://www.instagram.com/luwhc_/" rel="noopener noreferrer" target="_blank">Women's Instagram</Button.Root>
+          <Button.Root
+            class="transition-colors duration-200 hover:text-luhc-red"
+            href="https://www.instagram.com/luwhc_/"
+            rel="noopener noreferrer"
+            target="_blank">Women's Instagram</Button.Root
+          >
         </li>
         <li>
-          <Button.Root class="transition-colors duration-200 hover:text-luhc-red" href="https://www.instagram.com/luhc_dev/" rel="noopener noreferrer" target="_blank">Dev Squad Instagram</Button.Root>
+          <Button.Root
+            class="transition-colors duration-200 hover:text-luhc-red"
+            href="https://www.instagram.com/luhc_dev/"
+            rel="noopener noreferrer"
+            target="_blank">Dev Squad Instagram</Button.Root
+          >
         </li>
       </ul>
     </div>
@@ -123,10 +153,12 @@
 
   <!-- Copyright Bar -->
   <div class="mt-8 border-t border-white/10 px-6 pt-8">
-    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between text-xs text-gray-400 md:flex-row">
+    <div
+      class="mx-auto flex max-w-7xl flex-col items-center justify-between text-xs text-gray-400 md:flex-row"
+    >
       <div class="flex items-center gap-1">
-        <span>&copy; {new Date().getFullYear()} Lancaster University Hockey Club.</span>
-        <span class="hidden md:inline"> All Rights Reserved.</span>
+        <span>© {new Date().getFullYear()} Lancaster University Hockey Club.</span>
+        <span class="hidden md:inline">All Rights Reserved.</span>
       </div>
       <div class="mt-4 flex items-center gap-4 md:mt-0">
         <p class="transition-colors">#ROSESARERED</p>

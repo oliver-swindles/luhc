@@ -3,7 +3,7 @@ import {
   type ImageUrlBuilder,
   type SanityImageSource,
 } from '@sanity/image-url';
-import { client } from '$lib/sanityClient';
+import { client } from '#lib/sanityClient.js';
 
 const builder = createImageUrlBuilder(client);
 

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
   import { page } from '$app/state';
-  import LUHCLogo from '$lib/images/luhc-logo.png?enhanced';
+  import LUHCLogo from '#lib/images/luhc-logo.png?enhanced';
   import { slide } from 'svelte/transition';
   import { Button } from 'bits-ui';
 
@@ -30,7 +30,7 @@
             class="h-10 w-auto drop-shadow-md transition-transform group-hover:scale-105 md:h-12"
             alt="LUHC Logo"
             src={LUHCLogo}
-          />
+          ></enhanced:img>
           <span
             class="font-display text-2xl font-bold tracking-wide text-white uppercase drop-shadow-sm"
           >
@@ -67,23 +67,23 @@
               <div class="flex flex-col py-2 font-sans text-sm font-medium text-luhc-dark">
                 <Button.Root
                   class="border-b border-gray-100 px-4 py-3 hover:bg-gray-50 hover:text-luhc-red"
-                  href={resolve('/about')}>About the Club</Button.Root
+                  href={resolve('about')}>About the Club</Button.Root
                 >
                 <Button.Root
                   class="border-b border-gray-100 px-4 py-3 hover:bg-gray-50 hover:text-luhc-red"
-                  href={resolve('/roses')}>Roses</Button.Root
+                  href={resolve('roses')}>Roses</Button.Root
                 >
                 <Button.Root
                   class="border-b border-gray-100 px-4 py-3 hover:bg-gray-50 hover:text-luhc-red"
-                  href={resolve('/about/meet-the-exec')}>Meet the Exec</Button.Root
+                  href={resolve('about/meet-the-exec')}>Meet the Exec</Button.Root
                 >
                 <Button.Root
                   class="border-b border-gray-100 px-4 py-3 hover:bg-gray-50 hover:text-luhc-red"
-                  href={resolve('/about/meet-the-captains')}>Meet the Captains</Button.Root
+                  href={resolve('about/meet-the-captains')}>Meet the Captains</Button.Root
                 >
                 <Button.Root
                   class="px-4 py-3 hover:bg-gray-50 hover:text-luhc-red"
-                  href={resolve('/socials')}>Socials</Button.Root
+                  href={resolve('socials')}>Socials</Button.Root
                 >
               </div>
             </div>
@@ -112,19 +112,19 @@
               <div class="flex flex-col py-2 font-sans text-sm font-medium text-luhc-dark">
                 <Button.Root
                   class="border-b border-gray-100 px-4 py-3 hover:bg-gray-50 hover:text-luhc-red"
-                  href={resolve('/teams/mens-club')}>Men's Club</Button.Root
+                  href={resolve('teams/mens-club')}>Men's Club</Button.Root
                 >
                 <Button.Root
                   class="border-b border-gray-100 px-4 py-3 hover:bg-gray-50 hover:text-luhc-red"
-                  href={resolve('/teams/womens-club')}>Women's Club</Button.Root
+                  href={resolve('teams/womens-club')}>Women's Club</Button.Root
                 >
                 <Button.Root
                   class="border-b border-gray-100 px-4 py-3 hover:bg-gray-50 hover:text-luhc-red"
-                  href={resolve('/teams/development-squad')}>Development Squad</Button.Root
+                  href={resolve('teams/development-squad')}>Development Squad</Button.Root
                 >
                 <Button.Root
                   class="px-4 py-3 hover:bg-gray-50 hover:text-luhc-red"
-                  href={resolve('/teams/indoor-hockey')}>Indoor Hockey</Button.Root
+                  href={resolve('teams/indoor-hockey')}>Indoor Hockey</Button.Root
                 >
               </div>
             </div>
@@ -132,15 +132,13 @@
 
           <Button.Root
             class="font-display text-sm font-medium tracking-widest text-white uppercase transition-colors hover:text-white/80"
-            href={resolve('/sponsors')}>Sponsors</Button.Root
+            href={resolve('sponsors')}>Sponsors</Button.Root
           >
 
           <Button.Root
             class="rounded-sm bg-white px-6 py-2 font-display text-xs font-bold tracking-widest text-luhc-red uppercase shadow-sm transition-colors hover:bg-gray-100"
-            href={resolve('/contact-us')}
+            href={resolve('contact-us')}>Contact</Button.Root
           >
-            Contact
-          </Button.Root>
         </nav>
 
         <div class="flex items-center md:hidden">
@@ -157,8 +155,8 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                /></svg
-              >
+                ></path>
+              </svg>
             {:else}
               <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 ><path
@@ -166,8 +164,8 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                /></svg
-              >
+                ></path>
+              </svg>
             {/if}
           </Button.Root>
         </div>
@@ -186,7 +184,7 @@
           >
           <Button.Root
             class="block rounded-md px-3 py-3 font-display text-base font-medium tracking-widest text-white uppercase hover:bg-black/10"
-            href={resolve('/sponsors')}>Sponsors</Button.Root
+            href={resolve('sponsors')}>Sponsors</Button.Root
           >
 
           <div class="px-3 py-2">
@@ -196,22 +194,24 @@
             <div class="space-y-3 border-l-2 border-white/20 pl-4">
               <Button.Root
                 class="block font-sans text-sm text-white hover:text-white/80"
-                href={resolve('/about')}>Club Info</Button.Root
+                href={resolve('about')}>Club Info</Button.Root
               >
-              <Button.Root class="block font-sans text-sm text-white" href={resolve('/roses')}
+
+              <Button.Root class="block font-sans text-sm text-white" href={resolve('roses')}
                 >Roses</Button.Root
               >
+
               <Button.Root
                 class="block font-sans text-sm text-white hover:text-white/80"
-                href={resolve('/about/meet-the-exec')}>Exec Team</Button.Root
+                href={resolve('about/meet-the-exec')}>Exec Team</Button.Root
               >
               <Button.Root
                 class="block font-sans text-sm text-white hover:text-white/80"
-                href={resolve('/about/meet-the-captains')}>Captains</Button.Root
+                href={resolve('about/meet-the-captains')}>Captains</Button.Root
               >
               <Button.Root
                 class="block font-sans text-sm text-white hover:text-white/80"
-                href={resolve('/socials')}>Socials</Button.Root
+                href={resolve('socials')}>Socials</Button.Root
               >
             </div>
           </div>
@@ -223,25 +223,25 @@
             <div class="space-y-3 border-l-2 border-white/20 pl-4">
               <Button.Root
                 class="block font-sans text-sm text-white hover:text-white/80"
-                href={resolve('/teams/mens-club')}>Men's Club</Button.Root
+                href={resolve('teams/mens-club')}>Men's Club</Button.Root
               >
               <Button.Root
                 class="block font-sans text-sm text-white hover:text-white/80"
-                href={resolve('/teams/womens-club')}>Women's Club</Button.Root
+                href={resolve('teams/womens-club')}>Women's Club</Button.Root
               >
               <Button.Root
                 class="block font-sans text-sm text-white hover:text-white/80"
-                href={resolve('/teams/development-squad')}>Development</Button.Root
+                href={resolve('teams/development-squad')}>Development</Button.Root
               >
               <Button.Root
                 class="block font-sans text-sm text-white hover:text-white/80"
-                href={resolve('/teams/indoor-hockey')}>Indoor</Button.Root
+                href={resolve('teams/indoor-hockey')}>Indoor</Button.Root
               >
             </div>
           </div>
           <Button.Root
             class="mt-6 block rounded-md bg-white px-3 py-3 text-center font-display text-base font-bold tracking-widest text-luhc-red uppercase shadow-md"
-            href={resolve('/contact-us')}>Contact Us</Button.Root
+            href={resolve('contact-us')}>Contact Us</Button.Root
           >
         </div>
       </div>

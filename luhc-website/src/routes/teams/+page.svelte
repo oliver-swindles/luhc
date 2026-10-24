@@ -1,11 +1,11 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
 
-  import TeamsHero from '$lib/images/pages/teams/teams-hero.webp?enhanced';
-  import MensClub from '$lib/images/pages/teams/mens-club.webp?enhanced';
-  import WomensClub from '$lib/images/pages/teams/womens-club.webp?enhanced';
-  import DevSquad from '$lib/images/pages/teams/development-squad.avif';
-  import IndoorHockey from '$lib/images/pages/teams/indoor-hockey.webp?enhanced';
+  import TeamsHero from '#lib/images/pages/teams/teams-hero.webp?enhanced';
+  import MensClub from '#lib/images/pages/teams/mens-club.webp?enhanced';
+  import WomensClub from '#lib/images/pages/teams/womens-club.webp?enhanced';
+  import DevSquad from '#lib/images/pages/teams/development-squad.avif';
+  import IndoorHockey from '#lib/images/pages/teams/indoor-hockey.webp?enhanced';
 
   import { Button } from 'bits-ui';
 
@@ -82,7 +82,7 @@
     {#each teamPages as team (team.name + team.href)}
       <Button.Root
         class="group relative block transform overflow-hidden border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
-        aria-label={`Go to ${team.name} page`}
+        aria-label="Go to {team.name} page"
         href={resolve(team.href)}
       >
         <div class="relative h-64 overflow-hidden">

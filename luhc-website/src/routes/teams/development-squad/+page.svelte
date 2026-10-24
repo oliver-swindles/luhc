@@ -1,10 +1,10 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import DevHero from '$lib/images/pages/dev/dev-hero.jpg?enhanced';
-  import Dev1 from '$lib/images/pages/dev/dev-1.avif';
-  import Dev2 from '$lib/images/pages/dev/dev-2.avif';
-  import Dev3 from '$lib/images/pages/dev/dev-3.avif';
-  import Dev4 from '$lib/images/pages/dev/dev-4.avif';
+  import DevHero from '#lib/images/pages/dev/dev-hero.jpg?enhanced';
+  import Dev1 from '#lib/images/pages/dev/dev-1.avif';
+  import Dev2 from '#lib/images/pages/dev/dev-2.avif';
+  import Dev3 from '#lib/images/pages/dev/dev-3.avif';
+  import Dev4 from '#lib/images/pages/dev/dev-4.avif';
   import { Button } from 'bits-ui';
 
   const gallery = [Dev1, Dev2, Dev3, Dev4];
@@ -19,7 +19,8 @@
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"
     alt="Dev Squad Huddle"
     src={DevHero}
-  />
+  ></enhanced:img>
+
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
 
   <div
@@ -78,10 +79,8 @@
 
       <Button.Root
         class="block w-full border-2 border-luhc-red py-3 text-center font-display font-bold tracking-widest text-luhc-red uppercase transition-colors hover:bg-luhc-red hover:text-white"
-        href={resolve('/socials')}
+        href={resolve('socials')}>View Socials</Button.Root
       >
-        View Socials
-      </Button.Root>
     </div>
   </div>
 
@@ -96,7 +95,7 @@
             class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
             alt="Dev Squad Action"
             src={img}
-          />
+          ></enhanced:img>
         </div>
       {/each}
     </div>
@@ -107,9 +106,7 @@
     <p class="mb-8 font-sans text-lg text-white/90">No trials required. Just turn up and play.</p>
     <Button.Root
       class="inline-block bg-white px-10 py-4 font-display font-bold tracking-widest text-luhc-red uppercase shadow-md transition-colors hover:bg-luhc-dark hover:text-white"
-      href={resolve('/contact-us')}
+      href={resolve('contact-us')}>Get Involved</Button.Root
     >
-      Get Involved
-    </Button.Root>
   </section>
 </div>

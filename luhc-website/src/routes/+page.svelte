@@ -3,14 +3,14 @@
 
   import { Button } from 'bits-ui';
 
-  import HeroSection from '$lib/components/homepage/HeroSection.svelte';
-  import ScoreTicker from '$lib/components/homepage/ScoreTicker.svelte';
-  import NewsSection from '$lib/components/homepage/NewsSection.svelte';
-  import Sponsors from '$lib/components/homepage/Sponsors.svelte';
-  import ChairMessage from '$lib/components/homepage/ChairMessage.svelte';
-  import JoinCta from '$lib/components/homepage/JoinCta.svelte';
-  import MeetTheClub from '$lib/components/homepage/MeetTheClub.svelte';
-  import MatchCentre from '$lib/components/homepage/MatchCentre.svelte';
+  import HeroSection from '#lib/components/homepage/HeroSection.svelte';
+  import ScoreTicker from '#lib/components/homepage/ScoreTicker.svelte';
+  import NewsSection from '#lib/components/homepage/NewsSection.svelte';
+  import Sponsors from '#lib/components/homepage/Sponsors.svelte';
+  import ChairMessage from '#lib/components/homepage/ChairMessage.svelte';
+  import JoinCta from '#lib/components/homepage/JoinCta.svelte';
+  import MeetTheClub from '#lib/components/homepage/MeetTheClub.svelte';
+  import MatchCentre from '#lib/components/homepage/MatchCentre.svelte';
 
   let { data } = $props();
 </script>
@@ -49,10 +49,8 @@
     <div class="mt-12">
       <Button.Root
         class="inline-block border-b-2 border-luhc-red pb-1 text-xs font-bold tracking-widest text-luhc-dark uppercase transition-colors hover:text-luhc-red"
-        href={resolve('/about')}
+        href={resolve('about')}>Read more about LUHC</Button.Root
       >
-        Read more about LUHC
-      </Button.Root>
     </div>
   </div>
 </section>
@@ -120,14 +118,11 @@
         </h2>
         <div class="mx-auto mt-6 h-1.5 w-24 bg-luhc-red"></div>
       </div>
-      <div class="min-h-75">
-        <MeetTheClub />
-      </div>
+
+      <div class="min-h-75"><MeetTheClub /></div>
     </div>
 
-    <div>
-      <Sponsors sponsors={data.sponsors} />
-    </div>
+    <div><Sponsors sponsors={data.sponsors ?? []} /></div>
   </div>
 </section>
 

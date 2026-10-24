@@ -3,7 +3,7 @@
 
   import { Button } from 'bits-ui';
 
-  import { ICON_PATHS } from '$lib/constants/socials';
+  import { ICON_PATHS } from '#lib/constants/socials.js';
 
   const getIconPath = (platform: string): string => {
     return ICON_PATHS[platform.toLowerCase()] ?? '';

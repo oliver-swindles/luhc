@@ -1,7 +1,7 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import LinkTreeList from '$lib/components/links/LinkList.svelte';
-  import WomensLogo from '$lib/images/luhc-logo.png?enhanced';
+  import LinkTreeList from '#lib/components/links/LinkList.svelte';
+  import WomensLogo from '#lib/images/luhc-logo.png?enhanced';
 
   import { Button } from 'bits-ui';
 
@@ -18,7 +18,11 @@
   <div class="mx-auto max-w-xl">
     <div class="mb-10 text-center">
       <div class="mx-auto mb-4 h-28 w-28 overflow-hidden rounded-full bg-black p-3 shadow-sm">
-        <enhanced:img class="h-full w-full object-contain" alt="LUHC Women's Logo" src={WomensLogo} />
+        <enhanced:img
+          class="h-full w-full object-contain"
+          alt="LUHC Women's Logo"
+          src={WomensLogo}
+        />
       </div>
       <h1 class="mb-3 text-2xl font-bold">{pageData.title}</h1>
       <p class="mx-auto max-w-sm text-sm leading-relaxed text-gray-600">{pageData.description}</p>

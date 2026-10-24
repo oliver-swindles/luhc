@@ -1,5 +1,5 @@
 <script lang="ts">
-  import NewsImage from '$lib/images/pages/index/about-gallery-1.jpg?enhanced';
+  import NewsImage from '#lib/images/pages/index/about-gallery-1.jpg?enhanced';
 </script>
 
 <!-- Latest News -->

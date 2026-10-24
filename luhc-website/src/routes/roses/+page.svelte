@@ -1,7 +1,7 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import RosesHero from '$lib/images/pages/roses/roses-hero.webp?enhanced';
-  import RosesCountdown from '$lib/components/RosesCountdown.svelte';
+  import RosesHero from '#lib/images/pages/roses/roses-hero.webp?enhanced';
+  import RosesCountdown from '#lib/components/RosesCountdown.svelte';
 
   import { Button } from 'bits-ui';
 </script>
@@ -19,7 +19,8 @@
     class="absolute inset-0 h-full w-full object-cover object-center opacity-60"
     alt="Roses Hockey Action"
     src={RosesHero}
-  />
+  ></enhanced:img>
+
   <div class="absolute inset-0 bg-linear-to-t from-black/70 via-black/40 to-black/0"></div>
 
   <div
@@ -73,7 +74,7 @@
             d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
             stroke-linecap="round"
             stroke-linejoin="round"
-          />
+          ></path>
         </svg>
       </Button.Root>
 
@@ -81,10 +82,8 @@
         class="mt-4 border-b border-transparent pb-0.5 font-sans text-xs text-gray-400 transition-colors hover:border-luhc-red hover:text-luhc-red"
         href="https://www.lancaster.ac.uk/sport/roses/"
         rel="noopener noreferrer"
-        target="_blank"
+        target="_blank">View More Tournament Details on lancaster.ac.uk →</Button.Root
       >
-        View More Tournament Details on lancaster.ac.uk &rarr;
-      </Button.Root>
     </div>
   </section>
 
@@ -215,9 +214,7 @@
     </p>
     <Button.Root
       class="inline-block transform bg-luhc-red px-10 py-4 font-display font-bold tracking-widest text-white uppercase shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-luhc-red"
-      href={resolve('/contact-us')}
+      href={resolve('contact-us')}>Play for Lancaster</Button.Root
     >
-      Play for Lancaster
-    </Button.Root>
   </section>
 </div>

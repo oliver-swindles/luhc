@@ -1,12 +1,12 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
   import { Button } from 'bits-ui';
-  import { urlFor } from '$lib/image';
+  import { urlFor } from '#lib/image.js';
 
   let { data } = $props();
   let sponsors = $derived(data.sponsors || []);
 
-  import SponsorsHero from '$lib/images/pages/sponsors/sponsors-hero-2.webp?enhanced';
+  import SponsorsHero from '#lib/images/pages/sponsors/sponsors-hero-2.webp?enhanced';
 </script>
 
 <svelte:head>
@@ -18,7 +18,7 @@
     class="absolute inset-0 h-full w-full object-cover object-center opacity-90"
     alt="Sponsors Hero"
     src={SponsorsHero}
-  />
+  ></enhanced:img>
   <div class="absolute inset-0 bg-luhc-dark/80"></div>
 
   <div
@@ -43,7 +43,7 @@
         class="group flex flex-col items-center justify-between rounded-sm border border-gray-100 bg-white p-6 text-center transition-all duration-300 hover:border-luhc-red hover:shadow-lg"
         data-aos="fade-up"
       >
-        <div class="flex flex-col w-full">
+        <div class="flex w-full flex-col">
           <div class="mb-6 flex h-32 w-full items-center justify-center">
             {#if sponsor.logo}
               <img
@@ -57,10 +57,10 @@
             {sponsor.name}
           </h3>
           {#if sponsor.description}
-            <p class="font-sans text-sm text-gray-500 mb-4">{sponsor.description}</p>
+            <p class="mb-4 font-sans text-sm text-gray-500">{sponsor.description}</p>
           {/if}
         </div>
-        
+
         {#if sponsor.link}
           <Button.Root
             class="group inline-flex w-full items-center gap-2 bg-luhc-red px-2 py-2 font-display font-bold tracking-tight text-white uppercase shadow-md transition-colors duration-300 hover:bg-luhc-dark"
@@ -109,8 +109,6 @@
   <h2 class="mb-6 font-display text-3xl font-bold text-luhc-dark uppercase">Join The Team</h2>
   <Button.Root
     class="inline-block rounded-sm bg-luhc-red px-10 py-4 font-display font-bold tracking-widest text-white uppercase shadow-lg transition-colors hover:bg-luhc-dark"
-    href={resolve('/contact-us')}
+    href={resolve('contact-us')}>Become A Sponsor</Button.Root
   >
-    Become A Sponsor
-  </Button.Root>
 </section>

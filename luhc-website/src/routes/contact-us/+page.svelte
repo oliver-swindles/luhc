@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ContactHero from '$lib/images/pages/contact/contact-hero.webp?enhanced';
+  import ContactHero from '#lib/images/pages/contact/contact-hero.webp?enhanced';
 
   import { Button } from 'bits-ui';
 </script>

@@ -8,8 +8,8 @@
   import { onMount } from 'svelte';
   import { afterNavigate } from '$app/navigation';
 
-  import Header from '$lib/components/Header.svelte';
-  import Footer from '$lib/components/Footer.svelte';
+  import Header from '#lib/components/Header.svelte';
+  import Footer from '#lib/components/Footer.svelte';
 
   let { children, data } = $props();
 
@@ -21,7 +21,11 @@
     });
   });
 
-  afterNavigate(() => {
+  afterNavigate(({ shallow, type }) => {
+    if (shallow && type === 'goto') {
+      return;
+    }
+
     AOS.refresh();
   });
 </script>
@@ -49,7 +53,9 @@
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta content="luhc.co.uk" property="twitter:domain" />
+
   <meta content="https://www.luhc.co.uk" property="twitter:url" />
+
   <meta
     name="twitter:description"
     content="Join LUHC - the home of Lancaster Uni hockey. Fixtures, socials, photos, and everything LUHC."

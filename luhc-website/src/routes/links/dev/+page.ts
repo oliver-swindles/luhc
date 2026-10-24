@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { client } from '$lib/sanityClient';
+import { client } from '#lib/sanityClient.js';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async () => {

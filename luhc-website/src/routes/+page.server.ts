@@ -1,7 +1,7 @@
 import * as cheerio from 'cheerio';
 import type { PageServerLoad } from './$types';
-import type { Match } from '$lib/types';
-import { client } from '$lib/sanityClient';
+import type { Match } from '#lib/types.js';
+import { client } from '#lib/sanityClient.js';
 
 function normaliseScore(scoreStr: string, isHome: boolean): string {
   const match = scoreStr.match(/(\d+)\s*[-:–]\s*(\d+)/);
@@ -37,7 +37,7 @@ export const load: PageServerLoad = async ({ setHeaders, fetch }) => {
         }
       `);
   } catch (error) {
-    console.error("Failed to load sponsors", error);
+    console.error('Failed to load sponsors', error);
   }
 
   try {

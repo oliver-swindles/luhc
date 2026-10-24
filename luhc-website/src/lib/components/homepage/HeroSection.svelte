@@ -1,6 +1,6 @@
 <script lang="ts">
-  import LUHCLogo from '$lib/images/luhc-logo.png?enhanced';
-  import HeroPFlick from '$lib/images/pages/index/p-flick-hero.jpg?enhanced';
+  import LUHCLogo from '#lib/images/luhc-logo.png?enhanced';
+  import HeroPFlick from '#lib/images/pages/index/p-flick-hero.jpg?enhanced';
 </script>
 
 <section class="relative h-[85vh] w-full overflow-hidden bg-luhc-dark">

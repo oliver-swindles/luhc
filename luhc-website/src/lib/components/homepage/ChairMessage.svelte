@@ -1,5 +1,5 @@
 <script lang="ts">
-  import LUHCExecMessage from '$lib/images/pages/index/luhc-exec-message.jpg?enhanced';
+  import LUHCExecMessage from '#lib/images/pages/index/luhc-exec-message.jpg?enhanced';
 </script>
 
 <section

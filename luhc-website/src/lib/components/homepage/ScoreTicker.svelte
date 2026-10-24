@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Match } from '$lib/types';
+  import type { Match } from '#lib/types.js';
 
   interface Props {
     results?: Match[];

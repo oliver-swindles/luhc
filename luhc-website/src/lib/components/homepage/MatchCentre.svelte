@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Match } from '$lib/types';
+  import type { Match } from '#lib/types.js';
 
   interface DateStringExt {
     weekday: string;
@@ -65,7 +65,7 @@
     {#if fixtures && fixtures.length > 0}
       <div class="divide-y divide-gray-100">
         {#each fixtures as fixture (fixture.dateAndTime + fixture.opponent + fixture.team)}
-          {@const dt = formatDate(fixture.dateAndTime)}
+          {const dt = $derived(formatDate(fixture.dateAndTime))}
 
           <div class="group relative flex items-center p-3 transition-colors hover:bg-gray-50">
             <div

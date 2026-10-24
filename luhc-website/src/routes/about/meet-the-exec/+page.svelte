@@ -1,6 +1,6 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import ExecHero from '$lib/images/pages/exec/exec-hero-2.webp?enhanced';
+  import ExecHero from '#lib/images/pages/exec/exec-hero-2.webp?enhanced';
 
   import { Button } from 'bits-ui';
 
@@ -35,12 +35,15 @@
     class="absolute inset-0 h-full w-full object-cover object-top opacity-50"
     alt="Exec Team"
     src={ExecHero}
-  />
+  ></enhanced:img>
+
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
+
   <div class="absolute bottom-0 left-0 w-full p-8 md:p-16" data-aos="fade-up">
     <span class="mb-2 block font-display text-sm font-bold tracking-widest text-luhc-red uppercase"
       >Leadership</span
     >
+
     <h1 class="font-display text-5xl font-bold tracking-tighter text-white uppercase md:text-7xl">
       The Executive Committee
     </h1>
@@ -60,14 +63,14 @@
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               alt={person.name}
               src={person.photo}
-            />
+            ></enhanced:img>
           {:else}
             <div class="absolute inset-0 flex items-center justify-center text-gray-300">
-              <svg class="h-24 w-24" fill="currentColor" viewBox="0 0 24 24"
-                ><path
+              <svg class="h-24 w-24" fill="currentColor" viewBox="0 0 24 24">
+                <path
                   d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-                /></svg
-              >
+                ></path>
+              </svg>
             </div>
           {/if}
           <div
@@ -96,9 +99,7 @@
     </p>
     <Button.Root
       class="inline-block text-sm font-bold tracking-widest text-luhc-red uppercase decoration-2 underline-offset-4 hover:underline"
-      href={resolve('/about/meet-the-captains')}
+      href={resolve('about/meet-the-captains')}>View Captains Roster →</Button.Root
     >
-      View Captains Roster &rarr;
-    </Button.Root>
   </div>
 </div>

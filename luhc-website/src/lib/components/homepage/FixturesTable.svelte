@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Match } from '$lib/types';
+  import type { Match } from '#lib/types.js';
 
   interface DateString {
     day: string;
@@ -52,7 +52,7 @@
   {#if upcomingFixtures.length > 0}
     <div class="divide-y divide-gray-100">
       {#each upcomingFixtures.slice(0, 5) as fixture (fixture.dateAndTime + fixture.team)}
-        {@const dt = formatDate(fixture.dateAndTime)}
+        {const dt = $derived(formatDate(fixture.dateAndTime))}
 
         <div class="group flex items-center justify-between p-4 transition-colors hover:bg-gray-50">
           <div class="flex items-center gap-4">

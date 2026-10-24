@@ -1,15 +1,15 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
-  import IndoorHero from '$lib/images/pages/indoor/indoor-hero.jpg?enhanced';
-  import Indoor1 from '$lib/images/pages/indoor/indoor-1.webp?enhanced';
-  import Indoor2 from '$lib/images/pages/indoor/indoor-2.webp?enhanced';
-  import Indoor3 from '$lib/images/pages/indoor/indoor-3.webp?enhanced';
-  import Indoor4 from '$lib/images/pages/indoor/indoor-4.webp?enhanced';
-  import Indoor5 from '$lib/images/pages/indoor/indoor-5.webp?enhanced';
-  import Indoor6 from '$lib/images/pages/indoor/indoor-6.webp?enhanced';
-  import Indoor7 from '$lib/images/pages/indoor/indoor-7.webp?enhanced';
-  import Indoor8 from '$lib/images/pages/indoor/indoor-8.webp?enhanced';
-  import Indoor9 from '$lib/images/pages/indoor/indoor-9.webp?enhanced';
+  import IndoorHero from '#lib/images/pages/indoor/indoor-hero.jpg?enhanced';
+  import Indoor1 from '#lib/images/pages/indoor/indoor-1.webp?enhanced';
+  import Indoor2 from '#lib/images/pages/indoor/indoor-2.webp?enhanced';
+  import Indoor3 from '#lib/images/pages/indoor/indoor-3.webp?enhanced';
+  import Indoor4 from '#lib/images/pages/indoor/indoor-4.webp?enhanced';
+  import Indoor5 from '#lib/images/pages/indoor/indoor-5.webp?enhanced';
+  import Indoor6 from '#lib/images/pages/indoor/indoor-6.webp?enhanced';
+  import Indoor7 from '#lib/images/pages/indoor/indoor-7.webp?enhanced';
+  import Indoor8 from '#lib/images/pages/indoor/indoor-8.webp?enhanced';
+  import Indoor9 from '#lib/images/pages/indoor/indoor-9.webp?enhanced';
   import { Button } from 'bits-ui';
 
   const gallery = [
@@ -34,7 +34,8 @@
     class="absolute inset-0 h-full w-full object-cover object-center opacity-70"
     alt="Indoor Hockey Action"
     src={IndoorHero}
-  />
+  ></enhanced:img>
+
   <div class="absolute inset-0 bg-linear-to-t from-luhc-dark via-transparent to-transparent"></div>
 
   <div
@@ -99,7 +100,7 @@
             class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:opacity-100"
             alt={img.alt}
             src={img.src}
-          />
+          ></enhanced:img>
         </div>
       {/each}
     </div>
@@ -112,9 +113,7 @@
     </p>
     <Button.Root
       class="inline-block transform bg-luhc-red px-10 py-4 font-display font-bold tracking-widest text-white uppercase shadow-lg transition-colors hover:-translate-y-1 hover:bg-luhc-dark"
-      href={resolve('/contact-us')}
+      href={resolve('contact-us')}>Join Training</Button.Root
     >
-      Join Training
-    </Button.Root>
   </section>
 </div>
